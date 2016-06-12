@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "A custom abstract syntax tree for Dust.js",
   "scripts": {
-    "test": "nyc --reporter=lcov mocha",
+    "test": "nyc --reporter=text --reporter=lcov mocha",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint lib test"
   },
   "author": "Cory Roloff",
@@ -13,6 +14,7 @@
     "babel-core": "^6.9.1",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.8.0",
     "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
     "eslint": "^2.12.0",
     "mocha": "^2.5.3",
     "nyc": "^6.4.4",
