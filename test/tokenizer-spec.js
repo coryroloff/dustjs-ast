@@ -68,4 +68,16 @@ describe("tokenizer", function () {
 			{type: "Punctuator", value: "}", loc: {start: {line: 1, column: 10}, end: {line: 1, column: 11}}, range: {start: 10, end: 11}}
 		]);
 	});
+
+	it("should tokenize filters", function () {
+		expect(tokenize("{test|js|fake}")).to.deep.equal([
+			{type: "Punctuator", value: "{", loc: {start: {line: 1, column: 1}, end: {line: 1, column: 2}}, range: {start: 1, end: 2}},
+			{type: "Identifier", value: "test", loc: {start: {line: 1, column: 2}, end: {line: 1, column: 6}}, range: {start: 2, end: 6}},
+			{type: "Punctuator", value: "|", loc: {start: {line: 1, column: 6}, end: {line: 1, column: 7}}, range: {start: 6, end: 7}},
+			{type: "Identifier", value: "js", loc: {start: {line: 1, column: 7}, end: {line: 1, column: 9}}, range: {start: 7, end: 9}},
+			{type: "Punctuator", value: "|", loc: {start: {line: 1, column: 9}, end: {line: 1, column: 10}}, range: {start: 9, end: 10}},
+			{type: "Identifier", value: "fake", loc: {start: {line: 1, column: 10}, end: {line: 1, column: 14}}, range: {start: 10, end: 14}},
+			{type: "Punctuator", value: "}", loc: {start: {line: 1, column: 14}, end: {line: 1, column: 15}}, range: {start: 14, end: 15}}
+		]);
+	});
 });
