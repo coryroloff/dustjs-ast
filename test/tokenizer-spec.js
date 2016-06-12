@@ -39,6 +39,18 @@ describe("tokenizer", function () {
 		]);
 	});
 
+	it("should tokenize references in literals", function () {
+		expect(tokenize("{\"start{tests}end\"}")).to.deep.equal([
+			{type: "Punctuator", value: "{", loc: {start: {line: 1, column: 1}, end: {line: 1, column: 2}}, range: {start: 1, end: 2}},
+			{type: "Literal", value: "\"start", loc: {start: {line: 1, column: 2}, end: {line: 1, column: 8}}, range: {start: 2, end: 8}},
+			{type: "Punctuator", value: "{", loc: {start: {line: 1, column: 8}, end: {line: 1, column: 9}}, range: {start: 8, end: 9}},
+			{type: "Identifier", value: "tests", loc: {start: {line: 1, column: 9}, end: {line: 1, column: 14}}, range: {start: 9, end: 14}},
+			{type: "Punctuator", value: "}", loc: {start: {line: 1, column: 14}, end: {line: 1, column: 15}}, range: {start: 14, end: 15}},
+			{type: "Literal", value: "end\"", loc: {start: {line: 1, column: 15}, end: {line: 1, column: 19}}, range: {start: 15, end: 19}},
+			{type: "Punctuator", value: "}", loc: {start: {line: 1, column: 19}, end: {line: 1, column: 20}}, range: {start: 19, end: 20}}
+		]);
+	});
+
 	it("should tokenize literals with escaped double quotes inside of them", function () {
 		expect(tokenize("{\"lorem \\\" ipsum\"}")).to.deep.equal([
 			{type: "Punctuator", value: "{", loc: {start: {line: 1, column: 1}, end: {line: 1, column: 2}}, range: {start: 1, end: 2}},

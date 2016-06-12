@@ -26,6 +26,18 @@ describe("scanner", function () {
 		it("should default lineStart to 1", function () {
 			expect(scanner.lineStart).to.equal(1);
 		});
+
+		it("should offset index, lineNumber, lineStart not not 0", function () {
+			let scanner = new Scanner("12345", {
+				indexOffset: 3,
+				lineNumberOffset: 3,
+				lineStartOffset: 3
+			});
+
+			expect(scanner.index).to.equal(2);
+			expect(scanner.lineNumber).to.equal(3);
+			expect(scanner.lineStart).to.equal(3);
+		});
 	});
 
 	context("isLineTerminator", function () {
