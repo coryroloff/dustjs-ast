@@ -1,3 +1,5 @@
+"use strict";
+
 import {expect} from "chai";
 import tokenize from "../lib/tokenize";
 import alphabet from "alphabet";
