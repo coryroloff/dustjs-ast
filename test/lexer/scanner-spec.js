@@ -1,7 +1,7 @@
 "use strict";
 
 import {expect} from "chai";
-import Scanner from "../lib/scanner";
+import Scanner from "../../lib/lexer/scanner";
 
 describe("scanner", function () {
 	let scanner;

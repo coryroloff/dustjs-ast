@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A custom abstract syntax tree for Dust.js",
   "scripts": {
-    "test": "nyc --reporter=text --reporter=lcov mocha",
+    "test": "nyc --reporter=text --reporter=lcov mocha test/**/*-spec.js",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint lib test"
   },
