@@ -5,7 +5,7 @@ import tokenize from "../../lib/lexer";
 import alphabet from "alphabet";
 
 describe("tokenizer", function () {
-	for (let char of alphabet.concat(["_", "$"])) {
+	for (const char of alphabet.concat(["_", "$"])) {
 		it(`should tokenize when character has prefix: ${char}`, function () {
 			expect(tokenize(`{${char}char}`)).to.deep.equal([
 				{type: "Punctuator", value: "{", loc: {start: {line: 1, column: 1}, end: {line: 1, column: 2}}, range: {start: 1, end: 2}},
@@ -15,7 +15,7 @@ describe("tokenizer", function () {
 		});
 	}
 
-	for (let char of ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]) {
+	for (const char of ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]) {
 		it(`should not tokenize when character has prefix: ${char}`, function () {
 			expect(() => tokenize(`{${char}char}`)).to.throw();
 		});

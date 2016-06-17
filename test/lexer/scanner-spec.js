@@ -28,7 +28,7 @@ describe("scanner", function () {
 		});
 
 		it("should offset index, lineNumber, lineStart not not 0", function () {
-			let scanner = new Scanner("12345", {
+			const scanner = new Scanner("12345", {
 				indexOffset: 3,
 				lineNumberOffset: 3,
 				lineStartOffset: 3
@@ -41,7 +41,7 @@ describe("scanner", function () {
 	});
 
 	context("isLineTerminator", function () {
-		for (let char of ["\n", "\r", "\r\n", "\u2028", "\u2029"]) {
+		for (const char of ["\n", "\r", "\r\n", "\u2028", "\u2029"]) {
 			it(`should return true for: ${char}`, function () {
 				expect(scanner.isLineTerminator(char)).to.be.true;
 			});
@@ -52,30 +52,30 @@ describe("scanner", function () {
 		});
 	});
 
-	context("read", function () {
-		it("should read each character, move the cursor, and return undefined at the end", function () {
-			expect(scanner.read()).to.equal("1");
+	context("next", function () {
+		it("should read each character, move the cursor, and return done at the end", function () {
+			expect(scanner.next()).to.deep.equal({value: "1", done: false});
 			expect(scanner.index).to.equal(1);
-			expect(scanner.read()).to.equal("2");
+			expect(scanner.next()).to.deep.equal({value: "2", done: false});
 			expect(scanner.index).to.equal(2);
-			expect(scanner.read()).to.equal("3");
+			expect(scanner.next()).to.deep.equal({value: "3", done: false});
 			expect(scanner.index).to.equal(3);
-			expect(scanner.read()).to.equal("4");
+			expect(scanner.next()).to.deep.equal({value: "4", done: false});
 			expect(scanner.index).to.equal(4);
-			expect(scanner.read()).to.equal("5");
+			expect(scanner.next()).to.deep.equal({value: "5", done: false});
 			expect(scanner.index).to.equal(5);
-			expect(scanner.read()).to.be.undefined;
+			expect(scanner.next()).to.deep.equal({value: undefined, done: true});
 			expect(scanner.index).to.equal(6);
 		});
 
-		for (let char of ["\n", "\r", "\r\n", "\u2028", "\u2029"]) {
+		for (const char of ["\n", "\r", "\r\n", "\u2028", "\u2029"]) {
 			it(`should increment the line number and line start when it hits a new line: ${char}`, function () {
-				let scanner = new Scanner(`ab${char}c`);
-				scanner.read();
+				const scanner = new Scanner(`ab${char}c`);
+				scanner.next();
 				expect(scanner.lineNumber).to.equal(1);
 				expect(scanner.lineStart).to.equal(1);
-				scanner.read();
-				scanner.read();
+				scanner.next();
+				scanner.next();
 				expect(scanner.lineNumber).to.equal(2);
 				expect(scanner.lineStart).to.equal(3);
 				expect(scanner.index).to.equal(3);
@@ -91,8 +91,8 @@ describe("scanner", function () {
 		});
 
 		it("should return undefined if at the end of the string", function () {
-			let scanner = new Scanner("a");
-			scanner.read();
+			const scanner = new Scanner("a");
+			scanner.next();
 			expect(scanner.peek()).to.be.undefined;
 		});
 	});
