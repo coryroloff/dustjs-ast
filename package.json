@@ -9,6 +9,7 @@
   },
   "author": "Cory Roloff",
   "license": "MIT",
+  "main": "lib/index.js",
   "devDependencies": {
     "alphabet": "^1.0.0",
     "babel-core": "^6.9.1",
