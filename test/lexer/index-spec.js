@@ -94,4 +94,13 @@ describe("tokenizer", function () {
 			{type: "Punctuator", value: "}", loc: {start: {line: 1, column: 14}, end: {line: 1, column: 15}}, range: {start: 14, end: 15}}
 		]);
 	});
+
+	describe("token", function () {
+		context("toString", function () {
+			it("should return the value", function () {
+				const token = tokenize("{")[0];
+				expect(token.toString()).to.equal("{");
+			});
+		});
+	});
 });
