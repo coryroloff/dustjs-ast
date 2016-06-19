@@ -16,6 +16,7 @@
         "quotes": ["error", "double", {"allowTemplateLiterals": true}],
         "keyword-spacing": ["error", {"before": true, "after": true}],
         "eqeqeq": ["error", "always"],
-        "prefer-const": ["error"]
+        "prefer-const": ["error"],
+        "strict": ["error"]
     }
 }
