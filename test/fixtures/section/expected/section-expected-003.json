@@ -4,6 +4,7 @@
 		{
 			"type": "Section",
 			"body": [],
+			"params": [],
 			"id": {
 				"type": "Identifier",
 				"path": [

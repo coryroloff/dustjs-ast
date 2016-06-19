@@ -7,6 +7,7 @@
 				{
 					"type": "Section",
 					"body": [],
+					"params": [],
 					"id": {
 						"type": "Identifier",
 						"path": [
@@ -49,6 +50,7 @@
 					}
 				}
 			],
+			"params": [],
 			"id": {
 				"type": "Identifier",
 				"path": [

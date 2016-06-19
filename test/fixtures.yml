@@ -37,6 +37,8 @@
     - "{?exists}{/exists}"
     - "{^not-exists}{/not-exists}"
     - "{?exists/}"
+    - "{#section key=value newKey=three.two.one}{/section}"
+    - "{#section key=value newKey=three.two.one /}"
   unexpected:
     - "{#standard}{/standard"
     - "{#standard}{standard}"
