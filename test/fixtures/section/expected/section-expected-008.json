@@ -10,7 +10,7 @@
 				"path": [
 					{
 						"type": "Key",
-						"name": "helper",
+						"name": "exists",
 						"loc": {
 							"start": {
 								"line": 1,
@@ -34,7 +34,7 @@
 					}
 				}
 			},
-			"kind": "helper",
+			"kind": "exists",
 			"loc": {
 				"start": {
 					"line": 1,
@@ -42,7 +42,7 @@
 				},
 				"end": {
 					"line": 1,
-					"column": 19
+					"column": 11
 				}
 			}
 		}
@@ -64,7 +64,7 @@
 		},
 		{
 			"type": "Punctuator",
-			"value": "@",
+			"value": "?",
 			"loc": {
 				"start": {
 					"line": 1,
@@ -78,7 +78,7 @@
 		},
 		{
 			"type": "Key",
-			"value": "helper",
+			"value": "exists",
 			"loc": {
 				"start": {
 					"line": 1,
@@ -92,7 +92,7 @@
 		},
 		{
 			"type": "Punctuator",
-			"value": "}",
+			"value": "/",
 			"loc": {
 				"start": {
 					"line": 1,
@@ -106,7 +106,7 @@
 		},
 		{
 			"type": "Punctuator",
-			"value": "{",
+			"value": "}",
 			"loc": {
 				"start": {
 					"line": 1,
@@ -115,48 +115,6 @@
 				"end": {
 					"line": 1,
 					"column": 11
-				}
-			}
-		},
-		{
-			"type": "Punctuator",
-			"value": "/",
-			"loc": {
-				"start": {
-					"line": 1,
-					"column": 11
-				},
-				"end": {
-					"line": 1,
-					"column": 12
-				}
-			}
-		},
-		{
-			"type": "Key",
-			"value": "helper",
-			"loc": {
-				"start": {
-					"line": 1,
-					"column": 12
-				},
-				"end": {
-					"line": 1,
-					"column": 18
-				}
-			}
-		},
-		{
-			"type": "Punctuator",
-			"value": "}",
-			"loc": {
-				"start": {
-					"line": 1,
-					"column": 18
-				},
-				"end": {
-					"line": 1,
-					"column": 19
 				}
 			}
 		}
@@ -168,7 +126,7 @@
 		},
 		"end": {
 			"line": 1,
-			"column": 19
+			"column": 11
 		}
 	}
 }
