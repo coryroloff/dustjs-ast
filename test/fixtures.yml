@@ -1,0 +1,45 @@
+---
+- context: buffer
+  expected:
+    - "<h1>hello, world!</h1>"
+    - "<h1>hello,\nworld!</h1>"
+    - "<h1>hello,\r\nworld!</h1>"
+- context: reference
+  expected:
+    - "{single-key}"
+    - "{single-key/}"
+    - "{single-key /}"
+    - "{single-key|js}"
+    - "{single-key|js/}"
+    - "{single-key|js|s}"
+    - "{single-key|js|s/}"
+    - "{one.two.three.four.five}"
+    - "{one.two.three.four.five/}"
+    - "{one.two.three.four.five|js}"
+    - "{one.two.three.four.five|js/}"
+    - "{one.two.three.four.five|js|s}"
+    - "{one.two.three.four.five|js|s/}"
+  unexpected:
+    - "{single-key"
+    - "{single-key/"
+    - "{single-key.}"
+    - "{single-key./}"
+    - "{single key}"
+    - "{single key/}"
+    - "{one.two.}"
+    - "{one.two./}"
+    - "{one.two three}"
+    - "{one.two three/}"
+- context: section
+  expected:
+    - "{#standard}{/standard}"
+    - "{#standard}{#inner-standard}{/inner-standard}{/standard}"
+    - "{?exists}{/exists}"
+    - "{^not-exists}{/not-exists}"
+  unexpected:
+    - "{#standard}{/standard"
+    - "{#standard}{standard}"
+    - "{#standard}{/exists}"
+    - "{#standard{/standard"
+    - "{#standard}{?exists}{/not-exists}{/standard}"
+...

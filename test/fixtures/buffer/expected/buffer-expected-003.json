@@ -1,0 +1,43 @@
+{
+	"body": [
+		{
+			"text": "<h1>hello,\r\nworld!</h1>",
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 1
+				},
+				"end": {
+					"line": 2,
+					"column": 12
+				}
+			}
+		}
+	],
+	"tokens": [
+		{
+			"type": "Buffer",
+			"value": "<h1>hello,\r\nworld!</h1>",
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 1
+				},
+				"end": {
+					"line": 2,
+					"column": 12
+				}
+			}
+		}
+	],
+	"loc": {
+		"start": {
+			"line": 1,
+			"column": 1
+		},
+		"end": {
+			"line": 2,
+			"column": 12
+		}
+	}
+}
