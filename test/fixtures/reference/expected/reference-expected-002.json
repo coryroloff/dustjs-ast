@@ -1,9 +1,13 @@
 {
+	"type": "Template",
 	"body": [
 		{
+			"type": "Reference",
 			"id": {
+				"type": "Identifier",
 				"path": [
 					{
+						"type": "Key",
 						"name": "single-key",
 						"loc": {
 							"start": {

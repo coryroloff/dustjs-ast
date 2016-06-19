@@ -1,12 +1,17 @@
 {
+	"type": "Template",
 	"body": [
 		{
+			"type": "Section",
 			"body": [
 				{
+					"type": "Section",
 					"body": [],
 					"id": {
+						"type": "Identifier",
 						"path": [
 							{
+								"type": "Key",
 								"name": "inner-standard",
 								"loc": {
 									"start": {
@@ -45,8 +50,10 @@
 				}
 			],
 			"id": {
+				"type": "Identifier",
 				"path": [
 					{
+						"type": "Key",
 						"name": "standard",
 						"loc": {
 							"start": {

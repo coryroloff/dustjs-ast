@@ -1,6 +1,8 @@
 {
+	"type": "Template",
 	"body": [
 		{
+			"type": "Comment",
 			"text": " {?exists}{@helper param=\"hello\"/}, {world}!{/exists} ",
 			"loc": {
 				"start": {

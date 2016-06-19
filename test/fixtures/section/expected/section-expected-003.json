@@ -1,10 +1,14 @@
 {
+	"type": "Template",
 	"body": [
 		{
+			"type": "Section",
 			"body": [],
 			"id": {
+				"type": "Identifier",
 				"path": [
 					{
+						"type": "Key",
 						"name": "exists",
 						"loc": {
 							"start": {

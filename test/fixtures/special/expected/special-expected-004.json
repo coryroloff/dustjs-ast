@@ -1,9 +1,13 @@
 {
+	"type": "Template",
 	"body": [
 		{
+			"type": "Special",
 			"id": {
+				"type": "Identifier",
 				"path": [
 					{
+						"type": "Key",
 						"name": "lb",
 						"loc": {
 							"start": {

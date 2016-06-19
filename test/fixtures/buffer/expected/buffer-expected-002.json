@@ -1,6 +1,8 @@
 {
+	"type": "Template",
 	"body": [
 		{
+			"type": "Buffer",
 			"text": "<h1>hello,\nworld!</h1>",
 			"loc": {
 				"start": {
