@@ -1,0 +1,131 @@
+{
+	"type": "Template",
+	"body": [
+		{
+			"type": "Section",
+			"body": [],
+			"id": {
+				"type": "Identifier",
+				"path": [
+					{
+						"type": "Key",
+						"name": "exists",
+						"loc": {
+							"start": {
+								"line": 1,
+								"column": 3
+							},
+							"end": {
+								"line": 1,
+								"column": 9
+							}
+						}
+					}
+				],
+				"loc": {
+					"start": {
+						"line": 1,
+						"column": 3
+					},
+					"end": {
+						"line": 1,
+						"column": 9
+					}
+				}
+			},
+			"kind": "exists",
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 1
+				},
+				"end": {
+					"line": 1,
+					"column": 11
+				}
+			}
+		}
+	],
+	"tokens": [
+		{
+			"type": "Punctuator",
+			"value": "{",
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 1
+				},
+				"end": {
+					"line": 1,
+					"column": 2
+				}
+			}
+		},
+		{
+			"type": "Punctuator",
+			"value": "?",
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 2
+				},
+				"end": {
+					"line": 1,
+					"column": 3
+				}
+			}
+		},
+		{
+			"type": "Key",
+			"value": "exists",
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 3
+				},
+				"end": {
+					"line": 1,
+					"column": 9
+				}
+			}
+		},
+		{
+			"type": "Punctuator",
+			"value": "/",
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 9
+				},
+				"end": {
+					"line": 1,
+					"column": 10
+				}
+			}
+		},
+		{
+			"type": "Punctuator",
+			"value": "}",
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 10
+				},
+				"end": {
+					"line": 1,
+					"column": 11
+				}
+			}
+		}
+	],
+	"loc": {
+		"start": {
+			"line": 1,
+			"column": 1
+		},
+		"end": {
+			"line": 1,
+			"column": 11
+		}
+	}
+}

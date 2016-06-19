@@ -36,6 +36,7 @@
     - "{#standard}{#inner-standard}{/inner-standard}{/standard}"
     - "{?exists}{/exists}"
     - "{^not-exists}{/not-exists}"
+    - "{?exists/}"
   unexpected:
     - "{#standard}{/standard"
     - "{#standard}{standard}"
