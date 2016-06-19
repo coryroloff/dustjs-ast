@@ -42,6 +42,7 @@
     - "{#standard}{/exists}"
     - "{#standard{/standard"
     - "{#standard}{?exists}{/not-exists}{/standard}"
+    - "{?exists|js}{/exists}"
 - context: comment
   expected:
     - "{! {?exists}{@helper param=\"hello\"/}, {world}!{/exists} !}"
@@ -54,4 +55,5 @@
     - "{~rb}"
   unexpected:
     - "{~a}"
+    - "{~s|js}"
 ...

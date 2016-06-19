@@ -1,7 +1,7 @@
 {
 	"body": [
 		{
-			"reference": {
+			"id": {
 				"path": [
 					{
 						"name": "n",
@@ -17,7 +17,6 @@
 						}
 					}
 				],
-				"filters": [],
 				"loc": {
 					"start": {
 						"line": 1,

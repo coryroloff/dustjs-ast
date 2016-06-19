@@ -4,7 +4,7 @@
 			"body": [
 				{
 					"body": [],
-					"reference": {
+					"id": {
 						"path": [
 							{
 								"name": "inner-standard",
@@ -20,7 +20,6 @@
 								}
 							}
 						],
-						"filters": [],
 						"loc": {
 							"start": {
 								"line": 1,
@@ -45,7 +44,7 @@
 					}
 				}
 			],
-			"reference": {
+			"id": {
 				"path": [
 					{
 						"name": "standard",
@@ -61,7 +60,6 @@
 						}
 					}
 				],
-				"filters": [],
 				"loc": {
 					"start": {
 						"line": 1,
