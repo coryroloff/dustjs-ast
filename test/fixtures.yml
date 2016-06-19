@@ -42,4 +42,7 @@
     - "{#standard}{/exists}"
     - "{#standard{/standard"
     - "{#standard}{?exists}{/not-exists}{/standard}"
+- context: comment
+  expected:
+    - "{! {?exists}{@helper param=\"hello\"/}, {world}!{/exists} !}"
 ...
