@@ -45,4 +45,13 @@
 - context: comment
   expected:
     - "{! {?exists}{@helper param=\"hello\"/}, {world}!{/exists} !}"
+- context: special
+  expected:
+    - "{~s}"
+    - "{~n}"
+    - "{~r}"
+    - "{~lb}"
+    - "{~rb}"
+  unexpected:
+    - "{~a}"
 ...
