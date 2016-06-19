@@ -11,10 +11,7 @@ npm install --save dustjs-ast
 ## Usage
 
 ```js
-import dust from "dustjs-ast";
+import {default as dust, Token, Node} from "dustjs-ast";
 
-const code = "<h1>{hello}, {world}!</h1>";
-
-dust.lex(code);
-dust.parse(code);
+dust.parse("<h1>{hello}, {world}!</h1>");
 ```
