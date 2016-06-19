@@ -102,20 +102,6 @@
 							"column": 28
 						}
 					}
-				},
-				{
-					"type": "Key",
-					"name": "s",
-					"loc": {
-						"start": {
-							"line": 1,
-							"column": 29
-						},
-						"end": {
-							"line": 1,
-							"column": 30
-						}
-					}
 				}
 			],
 			"loc": {
@@ -125,7 +111,7 @@
 				},
 				"end": {
 					"line": 1,
-					"column": 31
+					"column": 30
 				}
 			}
 		}
@@ -301,7 +287,7 @@
 		},
 		{
 			"type": "Punctuator",
-			"value": "|",
+			"value": "/",
 			"loc": {
 				"start": {
 					"line": 1,
@@ -314,8 +300,8 @@
 			}
 		},
 		{
-			"type": "Key",
-			"value": "s",
+			"type": "Punctuator",
+			"value": "}",
 			"loc": {
 				"start": {
 					"line": 1,
@@ -324,20 +310,6 @@
 				"end": {
 					"line": 1,
 					"column": 30
-				}
-			}
-		},
-		{
-			"type": "Punctuator",
-			"value": "}",
-			"loc": {
-				"start": {
-					"line": 1,
-					"column": 30
-				},
-				"end": {
-					"line": 1,
-					"column": 31
 				}
 			}
 		}
@@ -349,7 +321,7 @@
 		},
 		"end": {
 			"line": 1,
-			"column": 31
+			"column": 30
 		}
 	}
 }

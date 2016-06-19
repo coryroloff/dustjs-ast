@@ -1,0 +1,1 @@
+{+block}<p>{notbuffer}</p>{/block}

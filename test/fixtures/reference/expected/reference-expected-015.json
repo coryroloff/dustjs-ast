@@ -12,11 +12,11 @@
 						"loc": {
 							"start": {
 								"line": 1,
-								"column": 2
+								"column": 8
 							},
 							"end": {
 								"line": 1,
-								"column": 5
+								"column": 11
 							}
 						}
 					},
@@ -26,21 +26,7 @@
 						"loc": {
 							"start": {
 								"line": 1,
-								"column": 6
-							},
-							"end": {
-								"line": 1,
-								"column": 9
-							}
-						}
-					},
-					{
-						"type": "Key",
-						"name": "three",
-						"loc": {
-							"start": {
-								"line": 1,
-								"column": 10
+								"column": 12
 							},
 							"end": {
 								"line": 1,
@@ -50,7 +36,7 @@
 					},
 					{
 						"type": "Key",
-						"name": "four",
+						"name": "three",
 						"loc": {
 							"start": {
 								"line": 1,
@@ -58,7 +44,21 @@
 							},
 							"end": {
 								"line": 1,
-								"column": 20
+								"column": 21
+							}
+						}
+					},
+					{
+						"type": "Key",
+						"name": "four",
+						"loc": {
+							"start": {
+								"line": 1,
+								"column": 22
+							},
+							"end": {
+								"line": 1,
+								"column": 26
 							}
 						}
 					},
@@ -68,11 +68,11 @@
 						"loc": {
 							"start": {
 								"line": 1,
-								"column": 21
+								"column": 27
 							},
 							"end": {
 								"line": 1,
-								"column": 25
+								"column": 31
 							}
 						}
 					}
@@ -80,30 +80,15 @@
 				"loc": {
 					"start": {
 						"line": 1,
-						"column": 2
+						"column": 8
 					},
 					"end": {
 						"line": 1,
-						"column": 25
+						"column": 31
 					}
 				}
 			},
-			"filters": [
-				{
-					"type": "Key",
-					"name": "js",
-					"loc": {
-						"start": {
-							"line": 1,
-							"column": 26
-						},
-						"end": {
-							"line": 1,
-							"column": 28
-						}
-					}
-				}
-			],
+			"filters": [],
 			"loc": {
 				"start": {
 					"line": 1,
@@ -111,7 +96,7 @@
 				},
 				"end": {
 					"line": 1,
-					"column": 29
+					"column": 35
 				}
 			}
 		}
@@ -137,11 +122,11 @@
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 2
+					"column": 8
 				},
 				"end": {
 					"line": 1,
-					"column": 5
+					"column": 11
 				}
 			}
 		},
@@ -151,11 +136,11 @@
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 5
+					"column": 11
 				},
 				"end": {
 					"line": 1,
-					"column": 6
+					"column": 12
 				}
 			}
 		},
@@ -165,11 +150,11 @@
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 6
+					"column": 12
 				},
 				"end": {
 					"line": 1,
-					"column": 9
+					"column": 15
 				}
 			}
 		},
@@ -179,11 +164,11 @@
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 9
+					"column": 15
 				},
 				"end": {
 					"line": 1,
-					"column": 10
+					"column": 16
 				}
 			}
 		},
@@ -193,11 +178,11 @@
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 10
+					"column": 16
 				},
 				"end": {
 					"line": 1,
-					"column": 15
+					"column": 21
 				}
 			}
 		},
@@ -207,11 +192,11 @@
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 15
+					"column": 21
 				},
 				"end": {
 					"line": 1,
-					"column": 16
+					"column": 22
 				}
 			}
 		},
@@ -221,11 +206,11 @@
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 16
+					"column": 22
 				},
 				"end": {
 					"line": 1,
-					"column": 20
+					"column": 26
 				}
 			}
 		},
@@ -235,11 +220,11 @@
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 20
+					"column": 26
 				},
 				"end": {
 					"line": 1,
-					"column": 21
+					"column": 27
 				}
 			}
 		},
@@ -249,39 +234,11 @@
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 21
+					"column": 27
 				},
 				"end": {
 					"line": 1,
-					"column": 25
-				}
-			}
-		},
-		{
-			"type": "Punctuator",
-			"value": "|",
-			"loc": {
-				"start": {
-					"line": 1,
-					"column": 25
-				},
-				"end": {
-					"line": 1,
-					"column": 26
-				}
-			}
-		},
-		{
-			"type": "Key",
-			"value": "js",
-			"loc": {
-				"start": {
-					"line": 1,
-					"column": 26
-				},
-				"end": {
-					"line": 1,
-					"column": 28
+					"column": 31
 				}
 			}
 		},
@@ -291,11 +248,11 @@
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 28
+					"column": 34
 				},
 				"end": {
 					"line": 1,
-					"column": 29
+					"column": 35
 				}
 			}
 		}
@@ -307,7 +264,7 @@
 		},
 		"end": {
 			"line": 1,
-			"column": 29
+			"column": 35
 		}
 	}
 }

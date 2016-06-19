@@ -13,12 +13,14 @@
     - "{single-key|js/}"
     - "{single-key|js|s}"
     - "{single-key|js|s/}"
+    - "{   single-key          }"
     - "{one.two.three.four.five}"
     - "{one.two.three.four.five/}"
     - "{one.two.three.four.five|js}"
     - "{one.two.three.four.five|js/}"
     - "{one.two.three.four.five|js|s}"
     - "{one.two.three.four.five|js|s/}"
+    - "{    \t one.two.three.four.five   }"
   unexpected:
     - "{single-key"
     - "{single-key/"
@@ -30,6 +32,7 @@
     - "{one.two./}"
     - "{one.two three}"
     - "{one.two three/}"
+    - "{\"single-key\"}" 
 - context: section
   expected:
     - "{#standard}{/standard}"
@@ -43,6 +46,7 @@
     - "{#section key=value newKey=three.two.one}{/section}"
     - "{#section key=value newKey=three.two.one /}"
     - "{?exists}block{:else}else{:custom}custom{/exists}"
+    - "{+block}<p>{notbuffer}</p>{/block}"
   unexpected:
     - "{#standard}{/standard"
     - "{#standard}{standard}"
@@ -50,6 +54,11 @@
     - "{#standard{/standard"
     - "{#standard}{?exists}{/not-exists}{/standard}"
     - "{?exists|js}{/exists}"
+    - "{#section key=@ /}"
+    - "{+block}{/#}"
+    - "{<inline.partial}{/inline.one}"
+    - "{<inline.partial}{/inline.^}"
+    - "{^not.exists}{/not.exists.here}"
 - context: comment
   expected:
     - "{! {?exists}{@helper param=\"hello\"/}, {world}!{/exists} !}"

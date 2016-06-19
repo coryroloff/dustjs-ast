@@ -125,7 +125,7 @@
 				},
 				"end": {
 					"line": 1,
-					"column": 32
+					"column": 31
 				}
 			}
 		}
@@ -329,7 +329,7 @@
 		},
 		{
 			"type": "Punctuator",
-			"value": "/",
+			"value": "}",
 			"loc": {
 				"start": {
 					"line": 1,
@@ -338,20 +338,6 @@
 				"end": {
 					"line": 1,
 					"column": 31
-				}
-			}
-		},
-		{
-			"type": "Punctuator",
-			"value": "}",
-			"loc": {
-				"start": {
-					"line": 1,
-					"column": 31
-				},
-				"end": {
-					"line": 1,
-					"column": 32
 				}
 			}
 		}
@@ -363,7 +349,7 @@
 		},
 		"end": {
 			"line": 1,
-			"column": 32
+			"column": 31
 		}
 	}
 }
