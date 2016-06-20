@@ -5,6 +5,7 @@
 			"type": "Section",
 			"body": [],
 			"params": [],
+			"kind": "<",
 			"id": {
 				"type": "Identifier",
 				"path": [
@@ -34,7 +35,6 @@
 					}
 				}
 			},
-			"kind": "inline-partial",
 			"loc": {
 				"start": {
 					"line": 1,
