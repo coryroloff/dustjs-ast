@@ -48,6 +48,7 @@
     - "{?exists}block{:else}else{:custom}custom{/exists}"
     - "{+block}<p>{notbuffer}</p>{/block}"
     - "{#section:change.the.context}{/section}"
+    - "{#section myparam=\"starting {~lb} right here {one.two} {~rb} ending over here\"}{/section}"
   unexpected:
     - "{#standard}{/standard"
     - "{#standard}{standard}"

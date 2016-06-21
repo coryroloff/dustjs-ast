@@ -26,37 +26,35 @@
 							}
 						}
 					},
-					"value": [
-						{
-							"type": "Identifier",
-							"path": [
-								{
-									"type": "Key",
-									"name": "value",
-									"loc": {
-										"start": {
-											"line": 1,
-											"column": 15
-										},
-										"end": {
-											"line": 1,
-											"column": 20
-										}
+					"value": {
+						"type": "Identifier",
+						"path": [
+							{
+								"type": "Key",
+								"name": "value",
+								"loc": {
+									"start": {
+										"line": 1,
+										"column": 15
+									},
+									"end": {
+										"line": 1,
+										"column": 20
 									}
 								}
-							],
-							"loc": {
-								"start": {
-									"line": 1,
-									"column": 15
-								},
-								"end": {
-									"line": 1,
-									"column": 20
-								}
+							}
+						],
+						"loc": {
+							"start": {
+								"line": 1,
+								"column": 15
+							},
+							"end": {
+								"line": 1,
+								"column": 20
 							}
 						}
-					],
+					},
 					"loc": {
 						"start": {
 							"line": 1,
@@ -84,65 +82,63 @@
 							}
 						}
 					},
-					"value": [
-						{
-							"type": "Identifier",
-							"path": [
-								{
-									"type": "Key",
-									"name": "three",
-									"loc": {
-										"start": {
-											"line": 1,
-											"column": 28
-										},
-										"end": {
-											"line": 1,
-											"column": 33
-										}
-									}
-								},
-								{
-									"type": "Key",
-									"name": "two",
-									"loc": {
-										"start": {
-											"line": 1,
-											"column": 34
-										},
-										"end": {
-											"line": 1,
-											"column": 37
-										}
-									}
-								},
-								{
-									"type": "Key",
-									"name": "one",
-									"loc": {
-										"start": {
-											"line": 1,
-											"column": 38
-										},
-										"end": {
-											"line": 1,
-											"column": 41
-										}
+					"value": {
+						"type": "Identifier",
+						"path": [
+							{
+								"type": "Key",
+								"name": "three",
+								"loc": {
+									"start": {
+										"line": 1,
+										"column": 28
+									},
+									"end": {
+										"line": 1,
+										"column": 33
 									}
 								}
-							],
-							"loc": {
-								"start": {
-									"line": 1,
-									"column": 28
-								},
-								"end": {
-									"line": 1,
-									"column": 41
+							},
+							{
+								"type": "Key",
+								"name": "two",
+								"loc": {
+									"start": {
+										"line": 1,
+										"column": 34
+									},
+									"end": {
+										"line": 1,
+										"column": 37
+									}
+								}
+							},
+							{
+								"type": "Key",
+								"name": "one",
+								"loc": {
+									"start": {
+										"line": 1,
+										"column": 38
+									},
+									"end": {
+										"line": 1,
+										"column": 41
+									}
 								}
 							}
+						],
+						"loc": {
+							"start": {
+								"line": 1,
+								"column": 28
+							},
+							"end": {
+								"line": 1,
+								"column": 41
+							}
 						}
-					],
+					},
 					"loc": {
 						"start": {
 							"line": 1,
