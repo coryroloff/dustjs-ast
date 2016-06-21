@@ -155,10 +155,6 @@
 					}
 				}
 			],
-			"block": {
-				"type": "Block",
-				"body": []
-			},
 			"kind": "#",
 			"id": {
 				"type": "Identifier",
@@ -188,6 +184,10 @@
 						"column": 10
 					}
 				}
+			},
+			"block": {
+				"type": "Block",
+				"body": []
 			},
 			"loc": {
 				"start": {

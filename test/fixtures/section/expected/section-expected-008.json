@@ -10,10 +10,6 @@
 				}
 			],
 			"params": [],
-			"block": {
-				"type": "Block",
-				"body": []
-			},
 			"kind": "?",
 			"id": {
 				"type": "Identifier",
@@ -43,6 +39,10 @@
 						"column": 9
 					}
 				}
+			},
+			"block": {
+				"type": "Block",
+				"body": []
 			},
 			"loc": {
 				"start": {

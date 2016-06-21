@@ -21,7 +21,17 @@
 								}
 							}
 						}
-					]
+					],
+					"loc": {
+						"start": {
+							"line": 1,
+							"column": 10
+						},
+						"end": {
+							"line": 1,
+							"column": 15
+						}
+					}
 				},
 				{
 					"type": "NamedBlock",
