@@ -1,5 +1,3 @@
-"use strict";
-
 import path from "path";
 import fs from "fs";
 import {execSync} from "child_process";
