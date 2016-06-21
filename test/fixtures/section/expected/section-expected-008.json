@@ -3,8 +3,17 @@
 	"body": [
 		{
 			"type": "Section",
-			"body": [],
+			"body": [
+				{
+					"type": "Block",
+					"body": []
+				}
+			],
 			"params": [],
+			"block": {
+				"type": "Block",
+				"body": []
+			},
 			"kind": "?",
 			"id": {
 				"type": "Identifier",

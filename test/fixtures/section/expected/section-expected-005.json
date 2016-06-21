@@ -3,7 +3,12 @@
 	"body": [
 		{
 			"type": "Section",
-			"body": [],
+			"body": [
+				{
+					"type": "Block",
+					"body": []
+				}
+			],
 			"params": [],
 			"kind": "@",
 			"id": {

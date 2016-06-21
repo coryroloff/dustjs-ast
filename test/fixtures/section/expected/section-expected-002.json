@@ -5,16 +5,36 @@
 			"type": "Section",
 			"body": [
 				{
-					"type": "Section",
-					"body": [],
-					"params": [],
-					"kind": "#",
-					"id": {
-						"type": "Identifier",
-						"path": [
-							{
-								"type": "Key",
-								"name": "inner-standard",
+					"type": "Block",
+					"body": [
+						{
+							"type": "Section",
+							"body": [
+								{
+									"type": "Block",
+									"body": []
+								}
+							],
+							"params": [],
+							"kind": "#",
+							"id": {
+								"type": "Identifier",
+								"path": [
+									{
+										"type": "Key",
+										"name": "inner-standard",
+										"loc": {
+											"start": {
+												"line": 1,
+												"column": 14
+											},
+											"end": {
+												"line": 1,
+												"column": 28
+											}
+										}
+									}
+								],
 								"loc": {
 									"start": {
 										"line": 1,
@@ -25,29 +45,19 @@
 										"column": 28
 									}
 								}
-							}
-						],
-						"loc": {
-							"start": {
-								"line": 1,
-								"column": 14
 							},
-							"end": {
-								"line": 1,
-								"column": 28
+							"loc": {
+								"start": {
+									"line": 1,
+									"column": 12
+								},
+								"end": {
+									"line": 1,
+									"column": 46
+								}
 							}
 						}
-					},
-					"loc": {
-						"start": {
-							"line": 1,
-							"column": 12
-						},
-						"end": {
-							"line": 1,
-							"column": 46
-						}
-					}
+					]
 				}
 			],
 			"params": [],
