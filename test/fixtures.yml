@@ -80,4 +80,8 @@
 - context: raw
   expected:
     - "{` this {is} a {#raw /} node`}"
+- context: partial
+  expected:
+    - "{>\"mypartial\" /}"
+    - "{> \"this is {variable-here} my partial\" /}"
 ...
