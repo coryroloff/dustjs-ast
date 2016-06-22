@@ -77,4 +77,7 @@
   unexpected:
     - "{~a}"
     - "{~s|js}"
+- context: raw
+  expected:
+    - "{` this {is} a {#raw /} node`}"
 ...

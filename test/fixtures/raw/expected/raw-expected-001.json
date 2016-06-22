@@ -1,0 +1,45 @@
+{
+	"type": "Template",
+	"body": [
+		{
+			"type": "Raw",
+			"text": " this {is} a {#raw /} node",
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 1
+				},
+				"end": {
+					"line": 1,
+					"column": 31
+				}
+			}
+		}
+	],
+	"tokens": [
+		{
+			"type": "Raw",
+			"value": " this {is} a {#raw /} node",
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 1
+				},
+				"end": {
+					"line": 1,
+					"column": 31
+				}
+			}
+		}
+	],
+	"loc": {
+		"start": {
+			"line": 1,
+			"column": 1
+		},
+		"end": {
+			"line": 1,
+			"column": 31
+		}
+	}
+}
