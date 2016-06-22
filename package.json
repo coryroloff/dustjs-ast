@@ -8,6 +8,9 @@
     "lint": "eslint lib test scripts webpack.config.js",
     "fixtures": "babel-node scripts/fixtures.js"
   },
+  "bin": {
+    "dustjs-ast": "bin/dustjs-ast.js"
+  },
   "author": "Cory Roloff",
   "license": "MIT",
   "main": "dist/dustjs-ast.js",
