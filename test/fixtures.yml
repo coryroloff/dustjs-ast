@@ -49,6 +49,9 @@
     - "{+block}<p>{notbuffer}</p>{/block}"
     - "{#section:change.the.context}{/section}"
     - "{#section myparam=\"starting {~lb} right here {one.two} {~rb} ending over here\"}{/section}"
+    - "{#section myparam=1 /}"
+    - "{#section myparam=562.123426/}"
+    - "{#section myparam=235./}"
   unexpected:
     - "{#standard}{/standard"
     - "{#standard}{standard}"
