@@ -1,0 +1,83 @@
+---
+- class: Key
+  extends: Node
+  properties:
+  - name: name
+    type: String
+- class: Node
+  properties:
+  - name: type
+    type: String
+  - name: loc.start.line
+    type: Number
+  - name: loc.start.column
+    type: Number
+  - name: loc.end.line
+    type: Number
+  - name: loc.end.column
+    type: Number
+  constants:
+  - name: Block
+    type: String
+  - name: Buffer
+    type: String
+  - name: Comment
+    type: String
+  - name: Identifier
+    type: String
+  - name: Inline
+    type: String
+  - name: Key
+    type: String
+  - name: Literal
+    type: String
+  - name: NamedBlock
+    type: String
+  - name: Param
+    type: String
+  - name: Partial
+    type: String
+  - name: Raw
+    type: String
+  - name: Reference
+    type: String
+  - name: Section
+    type: String
+  - name: Special
+    type: String
+  - name: Template
+    type: String
+- class: Reference
+  extends: Node
+  properties:
+  - name: id
+    type: Identifier
+  - name: filters
+    type: Array<Key>
+- class: Section
+  extends: Block
+  properties:
+  - name: kind
+    type: String
+  - name: id
+    type: Identifier
+  - name: context
+    type: Identifier
+  - name: params
+    type: Array<Param>
+- class: Special
+  extends: Node
+  properties:
+  - name: key
+    type: Key
+- class: Raw
+  extends: Node
+  properties:
+  - name: text
+    type: String
+- class: Buffer
+  extends: Node
+  properties:
+  - name: text
+    type: String
+...

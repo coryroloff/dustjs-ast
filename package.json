@@ -6,7 +6,8 @@
     "test": "nyc --reporter=text --reporter=lcov mocha test/**/*-spec.js",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint lib test scripts webpack.config.js",
-    "fixtures": "babel-node scripts/fixtures.js"
+    "fixtures": "babel-node scripts/fixtures.js",
+    "docs": "babel-node scripts/docs.js | pbcopy"
   },
   "bin": {
     "dustjs-ast": "bin/dustjs-ast.js"
@@ -16,6 +17,7 @@
   "main": "dist/dustjs-ast.js",
   "devDependencies": {
     "alphabet": "^1.0.0",
+    "babel-cli": "^6.10.1",
     "babel-core": "^6.9.1",
     "babel-loader": "^6.2.4",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.8.0",
@@ -24,6 +26,7 @@
     "coveralls": "^2.11.9",
     "eslint": "^2.12.0",
     "js-yaml": "^3.6.1",
+    "markdown-table": "^0.4.0",
     "mocha": "^2.5.3",
     "nyc": "^6.4.4",
     "pre-commit": "^1.1.3",

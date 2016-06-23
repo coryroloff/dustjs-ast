@@ -6,12 +6,12 @@ import yaml from "js-yaml";
 import dust from "../lib";
 import chalk from "chalk";
 
-const fixtures = yaml.safeLoad(fs.readFileSync(path.resolve("./test/fixtures.yml"), "utf8"));
+const fixtures = yaml.safeLoad(fs.readFileSync(path.join(__dirname, "./fixtures.yml"), "utf8"));
 
 process.stdout.write("removing previous fixtures...\n\n");
 
-execSync(`rm -rf ${path.resolve("./test/fixtures")}`);
-execSync(`mkdir -p ${path.resolve("./test/fixtures")}`);
+execSync(`rm -rf ${path.resolve("../test/fixtures")}`);
+execSync(`mkdir -p ${path.resolve("../test/fixtures")}`);
 
 function generate (fixture, kind, context) {
 	(fixture[kind] || []).forEach((template, index) => {
@@ -31,10 +31,10 @@ function generate (fixture, kind, context) {
 
 		process.stdout.write(`=> ${chalk.blue(id)}: ${chalk.green(JSON.stringify(template))}\n`);
 
-		execSync(`mkdir -p ${path.resolve(`./test/fixtures/${context}/${kind}`)}`);
+		execSync(`mkdir -p ${path.resolve(`../test/fixtures/${context}/${kind}`)}`);
 
-		fs.writeFileSync(path.resolve(`./test/fixtures/${context}/${kind}/${id}.dust`), template);
-		fs.writeFileSync(path.resolve(`./test/fixtures/${context}/${kind}/${id}.json`), json);
+		fs.writeFileSync(path.resolve(`../test/fixtures/${context}/${kind}/${id}.dust`), template);
+		fs.writeFileSync(path.resolve(`../test/fixtures/${context}/${kind}/${id}.json`), json);
 	});
 }
 
