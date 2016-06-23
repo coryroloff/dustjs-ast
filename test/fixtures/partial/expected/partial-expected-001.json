@@ -18,6 +18,7 @@
 				}
 			},
 			"context": null,
+			"params": [],
 			"loc": {
 				"start": {
 					"line": 1,

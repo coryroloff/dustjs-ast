@@ -84,4 +84,8 @@
   expected:
     - "{>\"mypartial\" /}"
     - "{> \"this is {variable-here} my partial\" /}"
+    - "{> \"thing\":my.context /}"
+    - "{> \"thing\" myparam=\"literal\" /}"
+    - "{> \"thing\" myparam=443.2 /}"
+    - "{> \"thing\" myparam=\"start{ref}end\" /}"
 ...

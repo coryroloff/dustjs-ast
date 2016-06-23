@@ -1,0 +1,328 @@
+{
+	"type": "Template",
+	"body": [
+		{
+			"type": "Partial",
+			"value": {
+				"type": "Literal",
+				"value": "\"thing\"",
+				"loc": {
+					"start": {
+						"line": 1,
+						"column": 4
+					},
+					"end": {
+						"line": 1,
+						"column": 11
+					}
+				}
+			},
+			"context": null,
+			"params": [
+				{
+					"type": "Param",
+					"key": {
+						"type": "Key",
+						"name": "myparam",
+						"loc": {
+							"start": {
+								"line": 1,
+								"column": 12
+							},
+							"end": {
+								"line": 1,
+								"column": 19
+							}
+						}
+					},
+					"value": {
+						"type": "Inline",
+						"body": [
+							{
+								"type": "Literal",
+								"value": "\"start",
+								"loc": {
+									"start": {
+										"line": 1,
+										"column": 20
+									},
+									"end": {
+										"line": 1,
+										"column": 26
+									}
+								}
+							},
+							{
+								"type": "Reference",
+								"id": {
+									"type": "Identifier",
+									"path": [
+										{
+											"type": "Key",
+											"name": "ref",
+											"loc": {
+												"start": {
+													"line": 1,
+													"column": 27
+												},
+												"end": {
+													"line": 1,
+													"column": 30
+												}
+											}
+										}
+									],
+									"loc": {
+										"start": {
+											"line": 1,
+											"column": 27
+										},
+										"end": {
+											"line": 1,
+											"column": 30
+										}
+									}
+								},
+								"filters": [],
+								"loc": {
+									"start": {
+										"line": 1,
+										"column": 26
+									},
+									"end": {
+										"line": 1,
+										"column": 31
+									}
+								}
+							},
+							{
+								"type": "Literal",
+								"value": "end\"",
+								"loc": {
+									"start": {
+										"line": 1,
+										"column": 31
+									},
+									"end": {
+										"line": 1,
+										"column": 35
+									}
+								}
+							}
+						],
+						"loc": {
+							"start": {
+								"line": 1,
+								"column": 20
+							},
+							"end": {
+								"line": 1,
+								"column": 35
+							}
+						}
+					},
+					"loc": {
+						"start": {
+							"line": 1,
+							"column": 12
+						},
+						"end": {
+							"line": 1,
+							"column": 35
+						}
+					}
+				}
+			],
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 1
+				},
+				"end": {
+					"line": 1,
+					"column": 38
+				}
+			}
+		}
+	],
+	"tokens": [
+		{
+			"type": "Punctuator",
+			"value": "{",
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 1
+				},
+				"end": {
+					"line": 1,
+					"column": 2
+				}
+			}
+		},
+		{
+			"type": "Punctuator",
+			"value": ">",
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 2
+				},
+				"end": {
+					"line": 1,
+					"column": 3
+				}
+			}
+		},
+		{
+			"type": "Literal",
+			"value": "\"thing\"",
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 4
+				},
+				"end": {
+					"line": 1,
+					"column": 11
+				}
+			}
+		},
+		{
+			"type": "Key",
+			"value": "myparam",
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 12
+				},
+				"end": {
+					"line": 1,
+					"column": 19
+				}
+			}
+		},
+		{
+			"type": "Punctuator",
+			"value": "=",
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 19
+				},
+				"end": {
+					"line": 1,
+					"column": 20
+				}
+			}
+		},
+		{
+			"type": "Literal",
+			"value": "\"start",
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 20
+				},
+				"end": {
+					"line": 1,
+					"column": 26
+				}
+			}
+		},
+		{
+			"type": "Punctuator",
+			"value": "{",
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 26
+				},
+				"end": {
+					"line": 1,
+					"column": 27
+				}
+			}
+		},
+		{
+			"type": "Key",
+			"value": "ref",
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 27
+				},
+				"end": {
+					"line": 1,
+					"column": 30
+				}
+			}
+		},
+		{
+			"type": "Punctuator",
+			"value": "}",
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 30
+				},
+				"end": {
+					"line": 1,
+					"column": 31
+				}
+			}
+		},
+		{
+			"type": "Literal",
+			"value": "end\"",
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 31
+				},
+				"end": {
+					"line": 1,
+					"column": 35
+				}
+			}
+		},
+		{
+			"type": "Punctuator",
+			"value": "/",
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 36
+				},
+				"end": {
+					"line": 1,
+					"column": 37
+				}
+			}
+		},
+		{
+			"type": "Punctuator",
+			"value": "}",
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 37
+				},
+				"end": {
+					"line": 1,
+					"column": 38
+				}
+			}
+		}
+	],
+	"loc": {
+		"start": {
+			"line": 1,
+			"column": 1
+		},
+		"end": {
+			"line": 1,
+			"column": 38
+		}
+	}
+}

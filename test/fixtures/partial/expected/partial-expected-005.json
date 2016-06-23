@@ -4,80 +4,8 @@
 		{
 			"type": "Partial",
 			"value": {
-				"type": "Inline",
-				"body": [
-					{
-						"type": "Literal",
-						"value": "\"this is ",
-						"loc": {
-							"start": {
-								"line": 1,
-								"column": 4
-							},
-							"end": {
-								"line": 1,
-								"column": 13
-							}
-						}
-					},
-					{
-						"type": "Reference",
-						"id": {
-							"type": "Identifier",
-							"path": [
-								{
-									"type": "Key",
-									"name": "variable-here",
-									"loc": {
-										"start": {
-											"line": 1,
-											"column": 14
-										},
-										"end": {
-											"line": 1,
-											"column": 27
-										}
-									}
-								}
-							],
-							"loc": {
-								"start": {
-									"line": 1,
-									"column": 14
-								},
-								"end": {
-									"line": 1,
-									"column": 27
-								}
-							}
-						},
-						"filters": [],
-						"loc": {
-							"start": {
-								"line": 1,
-								"column": 13
-							},
-							"end": {
-								"line": 1,
-								"column": 28
-							}
-						}
-					},
-					{
-						"type": "Literal",
-						"value": " my partial\"",
-						"loc": {
-							"start": {
-								"line": 1,
-								"column": 28
-							},
-							"end": {
-								"line": 1,
-								"column": 40
-							}
-						}
-					}
-				],
+				"type": "Literal",
+				"value": "\"thing\"",
 				"loc": {
 					"start": {
 						"line": 1,
@@ -85,12 +13,54 @@
 					},
 					"end": {
 						"line": 1,
-						"column": 40
+						"column": 11
 					}
 				}
 			},
 			"context": null,
-			"params": [],
+			"params": [
+				{
+					"type": "Param",
+					"key": {
+						"type": "Key",
+						"name": "myparam",
+						"loc": {
+							"start": {
+								"line": 1,
+								"column": 12
+							},
+							"end": {
+								"line": 1,
+								"column": 19
+							}
+						}
+					},
+					"value": {
+						"type": "Literal",
+						"value": 443.2,
+						"loc": {
+							"start": {
+								"line": 1,
+								"column": 24
+							},
+							"end": {
+								"line": 1,
+								"column": 25
+							}
+						}
+					},
+					"loc": {
+						"start": {
+							"line": 1,
+							"column": 12
+						},
+						"end": {
+							"line": 1,
+							"column": 25
+						}
+					}
+				}
+			],
 			"loc": {
 				"start": {
 					"line": 1,
@@ -98,7 +68,7 @@
 				},
 				"end": {
 					"line": 1,
-					"column": 43
+					"column": 28
 				}
 			}
 		}
@@ -134,7 +104,7 @@
 		},
 		{
 			"type": "Literal",
-			"value": "\"this is ",
+			"value": "\"thing\"",
 			"loc": {
 				"start": {
 					"line": 1,
@@ -142,63 +112,49 @@
 				},
 				"end": {
 					"line": 1,
-					"column": 13
-				}
-			}
-		},
-		{
-			"type": "Punctuator",
-			"value": "{",
-			"loc": {
-				"start": {
-					"line": 1,
-					"column": 13
-				},
-				"end": {
-					"line": 1,
-					"column": 14
+					"column": 11
 				}
 			}
 		},
 		{
 			"type": "Key",
-			"value": "variable-here",
+			"value": "myparam",
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 14
+					"column": 12
 				},
 				"end": {
 					"line": 1,
-					"column": 27
+					"column": 19
 				}
 			}
 		},
 		{
 			"type": "Punctuator",
-			"value": "}",
+			"value": "=",
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 27
+					"column": 19
 				},
 				"end": {
 					"line": 1,
-					"column": 28
+					"column": 24
 				}
 			}
 		},
 		{
 			"type": "Literal",
-			"value": " my partial\"",
+			"value": "443.2",
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 28
+					"column": 24
 				},
 				"end": {
 					"line": 1,
-					"column": 40
+					"column": 25
 				}
 			}
 		},
@@ -208,11 +164,11 @@
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 41
+					"column": 26
 				},
 				"end": {
 					"line": 1,
-					"column": 42
+					"column": 27
 				}
 			}
 		},
@@ -222,11 +178,11 @@
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 42
+					"column": 27
 				},
 				"end": {
 					"line": 1,
-					"column": 43
+					"column": 28
 				}
 			}
 		}
@@ -238,7 +194,7 @@
 		},
 		"end": {
 			"line": 1,
-			"column": 43
+			"column": 28
 		}
 	}
 }
