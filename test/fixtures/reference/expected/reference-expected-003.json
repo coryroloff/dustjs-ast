@@ -21,6 +21,7 @@
 						}
 					}
 				],
+				"localScope": false,
 				"loc": {
 					"start": {
 						"line": 1,

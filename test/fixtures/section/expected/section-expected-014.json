@@ -118,6 +118,7 @@
 											}
 										}
 									],
+									"localScope": false,
 									"loc": {
 										"start": {
 											"line": 1,
@@ -239,6 +240,7 @@
 						}
 					}
 				],
+				"localScope": false,
 				"loc": {
 					"start": {
 						"line": 1,

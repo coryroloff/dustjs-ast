@@ -21,6 +21,7 @@
     - "{one.two.three.four.five|js|s}"
     - "{one.two.three.four.five|js|s/}"
     - "{    \t one.two.three.four.five   }"
+    - "{.one.two.three}"
   unexpected:
     - "{single-key"
     - "{single-key/"
