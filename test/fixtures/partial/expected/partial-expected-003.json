@@ -49,7 +49,7 @@
 						}
 					}
 				],
-				"localScope": false,
+				"localContext": false,
 				"loc": {
 					"start": {
 						"line": 1,

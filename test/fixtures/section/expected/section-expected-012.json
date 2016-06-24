@@ -41,7 +41,7 @@
 										}
 									}
 								],
-								"localScope": false,
+								"localContext": false,
 								"loc": {
 									"start": {
 										"line": 1,
@@ -112,7 +112,7 @@
 						}
 					}
 				],
-				"localScope": false,
+				"localContext": false,
 				"loc": {
 					"start": {
 						"line": 1,

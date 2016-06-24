@@ -57,7 +57,7 @@
 						}
 					}
 				],
-				"localScope": true,
+				"localContext": true,
 				"loc": {
 					"start": {
 						"line": 1,
