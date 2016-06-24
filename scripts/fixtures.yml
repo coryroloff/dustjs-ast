@@ -54,6 +54,7 @@
     - "{#section myparam=562.123426/}"
     - "{#section myparam=235./}"
     - "{#.one.two.three}{/.one.two.three}"
+    - "{%pragma}{/pragma}"
   unexpected:
     - "{#standard}{/standard"
     - "{#standard}{standard}"
