@@ -34,13 +34,13 @@
   - name: name
     type: String
 
-- class: StringLiteral
+- class: Literal
   extends: Node
   properties:
   - name: value
     type: String
 
-- class: NumericLiteral
+- class: Literal
   extends: Node
   properties:
   - name: value
@@ -102,14 +102,14 @@
   - name: key
     type: Key
   - name: value
-    type: Identifier, Inline, NumericLiteral
+    type: Identifier, Inline, Literal
 
 - class: Partial
   extends: Node
   description: A Partial is defined as matching a opening brace followed by a > plus anything that matches with key or inline plus context plus params followed by slash and closing brace.
   properties:
   - name: value
-    type: Key, Inline, NumericLiteral
+    type: Key, Inline, Literal
   - name: context
     type: Identifier
   - name: params

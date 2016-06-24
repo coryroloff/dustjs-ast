@@ -53,6 +53,18 @@ dust.parse("<h1>{hello}, {world}!</h1>");
 | -------- | ------------------------------------------------------------------------------------------------- |
 | name     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
 
+### Literal ⇒ Node
+
+| Property | Type                                                                                              |
+| -------- | ------------------------------------------------------------------------------------------------- |
+| value    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+
+### Literal ⇒ Node
+
+| Property | Type                                                                                              |
+| -------- | ------------------------------------------------------------------------------------------------- |
+| value    | [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
+
 ### NamedBlock ⇒ Block
 
 | Property | Type |
@@ -87,18 +99,12 @@ dust.parse("<h1>{hello}, {world}!</h1>");
 | Special    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
 | Template   | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
 
-### NumericLiteral ⇒ Node
-
-| Property | Type                                                                                              |
-| -------- | ------------------------------------------------------------------------------------------------- |
-| value    | [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
-
 ### Param ⇒ Node
 
-| Property | Type                               |
-| -------- | ---------------------------------- |
-| key      | Key                                |
-| value    | Identifier, Inline, NumericLiteral |
+| Property | Type                        |
+| -------- | --------------------------- |
+| key      | Key                         |
+| value    | Identifier, Inline, Literal |
 
 ### Partial ⇒ Node
 
@@ -106,7 +112,7 @@ A Partial is defined as matching a opening brace followed by a > plus anything t
 
 | Property | Type                                                                                                         |
 | -------- | ------------------------------------------------------------------------------------------------------------ |
-| value    | Key, Inline, NumericLiteral                                                                                  |
+| value    | Key, Inline, Literal                                                                                         |
 | context  | Identifier                                                                                                   |
 | params   | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;Param&gt; |
 
@@ -147,12 +153,6 @@ A Partial is defined as matching a opening brace followed by a > plus anything t
 | Property | Type |
 | -------- | ---- |
 | key      | Key  |
-
-### StringLiteral ⇒ Node
-
-| Property | Type                                                                                              |
-| -------- | ------------------------------------------------------------------------------------------------- |
-| value    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
 
 ### Template ⇒ Block
 
