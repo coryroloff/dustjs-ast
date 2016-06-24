@@ -9,7 +9,7 @@ const doc = yaml.safeLoad(fs.readFileSync(__dirname + "/docs.yml", "utf8"));
 
 let output = "";
 
-function write (value) {
+function writeln (value) {
 	output += `${value}\n\n`;
 }
 
@@ -22,11 +22,18 @@ const types = {
 	"Boolean": `${mdn}/Boolean`
 };
 
+doc.forEach(klass => {
+	// types[klass.class] = `#${klass.class}--${klass.extends}`;
+	let anchor = `${klass.class}`;
+	if (klass.extends) anchor += `--${klass.extends}`;
+	types[klass.class] = `#${anchor.toLowerCase()}`;
+});
+
 doc.sort(sortBy("class")).forEach(klass => {
 	let header = `### ${klass.class}`;
 	if (klass.extends) header += ` ⇒ ${type(klass.extends)}`;
-	write(header);
-	if (klass.description) write(klass.description);
+	writeln(header);
+	if (klass.description) writeln(klass.description);
 	props(klass.properties, "Property");
 	props(klass.constants, "Constant");
 });
@@ -50,14 +57,24 @@ function props (data, header) {
 	if (!data) return;
 	const rows = [[header, "Type"]];
 	data.forEach(prop => rows.push([prop.name, type(prop.type)]));
-	write(table(rows));
+	writeln(table(rows));
 }
 
 function type (data) {
 	let value = htmlEncode(data);
+	let id = 0;
+	const loc = [];
 	for (const type in types) {
-		value = value.replace(type, `[${type}](${types[type]})`);
+		const index = value.indexOf(type);
+		if (index !== -1) {
+			id++;
+			loc.push({id: `__${id}__`, type});
+			value = value.replace(type, `__${id}__`);
+		}
 	}
+	loc.forEach(loc => {
+		value = value.replace(loc.id, `[${loc.type}](${types[loc.type]})`);
+	});
 	return value;
 }
 

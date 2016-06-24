@@ -20,50 +20,50 @@ dust.parse("<h1>{hello}, {world}!</h1>");
 
 <!-- API: start -->
 
-### Block ⇒ Node
+### Block ⇒ [Node](#node)
 
-| Property | Type                                                                                                        |
-| -------- | ----------------------------------------------------------------------------------------------------------- |
-| body     | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;Node&gt; |
+| Property | Type                                                                                                                 |
+| -------- | -------------------------------------------------------------------------------------------------------------------- |
+| body     | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[Node](#node)&gt; |
 
-### Buffer ⇒ Node
-
-| Property | Type                                                                                              |
-| -------- | ------------------------------------------------------------------------------------------------- |
-| text     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
-
-### Comment ⇒ Node
+### Buffer ⇒ [Node](#node)
 
 | Property | Type                                                                                              |
 | -------- | ------------------------------------------------------------------------------------------------- |
 | text     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
 
-### Identifier ⇒ Node
+### Comment ⇒ [Node](#node)
 
-| Property     | Type                                                                                                       |
-| ------------ | ---------------------------------------------------------------------------------------------------------- |
-| path         | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;Key&gt; |
-| localContext | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)        |
+| Property | Type                                                                                              |
+| -------- | ------------------------------------------------------------------------------------------------- |
+| text     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
 
-### Inline ⇒ Block
+### Identifier ⇒ [Node](#node)
 
-### Key ⇒ Node
+| Property     | Type                                                                                                                     |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------ |
+| path         | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[Key](#key--node)&gt; |
+| localContext | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)                      |
+
+### Inline ⇒ [Block](#block--node)
+
+### Key ⇒ [Node](#node)
 
 | Property | Type                                                                                              |
 | -------- | ------------------------------------------------------------------------------------------------- |
 | name     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
 
-### Literal ⇒ Node
+### Literal ⇒ [Node](#node)
 
 | Property | Type                                                                                                                                                                                                 |
 | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | value    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
 
-### NamedBlock ⇒ Block
+### NamedBlock ⇒ [Block](#block--node)
 
-| Property | Type |
-| -------- | ---- |
-| key      | Key  |
+| Property | Type              |
+| -------- | ----------------- |
+| key      | [Key](#key--node) |
 
 ### Node
 
@@ -93,44 +93,44 @@ dust.parse("<h1>{hello}, {world}!</h1>");
 | Special    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
 | Template   | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
 
-### Param ⇒ Node
+### Param ⇒ [Node](#node)
 
-| Property | Type                        |
-| -------- | --------------------------- |
-| key      | Key                         |
-| value    | Identifier, Inline, Literal |
+| Property | Type                                                                                 |
+| -------- | ------------------------------------------------------------------------------------ |
+| key      | [Key](#key--node)                                                                    |
+| value    | [Identifier](#identifier--node), [Inline](#inline--block), [Literal](#literal--node) |
 
-### Partial ⇒ Node
+### Partial ⇒ [Node](#node)
 
 A Partial is defined as matching a opening brace followed by a > plus anything that matches with key or inline plus context plus params followed by slash and closing brace.
 
-| Property | Type                                                                                                         |
-| -------- | ------------------------------------------------------------------------------------------------------------ |
-| value    | Key, Inline, Literal                                                                                         |
-| context  | Identifier                                                                                                   |
-| params   | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;Param&gt; |
+| Property | Type                                                                                                                         |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| value    | [Key](#key--node), [Inline](#inline--block), [Literal](#literal--node)                                                       |
+| context  | [Identifier](#identifier--node)                                                                                              |
+| params   | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[Param](#param--node)&gt; |
 
-### Raw ⇒ Node
+### Raw ⇒ [Node](#node)
 
 | Property | Type                                                                                              |
 | -------- | ------------------------------------------------------------------------------------------------- |
 | text     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
 
-### Reference ⇒ Node
+### Reference ⇒ [Node](#node)
 
-| Property | Type                                                                                                       |
-| -------- | ---------------------------------------------------------------------------------------------------------- |
-| id       | Identifier                                                                                                 |
-| filters  | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;Key&gt; |
+| Property | Type                                                                                                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------ |
+| id       | [Identifier](#identifier--node)                                                                                          |
+| filters  | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[Key](#key--node)&gt; |
 
-### Section ⇒ Block
+### Section ⇒ [Block](#block--node)
 
-| Property | Type                                                                                                         |
-| -------- | ------------------------------------------------------------------------------------------------------------ |
-| kind     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)            |
-| id       | Identifier                                                                                                   |
-| context  | Identifier                                                                                                   |
-| params   | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;Param&gt; |
+| Property | Type                                                                                                                         |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| kind     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                            |
+| id       | [Identifier](#identifier--node)                                                                                              |
+| context  | [Identifier](#identifier--node)                                                                                              |
+| params   | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[Param](#param--node)&gt; |
 
 | Constant      | Type                                                                                              |
 | ------------- | ------------------------------------------------------------------------------------------------- |
@@ -142,17 +142,17 @@ A Partial is defined as matching a opening brace followed by a > plus anything t
 | Helper        | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
 | Pragma        | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
 
-### Special ⇒ Node
+### Special ⇒ [Node](#node)
 
-| Property | Type |
-| -------- | ---- |
-| key      | Key  |
+| Property | Type              |
+| -------- | ----------------- |
+| key      | [Key](#key--node) |
 
-### Template ⇒ Block
+### Template ⇒ [Block](#block--node)
 
-| Property | Type                                                                                                         |
-| -------- | ------------------------------------------------------------------------------------------------------------ |
-| tokens   | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;Token&gt; |
+| Property | Type                                                                                                                   |
+| -------- | ---------------------------------------------------------------------------------------------------------------------- |
+| tokens   | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[Token](#token)&gt; |
 
 ### Token
 
