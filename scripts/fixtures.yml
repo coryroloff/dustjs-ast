@@ -53,6 +53,7 @@
     - "{#section myparam=1 /}"
     - "{#section myparam=562.123426/}"
     - "{#section myparam=235./}"
+    - "{#.one.two.three}{/.one.two.three}"
   unexpected:
     - "{#standard}{/standard"
     - "{#standard}{standard}"
@@ -89,4 +90,5 @@
     - "{> \"thing\" myparam=\"literal\" /}"
     - "{> \"thing\" myparam=443.2 /}"
     - "{> \"thing\" myparam=\"start{ref}end\" /}"
+    - "{> \"{.one.two.three}\" /}"
 ...
