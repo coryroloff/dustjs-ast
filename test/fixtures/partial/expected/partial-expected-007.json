@@ -7,20 +7,6 @@
 				"type": "Inline",
 				"body": [
 					{
-						"type": "Literal",
-						"value": "\"",
-						"loc": {
-							"start": {
-								"line": 1,
-								"column": 4
-							},
-							"end": {
-								"line": 1,
-								"column": 5
-							}
-						}
-					},
-					{
 						"type": "Reference",
 						"id": {
 							"type": "Identifier",
@@ -91,20 +77,6 @@
 								"column": 21
 							}
 						}
-					},
-					{
-						"type": "Literal",
-						"value": "\"",
-						"loc": {
-							"start": {
-								"line": 1,
-								"column": 21
-							},
-							"end": {
-								"line": 1,
-								"column": 22
-							}
-						}
 					}
 				],
 				"loc": {
@@ -162,7 +134,7 @@
 			}
 		},
 		{
-			"type": "Literal",
+			"type": "Punctuator",
 			"value": "\"",
 			"loc": {
 				"start": {
@@ -288,7 +260,7 @@
 			}
 		},
 		{
-			"type": "Literal",
+			"type": "Punctuator",
 			"value": "\"",
 			"loc": {
 				"start": {

@@ -34,11 +34,17 @@
   - name: name
     type: String
 
-- class: Literal
+- class: StringLiteral
   extends: Node
   properties:
   - name: value
-    type: String, Number
+    type: String
+
+- class: NumericLiteral
+  extends: Node
+  properties:
+  - name: value
+    type: Number
 
 - class: NamedBlock
   extends: Block
@@ -71,7 +77,9 @@
     type: String
   - name: Key
     type: String
-  - name: Literal
+  - name: StringLiteral
+    type: String
+  - name: NumericLiteral
     type: String
   - name: NamedBlock
     type: String
@@ -96,14 +104,14 @@
   - name: key
     type: Key
   - name: value
-    type: Identifier, Inline, Literal
+    type: Identifier, Inline, NumericLiteral
 
 - class: Partial
   extends: Node
   description: A Partial is defined as matching a opening brace followed by a > plus anything that matches with key or inline plus context plus params followed by slash and closing brace.
   properties:
   - name: value
-    type: Key, Inline, Literal
+    type: Key, Inline
   - name: context
     type: Identifier
   - name: params
@@ -173,7 +181,9 @@
     type: String
   - name: Key
     type: String
-  - name: Literal
+  - name: StringLiteral
+    type: String
+  - name: NumericLiteral
     type: String
   - name: Punctuator
     type: String

@@ -30,12 +30,12 @@
 						"type": "Inline",
 						"body": [
 							{
-								"type": "Literal",
-								"value": "\"starting ",
+								"type": "StringLiteral",
+								"value": "starting ",
 								"loc": {
 									"start": {
 										"line": 1,
-										"column": 19
+										"column": 20
 									},
 									"end": {
 										"line": 1,
@@ -71,7 +71,7 @@
 								}
 							},
 							{
-								"type": "Literal",
+								"type": "StringLiteral",
 								"value": " right here ",
 								"loc": {
 									"start": {
@@ -143,7 +143,7 @@
 								}
 							},
 							{
-								"type": "Literal",
+								"type": "StringLiteral",
 								"value": " ",
 								"loc": {
 									"start": {
@@ -184,8 +184,8 @@
 								}
 							},
 							{
-								"type": "Literal",
-								"value": " ending over here\"",
+								"type": "StringLiteral",
+								"value": " ending over here",
 								"loc": {
 									"start": {
 										"line": 1,
@@ -193,7 +193,7 @@
 									},
 									"end": {
 										"line": 1,
-										"column": 79
+										"column": 78
 									}
 								}
 							}
@@ -336,12 +336,26 @@
 			}
 		},
 		{
-			"type": "Literal",
-			"value": "\"starting ",
+			"type": "Punctuator",
+			"value": "\"",
 			"loc": {
 				"start": {
 					"line": 1,
 					"column": 19
+				},
+				"end": {
+					"line": 1,
+					"column": 20
+				}
+			}
+		},
+		{
+			"type": "StringLiteral",
+			"value": "starting ",
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 20
 				},
 				"end": {
 					"line": 1,
@@ -406,7 +420,7 @@
 			}
 		},
 		{
-			"type": "Literal",
+			"type": "StringLiteral",
 			"value": " right here ",
 			"loc": {
 				"start": {
@@ -490,7 +504,7 @@
 			}
 		},
 		{
-			"type": "Literal",
+			"type": "StringLiteral",
 			"value": " ",
 			"loc": {
 				"start": {
@@ -560,12 +574,26 @@
 			}
 		},
 		{
-			"type": "Literal",
-			"value": " ending over here\"",
+			"type": "StringLiteral",
+			"value": " ending over here",
 			"loc": {
 				"start": {
 					"line": 1,
 					"column": 61
+				},
+				"end": {
+					"line": 1,
+					"column": 78
+				}
+			}
+		},
+		{
+			"type": "Punctuator",
+			"value": "\"",
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 78
 				},
 				"end": {
 					"line": 1,
