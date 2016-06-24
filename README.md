@@ -18,70 +18,159 @@ dust.parse("<h1>{hello}, {world}!</h1>");
 
 ## API
 
-### Buffer ⇒ `Node`
+<!-- API: start -->
 
-| Property | Type                                                                                                |
-| -------- | --------------------------------------------------------------------------------------------------- |
-| text     | [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+### Block ⇒ Node
 
-### Key ⇒ `Node`
+| Property | Type                                                                                                        |
+| -------- | ----------------------------------------------------------------------------------------------------------- |
+| body     | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;Node&gt; |
 
-| Property | Type                                                                                                |
-| -------- | --------------------------------------------------------------------------------------------------- |
-| name     | [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+### Buffer ⇒ Node
+
+| Property | Type                                                                                              |
+| -------- | ------------------------------------------------------------------------------------------------- |
+| text     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+
+### Comment ⇒ Node
+
+| Property | Type                                                                                              |
+| -------- | ------------------------------------------------------------------------------------------------- |
+| text     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+
+### Identifier ⇒ Node
+
+| Property | Type                                                                                                       |
+| -------- | ---------------------------------------------------------------------------------------------------------- |
+| path     | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;Key&gt; |
+
+### Inline ⇒ Block
+
+### Key ⇒ Node
+
+| Property | Type                                                                                              |
+| -------- | ------------------------------------------------------------------------------------------------- |
+| name     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+
+### NamedBlock ⇒ Block
+
+| Property | Type |
+| -------- | ---- |
+| key      | Key  |
 
 ### Node
 
-| Property         | Type                                                                                                |
-| ---------------- | --------------------------------------------------------------------------------------------------- |
-| type             | [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
-| loc.start.line   | [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
-| loc.start.column | [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
-| loc.end.line     | [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
-| loc.end.column   | [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
+| Property         | Type                                                                                              |
+| ---------------- | ------------------------------------------------------------------------------------------------- |
+| type             | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| loc.start.line   | [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
+| loc.start.column | [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
+| loc.end.line     | [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
+| loc.end.column   | [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
 
-| Constant   | Type                                                                                                |
-| ---------- | --------------------------------------------------------------------------------------------------- |
-| Block      | [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
-| Buffer     | [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
-| Comment    | [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
-| Identifier | [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
-| Inline     | [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
-| Key        | [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
-| Literal    | [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
-| NamedBlock | [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
-| Param      | [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
-| Partial    | [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
-| Raw        | [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
-| Reference  | [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
-| Section    | [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
-| Special    | [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
-| Template   | [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| Constant   | Type                                                                                              |
+| ---------- | ------------------------------------------------------------------------------------------------- |
+| Block      | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| Buffer     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| Comment    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| Identifier | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| Inline     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| Key        | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| Literal    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| NamedBlock | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| Param      | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| Partial    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| Raw        | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| Reference  | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| Section    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| Special    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| Template   | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
 
-### Raw ⇒ `Node`
+### NumericLiteral ⇒ Node
 
-| Property | Type                                                                                                |
-| -------- | --------------------------------------------------------------------------------------------------- |
-| text     | [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| Property | Type                                                                                              |
+| -------- | ------------------------------------------------------------------------------------------------- |
+| value    | [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
 
-### Reference ⇒ `Node`
+### Param ⇒ Node
 
-| Property | Type         |
-| -------- | ------------ |
-| id       | `Identifier` |
-| filters  | `Array<Key>` |
+| Property | Type                               |
+| -------- | ---------------------------------- |
+| key      | Key                                |
+| value    | Identifier, Inline, NumericLiteral |
 
-### Section ⇒ `Block`
+### Partial ⇒ Node
 
-| Property | Type                                                                                                |
-| -------- | --------------------------------------------------------------------------------------------------- |
-| kind     | [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
-| id       | `Identifier`                                                                                        |
-| context  | `Identifier`                                                                                        |
-| params   | `Array<Param>`                                                                                      |
+| Property | Type                                                                                                         |
+| -------- | ------------------------------------------------------------------------------------------------------------ |
+| value    | Key, Inline, NumericLiteral                                                                                  |
+| context  | Identifier                                                                                                   |
+| params   | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;Param&gt; |
 
-### Special ⇒ `Node`
+### Raw ⇒ Node
 
-| Property | Type  |
-| -------- | ----- |
-| key      | `Key` |
+| Property | Type                                                                                              |
+| -------- | ------------------------------------------------------------------------------------------------- |
+| text     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+
+### Reference ⇒ Node
+
+| Property | Type                                                                                                       |
+| -------- | ---------------------------------------------------------------------------------------------------------- |
+| id       | Identifier                                                                                                 |
+| filters  | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;Key&gt; |
+
+### Section ⇒ Block
+
+| Property | Type                                                                                                         |
+| -------- | ------------------------------------------------------------------------------------------------------------ |
+| kind     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)            |
+| id       | Identifier                                                                                                   |
+| context  | Identifier                                                                                                   |
+| params   | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;Param&gt; |
+
+| Constant      | Type                                                                                              |
+| ------------- | ------------------------------------------------------------------------------------------------- |
+| Standard      | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| Exists        | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| NotExists     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| InlinePartial | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| Block         | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| Helper        | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+
+### Special ⇒ Node
+
+| Property | Type |
+| -------- | ---- |
+| key      | Key  |
+
+### StringLiteral ⇒ Node
+
+| Property | Type                                                                                              |
+| -------- | ------------------------------------------------------------------------------------------------- |
+| value    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+
+### Template ⇒ Block
+
+| Property | Type                                                                                                         |
+| -------- | ------------------------------------------------------------------------------------------------------------ |
+| tokens   | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;Token&gt; |
+
+### Token
+
+| Property | Type                                                                                              |
+| -------- | ------------------------------------------------------------------------------------------------- |
+| type     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| value    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+
+| Constant   | Type                                                                                              |
+| ---------- | ------------------------------------------------------------------------------------------------- |
+| Comment    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| Key        | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| Literal    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| Punctuator | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| Format     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| Buffer     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| Raw        | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+
+<!-- API: end -->

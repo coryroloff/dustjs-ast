@@ -7,7 +7,7 @@
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint lib test scripts webpack.config.js",
     "fixtures": "babel-node scripts/fixtures.js",
-    "docs": "babel-node scripts/docs.js | pbcopy"
+    "docs": "babel-node scripts/docs.js"
   },
   "bin": {
     "dustjs-ast": "bin/dustjs-ast.js"
@@ -25,6 +25,7 @@
     "chai": "^3.5.0",
     "coveralls": "^2.11.9",
     "eslint": "^2.12.0",
+    "htmlencode": "0.0.4",
     "js-yaml": "^3.6.1",
     "markdown-table": "^0.4.0",
     "mocha": "^2.5.3",

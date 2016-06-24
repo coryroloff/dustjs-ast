@@ -1,9 +1,55 @@
 ---
+- class: Block
+  extends: Node
+  properties:
+  - name: body
+    type: Array<Node>
+
+- class: Buffer
+  extends: Node
+  properties:
+  - name: text
+    type: String
+
+- class: Comment
+  extends: Node
+  properties:
+  - name: text
+    type: String
+
+- class: Identifier
+  extends: Node
+  properties:
+  - name: path
+    type: Array<Key>
+
+- class: Inline
+  extends: Block
+
 - class: Key
   extends: Node
   properties:
   - name: name
     type: String
+
+- class: StringLiteral
+  extends: Node
+  properties:
+  - name: value
+    type: String
+
+- class: NumericLiteral
+  extends: Node
+  properties:
+  - name: value
+    type: Number
+
+- class: NamedBlock
+  extends: Block
+  properties:
+  - name: key
+    type: Key
+
 - class: Node
   properties:
   - name: type
@@ -47,6 +93,31 @@
     type: String
   - name: Template
     type: String
+
+- class: Param
+  extends: Node
+  properties:
+  - name: key
+    type: Key
+  - name: value
+    type: Identifier, Inline, NumericLiteral
+
+- class: Partial
+  extends: Node
+  properties:
+  - name: value
+    type: Key, Inline, NumericLiteral
+  - name: context
+    type: Identifier
+  - name: params
+    type: Array<Param>
+
+- class: Raw
+  extends: Node
+  properties:
+  - name: text
+    type: String
+
 - class: Reference
   extends: Node
   properties:
@@ -54,6 +125,7 @@
     type: Identifier
   - name: filters
     type: Array<Key>
+
 - class: Section
   extends: Block
   properties:
@@ -65,19 +137,51 @@
     type: Identifier
   - name: params
     type: Array<Param>
+  constants:
+  - name: Standard
+    type: String
+  - name: Exists
+    type: String
+  - name: NotExists
+    type: String
+  - name: InlinePartial
+    type: String
+  - name: Block
+    type: String
+  - name: Helper
+    type: String
+
 - class: Special
   extends: Node
   properties:
   - name: key
     type: Key
-- class: Raw
-  extends: Node
+
+- class: Template
+  extends: Block
   properties:
-  - name: text
+  - name: tokens
+    type: Array<Token>
+
+- class: Token
+  properties:
+  - name: type
     type: String
-- class: Buffer
-  extends: Node
-  properties:
-  - name: text
+  - name: value
+    type: String
+  constants:
+  - name: Comment
+    type: String
+  - name: Key
+    type: String
+  - name: Literal
+    type: String
+  - name: Punctuator
+    type: String
+  - name: Format
+    type: String
+  - name: Buffer
+    type: String
+  - name: Raw
     type: String
 ...
