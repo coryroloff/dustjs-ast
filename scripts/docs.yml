@@ -153,6 +153,8 @@
     type: String
   - name: Helper
     type: String
+  - name: Pragma
+    type: String
 
 - class: Special
   extends: Node
