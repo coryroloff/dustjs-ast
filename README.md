@@ -55,15 +55,9 @@ dust.parse("<h1>{hello}, {world}!</h1>");
 
 ### Literal ⇒ Node
 
-| Property | Type                                                                                              |
-| -------- | ------------------------------------------------------------------------------------------------- |
-| value    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
-
-### Literal ⇒ Node
-
-| Property | Type                                                                                              |
-| -------- | ------------------------------------------------------------------------------------------------- |
-| value    | [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
+| Property | Type                                                                                                                                                                                                 |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| value    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |
 
 ### NamedBlock ⇒ Block
 

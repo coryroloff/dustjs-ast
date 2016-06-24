@@ -38,13 +38,7 @@
   extends: Node
   properties:
   - name: value
-    type: String
-
-- class: Literal
-  extends: Node
-  properties:
-  - name: value
-    type: Number
+    type: String, Number
 
 - class: NamedBlock
   extends: Block
