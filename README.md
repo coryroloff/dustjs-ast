@@ -40,9 +40,10 @@ dust.parse("<h1>{hello}, {world}!</h1>");
 
 ### Identifier ⇒ Node
 
-| Property | Type                                                                                                       |
-| -------- | ---------------------------------------------------------------------------------------------------------- |
-| path     | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;Key&gt; |
+| Property     | Type                                                                                                       |
+| ------------ | ---------------------------------------------------------------------------------------------------------- |
+| path         | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;Key&gt; |
+| localContext | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)        |
 
 ### Inline ⇒ Block
 

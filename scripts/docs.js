@@ -18,7 +18,8 @@ const mdn = "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/G
 const types = {
 	"String": `${mdn}/String`,
 	"Number": `${mdn}/Number`,
-	"Array": `${mdn}/Array`
+	"Array": `${mdn}/Array`,
+	"Boolean": `${mdn}/Boolean`
 };
 
 doc.sort(sortBy("class")).forEach(klass => {

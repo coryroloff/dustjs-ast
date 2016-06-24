@@ -22,6 +22,8 @@
   properties:
   - name: path
     type: Array<Key>
+  - name: localContext
+    type: Boolean
 
 - class: Inline
   extends: Block
