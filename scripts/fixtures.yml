@@ -22,6 +22,14 @@
     - "{one.two.three.four.five|js|s/}"
     - "{    \t one.two.three.four.five   }"
     - "{.one.two.three}"
+    - "{.}"
+    - "{.[0]}"
+    - "{.thing}"
+    - "{.thing.thing}"
+    - "{.thing[1]}"
+    - "{.thing.two[2]}"
+    - "{[0].one}"
+    - "{[1].thing[1]}"
   unexpected:
     - "{single-key"
     - "{single-key/"
@@ -34,6 +42,9 @@
     - "{one.two three}"
     - "{one.two three/}"
     - "{\"single-key\"}"
+    - "{thing[1][1]}"
+    - "{[1][1]}"
+    - "{[0].[1]}"
 - context: section
   expected:
     - "{#standard}{/standard}"
