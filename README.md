@@ -101,6 +101,8 @@ dust.parse("<h1>{hello}, {world}!</h1>");
 
 ### Partial ⇒ Node
 
+A Partial is defined as matching a opening brace followed by a > plus anything that matches with key or inline plus context plus params followed by slash and closing brace.
+
 | Property | Type                                                                                                         |
 | -------- | ------------------------------------------------------------------------------------------------------------ |
 | value    | Key, Inline, NumericLiteral                                                                                  |

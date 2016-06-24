@@ -25,6 +25,7 @@ doc.sort(sortBy("class")).forEach(klass => {
 	let header = `### ${klass.class}`;
 	if (klass.extends) header += ` ⇒ ${type(klass.extends)}`;
 	write(header);
+	if (klass.description) write(klass.description);
 	props(klass.properties, "Property");
 	props(klass.constants, "Constant");
 });
