@@ -4,6 +4,8 @@
 		{
 			"type": "Buffer",
 			"text": "<h1>hello,\r\nworld!</h1>",
+			"start": 0,
+			"end": 23,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -11,7 +13,7 @@
 				},
 				"end": {
 					"line": 2,
-					"column": 12
+					"column": 11
 				}
 			}
 		}
@@ -20,6 +22,8 @@
 		{
 			"type": "Buffer",
 			"value": "<h1>hello,\r\nworld!</h1>",
+			"start": 0,
+			"end": 23,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -27,11 +31,13 @@
 				},
 				"end": {
 					"line": 2,
-					"column": 12
+					"column": 11
 				}
 			}
 		}
 	],
+	"start": 0,
+	"end": 23,
 	"loc": {
 		"start": {
 			"line": 1,
@@ -39,7 +45,7 @@
 		},
 		"end": {
 			"line": 2,
-			"column": 12
+			"column": 11
 		}
 	}
 }

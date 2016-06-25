@@ -2,6 +2,8 @@
 	"token": {
 		"type": "Key",
 		"value": "three",
+		"start": 9,
+		"end": 14,
 		"loc": {
 			"start": {
 				"line": 1,

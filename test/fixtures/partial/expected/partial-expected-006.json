@@ -9,10 +9,12 @@
 					{
 						"type": "StringLiteral",
 						"value": "thing",
+						"start": 4,
+						"end": 9,
 						"loc": {
 							"start": {
-								"line": 1,
-								"column": 3
+								"line": 2,
+								"column": 4
 							},
 							"end": {
 								"line": 1,
@@ -21,6 +23,8 @@
 						}
 					}
 				],
+				"start": 3,
+				"end": 10,
 				"loc": {
 					"start": {
 						"line": 1,
@@ -39,6 +43,8 @@
 					"key": {
 						"type": "Key",
 						"name": "myparam",
+						"start": 11,
+						"end": 18,
 						"loc": {
 							"start": {
 								"line": 1,
@@ -56,14 +62,16 @@
 							{
 								"type": "StringLiteral",
 								"value": "start",
+								"start": 20,
+								"end": 25,
 								"loc": {
 									"start": {
-										"line": 1,
-										"column": 19
+										"line": 2,
+										"column": 20
 									},
 									"end": {
-										"line": 1,
-										"column": 24
+										"line": 2,
+										"column": 25
 									}
 								}
 							},
@@ -75,49 +83,57 @@
 										{
 											"type": "Key",
 											"name": "ref",
+											"start": 26,
+											"end": 29,
 											"loc": {
 												"start": {
-													"line": 1,
-													"column": 25
+													"line": 2,
+													"column": 26
 												},
 												"end": {
-													"line": 1,
-													"column": 28
+													"line": 2,
+													"column": 29
 												}
 											}
 										}
 									],
 									"localContext": false,
+									"start": 26,
+									"end": 29,
 									"loc": {
 										"start": {
-											"line": 1,
-											"column": 25
+											"line": 2,
+											"column": 26
 										},
 										"end": {
-											"line": 1,
-											"column": 28
+											"line": 2,
+											"column": 29
 										}
 									}
 								},
 								"filters": [],
+								"start": 25,
+								"end": 30,
 								"loc": {
 									"start": {
-										"line": 1,
-										"column": 24
+										"line": 2,
+										"column": 25
 									},
 									"end": {
-										"line": 1,
-										"column": 29
+										"line": 2,
+										"column": 30
 									}
 								}
 							},
 							{
 								"type": "StringLiteral",
 								"value": "end",
+								"start": 30,
+								"end": 33,
 								"loc": {
 									"start": {
-										"line": 1,
-										"column": 29
+										"line": 2,
+										"column": 30
 									},
 									"end": {
 										"line": 1,
@@ -126,6 +142,8 @@
 								}
 							}
 						],
+						"start": 19,
+						"end": 34,
 						"loc": {
 							"start": {
 								"line": 1,
@@ -137,6 +155,8 @@
 							}
 						}
 					},
+					"start": 11,
+					"end": 34,
 					"loc": {
 						"start": {
 							"line": 1,
@@ -149,6 +169,8 @@
 					}
 				}
 			],
+			"start": 0,
+			"end": 37,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -165,6 +187,8 @@
 		{
 			"type": "Punctuator",
 			"value": "{",
+			"start": 0,
+			"end": 1,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -179,6 +203,8 @@
 		{
 			"type": "Punctuator",
 			"value": ">",
+			"start": 1,
+			"end": 2,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -193,24 +219,28 @@
 		{
 			"type": "Punctuator",
 			"value": "\"",
+			"start": 3,
+			"end": 4,
 			"loc": {
 				"start": {
 					"line": 1,
 					"column": 3
 				},
 				"end": {
-					"line": 1,
-					"column": 3
+					"line": 2,
+					"column": 4
 				}
 			}
 		},
 		{
 			"type": "StringLiteral",
 			"value": "thing",
+			"start": 4,
+			"end": 9,
 			"loc": {
 				"start": {
-					"line": 1,
-					"column": 3
+					"line": 2,
+					"column": 4
 				},
 				"end": {
 					"line": 1,
@@ -221,6 +251,8 @@
 		{
 			"type": "Punctuator",
 			"value": "\"",
+			"start": 9,
+			"end": 10,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -235,6 +267,8 @@
 		{
 			"type": "Key",
 			"value": "myparam",
+			"start": 11,
+			"end": 18,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -249,6 +283,8 @@
 		{
 			"type": "Punctuator",
 			"value": "=",
+			"start": 18,
+			"end": 19,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -263,80 +299,92 @@
 		{
 			"type": "Punctuator",
 			"value": "\"",
+			"start": 19,
+			"end": 20,
 			"loc": {
 				"start": {
 					"line": 1,
 					"column": 19
 				},
 				"end": {
-					"line": 1,
-					"column": 19
+					"line": 2,
+					"column": 20
 				}
 			}
 		},
 		{
 			"type": "StringLiteral",
 			"value": "start",
+			"start": 20,
+			"end": 25,
 			"loc": {
 				"start": {
-					"line": 1,
-					"column": 19
+					"line": 2,
+					"column": 20
 				},
 				"end": {
-					"line": 1,
-					"column": 24
+					"line": 2,
+					"column": 25
 				}
 			}
 		},
 		{
 			"type": "Punctuator",
 			"value": "{",
+			"start": 25,
+			"end": 26,
 			"loc": {
 				"start": {
-					"line": 1,
-					"column": 24
+					"line": 2,
+					"column": 25
 				},
 				"end": {
-					"line": 1,
-					"column": 25
+					"line": 2,
+					"column": 26
 				}
 			}
 		},
 		{
 			"type": "Key",
 			"value": "ref",
+			"start": 26,
+			"end": 29,
 			"loc": {
 				"start": {
-					"line": 1,
-					"column": 25
+					"line": 2,
+					"column": 26
 				},
 				"end": {
-					"line": 1,
-					"column": 28
+					"line": 2,
+					"column": 29
 				}
 			}
 		},
 		{
 			"type": "Punctuator",
 			"value": "}",
+			"start": 29,
+			"end": 30,
 			"loc": {
 				"start": {
-					"line": 1,
-					"column": 28
+					"line": 2,
+					"column": 29
 				},
 				"end": {
-					"line": 1,
-					"column": 29
+					"line": 2,
+					"column": 30
 				}
 			}
 		},
 		{
 			"type": "StringLiteral",
 			"value": "end",
+			"start": 30,
+			"end": 33,
 			"loc": {
 				"start": {
-					"line": 1,
-					"column": 29
+					"line": 2,
+					"column": 30
 				},
 				"end": {
 					"line": 1,
@@ -347,6 +395,8 @@
 		{
 			"type": "Punctuator",
 			"value": "\"",
+			"start": 33,
+			"end": 34,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -361,6 +411,8 @@
 		{
 			"type": "Punctuator",
 			"value": "/",
+			"start": 35,
+			"end": 36,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -375,6 +427,8 @@
 		{
 			"type": "Punctuator",
 			"value": "}",
+			"start": 36,
+			"end": 37,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -387,6 +441,8 @@
 			}
 		}
 	],
+	"start": 0,
+	"end": 37,
 	"loc": {
 		"start": {
 			"line": 1,

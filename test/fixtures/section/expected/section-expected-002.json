@@ -16,6 +16,8 @@
 										{
 											"type": "Buffer",
 											"text": "",
+											"start": 28,
+											"end": 29,
 											"loc": {
 												"start": {
 													"line": 1,
@@ -28,6 +30,8 @@
 											}
 										}
 									],
+									"start": 28,
+									"end": 29,
 									"loc": {
 										"start": {
 											"line": 1,
@@ -48,6 +52,8 @@
 									{
 										"type": "Key",
 										"name": "inner-standard",
+										"start": 13,
+										"end": 27,
 										"loc": {
 											"start": {
 												"line": 1,
@@ -61,6 +67,8 @@
 									}
 								],
 								"localContext": false,
+								"start": 13,
+								"end": 27,
 								"loc": {
 									"start": {
 										"line": 1,
@@ -72,6 +80,8 @@
 									}
 								}
 							},
+							"start": 11,
+							"end": 45,
 							"loc": {
 								"start": {
 									"line": 1,
@@ -84,6 +94,8 @@
 							}
 						}
 					],
+					"start": 11,
+					"end": 45,
 					"loc": {
 						"start": {
 							"line": 1,
@@ -104,6 +116,8 @@
 					{
 						"type": "Key",
 						"name": "standard",
+						"start": 2,
+						"end": 10,
 						"loc": {
 							"start": {
 								"line": 1,
@@ -117,6 +131,8 @@
 					}
 				],
 				"localContext": false,
+				"start": 2,
+				"end": 10,
 				"loc": {
 					"start": {
 						"line": 1,
@@ -128,6 +144,8 @@
 					}
 				}
 			},
+			"start": 0,
+			"end": 56,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -144,6 +162,8 @@
 		{
 			"type": "Punctuator",
 			"value": "{",
+			"start": 0,
+			"end": 1,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -158,6 +178,8 @@
 		{
 			"type": "Punctuator",
 			"value": "#",
+			"start": 1,
+			"end": 2,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -172,6 +194,8 @@
 		{
 			"type": "Key",
 			"value": "standard",
+			"start": 2,
+			"end": 10,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -186,6 +210,8 @@
 		{
 			"type": "Punctuator",
 			"value": "}",
+			"start": 10,
+			"end": 11,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -200,6 +226,8 @@
 		{
 			"type": "Punctuator",
 			"value": "{",
+			"start": 11,
+			"end": 12,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -214,6 +242,8 @@
 		{
 			"type": "Punctuator",
 			"value": "#",
+			"start": 12,
+			"end": 13,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -228,6 +258,8 @@
 		{
 			"type": "Key",
 			"value": "inner-standard",
+			"start": 13,
+			"end": 27,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -242,6 +274,8 @@
 		{
 			"type": "Punctuator",
 			"value": "}",
+			"start": 27,
+			"end": 28,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -256,6 +290,8 @@
 		{
 			"type": "Punctuator",
 			"value": "{",
+			"start": 28,
+			"end": 29,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -270,6 +306,8 @@
 		{
 			"type": "Punctuator",
 			"value": "/",
+			"start": 29,
+			"end": 30,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -284,6 +322,8 @@
 		{
 			"type": "Key",
 			"value": "inner-standard",
+			"start": 30,
+			"end": 44,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -298,6 +338,8 @@
 		{
 			"type": "Punctuator",
 			"value": "}",
+			"start": 44,
+			"end": 45,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -312,6 +354,8 @@
 		{
 			"type": "Punctuator",
 			"value": "{",
+			"start": 45,
+			"end": 46,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -326,6 +370,8 @@
 		{
 			"type": "Punctuator",
 			"value": "/",
+			"start": 46,
+			"end": 47,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -340,6 +386,8 @@
 		{
 			"type": "Key",
 			"value": "standard",
+			"start": 47,
+			"end": 55,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -354,6 +402,8 @@
 		{
 			"type": "Punctuator",
 			"value": "}",
+			"start": 55,
+			"end": 56,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -366,6 +416,8 @@
 			}
 		}
 	],
+	"start": 0,
+	"end": 56,
 	"loc": {
 		"start": {
 			"line": 1,

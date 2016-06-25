@@ -6,6 +6,8 @@
 			"key": {
 				"type": "Key",
 				"name": "n",
+				"start": 2,
+				"end": 3,
 				"loc": {
 					"start": {
 						"line": 1,
@@ -17,6 +19,8 @@
 					}
 				}
 			},
+			"start": 0,
+			"end": 4,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -33,6 +37,8 @@
 		{
 			"type": "Punctuator",
 			"value": "{",
+			"start": 0,
+			"end": 1,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -47,6 +53,8 @@
 		{
 			"type": "Punctuator",
 			"value": "~",
+			"start": 1,
+			"end": 2,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -61,6 +69,8 @@
 		{
 			"type": "Key",
 			"value": "n",
+			"start": 2,
+			"end": 3,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -75,6 +85,8 @@
 		{
 			"type": "Punctuator",
 			"value": "}",
+			"start": 3,
+			"end": 4,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -87,6 +99,8 @@
 			}
 		}
 	],
+	"start": 0,
+	"end": 4,
 	"loc": {
 		"start": {
 			"line": 1,

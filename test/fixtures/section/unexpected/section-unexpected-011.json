@@ -2,6 +2,8 @@
 	"token": {
 		"type": "Punctuator",
 		"value": ".",
+		"start": 25,
+		"end": 26,
 		"loc": {
 			"start": {
 				"line": 1,
