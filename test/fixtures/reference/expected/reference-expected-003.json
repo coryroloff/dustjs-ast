@@ -37,9 +37,42 @@
 					}
 				}
 			},
-			"filters": [],
+			"filters": [
+				{
+					"type": "Key",
+					"name": "js",
+					"start": 12,
+					"end": 14,
+					"loc": {
+						"start": {
+							"line": 1,
+							"column": 12
+						},
+						"end": {
+							"line": 1,
+							"column": 14
+						}
+					}
+				},
+				{
+					"type": "Key",
+					"name": "s",
+					"start": 15,
+					"end": 16,
+					"loc": {
+						"start": {
+							"line": 1,
+							"column": 15
+						},
+						"end": {
+							"line": 1,
+							"column": 16
+						}
+					}
+				}
+			],
 			"start": 0,
-			"end": 14,
+			"end": 17,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -47,7 +80,7 @@
 				},
 				"end": {
 					"line": 1,
-					"column": 14
+					"column": 17
 				}
 			}
 		}
@@ -87,9 +120,25 @@
 		},
 		{
 			"type": "Punctuator",
-			"value": "/",
+			"value": "|",
+			"start": 11,
+			"end": 12,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 11
+				},
+				"end": {
+					"line": 1,
+					"column": 12
+				}
+			}
+		},
+		{
+			"type": "Key",
+			"value": "js",
 			"start": 12,
-			"end": 13,
+			"end": 14,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -97,29 +146,61 @@
 				},
 				"end": {
 					"line": 1,
-					"column": 13
+					"column": 14
+				}
+			}
+		},
+		{
+			"type": "Punctuator",
+			"value": "|",
+			"start": 14,
+			"end": 15,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 14
+				},
+				"end": {
+					"line": 1,
+					"column": 15
+				}
+			}
+		},
+		{
+			"type": "Key",
+			"value": "s",
+			"start": 15,
+			"end": 16,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 15
+				},
+				"end": {
+					"line": 1,
+					"column": 16
 				}
 			}
 		},
 		{
 			"type": "Punctuator",
 			"value": "}",
-			"start": 13,
-			"end": 14,
+			"start": 16,
+			"end": 17,
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 13
+					"column": 16
 				},
 				"end": {
 					"line": 1,
-					"column": 14
+					"column": 17
 				}
 			}
 		}
 	],
 	"start": 0,
-	"end": 14,
+	"end": 17,
 	"loc": {
 		"start": {
 			"line": 1,
@@ -127,7 +208,7 @@
 		},
 		"end": {
 			"line": 1,
-			"column": 14
+			"column": 17
 		}
 	}
 }

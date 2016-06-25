@@ -3,12 +3,44 @@
 	"body": [
 		{
 			"type": "Buffer",
-			"text": "<h1>hello,\nworld!</h1>",
+			"text": "<h1>hello,",
 			"start": 0,
-			"end": 22,
+			"end": 9,
 			"loc": {
 				"start": {
 					"line": 1,
+					"column": 0
+				},
+				"end": {
+					"line": 1,
+					"column": 9
+				}
+			}
+		},
+		{
+			"type": "Format",
+			"text": "\n",
+			"start": 9,
+			"end": 11,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 9
+				},
+				"end": {
+					"line": 2,
+					"column": 0
+				}
+			}
+		},
+		{
+			"type": "Buffer",
+			"text": "world!</h1>",
+			"start": 11,
+			"end": 22,
+			"loc": {
+				"start": {
+					"line": 2,
 					"column": 0
 				},
 				"end": {
@@ -21,12 +53,44 @@
 	"tokens": [
 		{
 			"type": "Buffer",
-			"value": "<h1>hello,\nworld!</h1>",
+			"value": "<h1>hello,",
 			"start": 0,
-			"end": 22,
+			"end": 9,
 			"loc": {
 				"start": {
 					"line": 1,
+					"column": 0
+				},
+				"end": {
+					"line": 1,
+					"column": 9
+				}
+			}
+		},
+		{
+			"type": "Format",
+			"value": "\n",
+			"start": 9,
+			"end": 11,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 9
+				},
+				"end": {
+					"line": 2,
+					"column": 0
+				}
+			}
+		},
+		{
+			"type": "Buffer",
+			"value": "world!</h1>",
+			"start": 11,
+			"end": 22,
+			"loc": {
+				"start": {
+					"line": 2,
 					"column": 0
 				},
 				"end": {

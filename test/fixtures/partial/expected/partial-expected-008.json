@@ -2,35 +2,19 @@
 	"type": "Template",
 	"body": [
 		{
-			"type": "Reference",
-			"id": {
-				"type": "Identifier",
-				"path": [
+			"type": "Partial",
+			"value": {
+				"type": "Inline",
+				"body": [
 					{
-						"type": "Key",
-						"name": "thing",
-						"start": 2,
-						"end": 7,
-						"loc": {
-							"start": {
-								"line": 1,
-								"column": 2
-							},
-							"end": {
-								"line": 1,
-								"column": 7
-							}
-						}
-					},
-					{
-						"type": "NumericLiteral",
-						"value": 1,
-						"start": 8,
+						"type": "StringLiteral",
+						"value": "hey",
+						"start": 6,
 						"end": 9,
 						"loc": {
 							"start": {
-								"line": 1,
-								"column": 8
+								"line": 2,
+								"column": 6
 							},
 							"end": {
 								"line": 1,
@@ -39,13 +23,12 @@
 						}
 					}
 				],
-				"localContext": true,
-				"start": 1,
+				"start": 5,
 				"end": 10,
 				"loc": {
 					"start": {
 						"line": 1,
-						"column": 1
+						"column": 5
 					},
 					"end": {
 						"line": 1,
@@ -53,9 +36,10 @@
 					}
 				}
 			},
-			"filters": [],
+			"context": null,
+			"params": [],
 			"start": 0,
-			"end": 11,
+			"end": 15,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -63,7 +47,7 @@
 				},
 				"end": {
 					"line": 1,
-					"column": 11
+					"column": 15
 				}
 			}
 		}
@@ -87,7 +71,7 @@
 		},
 		{
 			"type": "Punctuator",
-			"value": ".",
+			"value": ">",
 			"start": 1,
 			"end": 2,
 			"loc": {
@@ -102,10 +86,10 @@
 			}
 		},
 		{
-			"type": "Key",
-			"value": "thing",
+			"type": "Format",
+			"value": "   ",
 			"start": 2,
-			"end": 7,
+			"end": 5,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -113,35 +97,35 @@
 				},
 				"end": {
 					"line": 1,
-					"column": 7
+					"column": 5
 				}
 			}
 		},
 		{
 			"type": "Punctuator",
-			"value": "[",
-			"start": 7,
-			"end": 8,
+			"value": "\"",
+			"start": 5,
+			"end": 6,
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 7
+					"column": 5
 				},
 				"end": {
-					"line": 1,
-					"column": 8
+					"line": 2,
+					"column": 6
 				}
 			}
 		},
 		{
-			"type": "NumericLiteral",
-			"value": "1",
-			"start": 8,
+			"type": "StringLiteral",
+			"value": "hey",
+			"start": 6,
 			"end": 9,
 			"loc": {
 				"start": {
-					"line": 1,
-					"column": 8
+					"line": 2,
+					"column": 6
 				},
 				"end": {
 					"line": 1,
@@ -151,7 +135,7 @@
 		},
 		{
 			"type": "Punctuator",
-			"value": "]",
+			"value": "\"",
 			"start": 9,
 			"end": 10,
 			"loc": {
@@ -166,10 +150,10 @@
 			}
 		},
 		{
-			"type": "Punctuator",
-			"value": "}",
+			"type": "Format",
+			"value": "   ",
 			"start": 10,
-			"end": 11,
+			"end": 13,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -177,13 +161,45 @@
 				},
 				"end": {
 					"line": 1,
-					"column": 11
+					"column": 13
+				}
+			}
+		},
+		{
+			"type": "Punctuator",
+			"value": "/",
+			"start": 13,
+			"end": 14,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 13
+				},
+				"end": {
+					"line": 1,
+					"column": 14
+				}
+			}
+		},
+		{
+			"type": "Punctuator",
+			"value": "}",
+			"start": 14,
+			"end": 15,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 14
+				},
+				"end": {
+					"line": 1,
+					"column": 15
 				}
 			}
 		}
 	],
 	"start": 0,
-	"end": 11,
+	"end": 15,
 	"loc": {
 		"start": {
 			"line": 1,
@@ -191,7 +207,7 @@
 		},
 		"end": {
 			"line": 1,
-			"column": 11
+			"column": 15
 		}
 	}
 }

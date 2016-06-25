@@ -161,6 +161,22 @@
 			}
 		},
 		{
+			"type": "Format",
+			"value": " ",
+			"start": 9,
+			"end": 10,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 9
+				},
+				"end": {
+					"line": 1,
+					"column": 10
+				}
+			}
+		},
+		{
 			"type": "Key",
 			"value": "myparam",
 			"start": 10,
@@ -205,6 +221,22 @@
 				"end": {
 					"line": 1,
 					"column": 19
+				}
+			}
+		},
+		{
+			"type": "Format",
+			"value": " ",
+			"start": 19,
+			"end": 20,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 19
+				},
+				"end": {
+					"line": 1,
+					"column": 20
 				}
 			}
 		},

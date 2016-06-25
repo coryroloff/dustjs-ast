@@ -151,6 +151,22 @@
 			}
 		},
 		{
+			"type": "Format",
+			"value": " ",
+			"start": 2,
+			"end": 3,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 2
+				},
+				"end": {
+					"line": 1,
+					"column": 3
+				}
+			}
+		},
+		{
 			"type": "Punctuator",
 			"value": "\"",
 			"start": 3,
@@ -195,6 +211,22 @@
 				"end": {
 					"line": 1,
 					"column": 10
+				}
+			}
+		},
+		{
+			"type": "Format",
+			"value": " ",
+			"start": 10,
+			"end": 11,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 10
+				},
+				"end": {
+					"line": 1,
+					"column": 11
 				}
 			}
 		},
@@ -275,6 +307,22 @@
 				"end": {
 					"line": 1,
 					"column": 28
+				}
+			}
+		},
+		{
+			"type": "Format",
+			"value": " ",
+			"start": 28,
+			"end": 29,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 28
+				},
+				"end": {
+					"line": 1,
+					"column": 29
 				}
 			}
 		},

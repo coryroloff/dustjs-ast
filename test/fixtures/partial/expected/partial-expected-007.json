@@ -152,6 +152,22 @@
 			}
 		},
 		{
+			"type": "Format",
+			"value": " ",
+			"start": 2,
+			"end": 3,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 2
+				},
+				"end": {
+					"line": 1,
+					"column": 3
+				}
+			}
+		},
+		{
 			"type": "Punctuator",
 			"value": "\"",
 			"start": 3,
@@ -308,6 +324,22 @@
 				"end": {
 					"line": 1,
 					"column": 21
+				}
+			}
+		},
+		{
+			"type": "Format",
+			"value": " ",
+			"start": 21,
+			"end": 22,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 21
+				},
+				"end": {
+					"line": 1,
+					"column": 22
 				}
 			}
 		},

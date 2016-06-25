@@ -7,20 +7,11 @@
 - context: reference
   expected:
     - "{single-key}"
-    - "{single-key/}"
-    - "{single-key /}"
     - "{single-key|js}"
-    - "{single-key|js/}"
     - "{single-key|js|s}"
-    - "{single-key|js|s/}"
-    - "{   single-key          }"
     - "{one.two.three.four.five}"
-    - "{one.two.three.four.five/}"
     - "{one.two.three.four.five|js}"
-    - "{one.two.three.four.five|js/}"
     - "{one.two.three.four.five|js|s}"
-    - "{one.two.three.four.five|js|s/}"
-    - "{    \t one.two.three.four.five   }"
     - "{.one.two.three}"
     - "{.}"
     - "{.[0]}"
@@ -66,6 +57,8 @@
     - "{#section myparam=235./}"
     - "{#.one.two.three}{/.one.two.three}"
     - "{%pragma}{/pragma}"
+    - "{#  hey:a.b.c     param1=1       param2=2    }{/         hey         }"
+    - "{#  hey     /}"
   unexpected:
     - "{#standard}{/standard"
     - "{#standard}{standard}"
@@ -103,4 +96,5 @@
     - "{> \"thing\" myparam=443.2 /}"
     - "{> \"thing\" myparam=\"start{ref}end\" /}"
     - "{> \"{.one.two.three}\" /}"
+    - "{>   \"hey\"   /}"
 ...
