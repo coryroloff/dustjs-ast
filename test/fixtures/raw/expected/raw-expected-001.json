@@ -5,7 +5,7 @@
 			"type": "Raw",
 			"text": " this {is} a {#raw /} node",
 			"start": 0,
-			"end": 26,
+			"end": 30,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -23,7 +23,7 @@
 			"type": "Raw",
 			"value": " this {is} a {#raw /} node",
 			"start": 0,
-			"end": 26,
+			"end": 30,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -37,7 +37,7 @@
 		}
 	],
 	"start": 0,
-	"end": 26,
+	"end": 30,
 	"loc": {
 		"start": {
 			"line": 1,

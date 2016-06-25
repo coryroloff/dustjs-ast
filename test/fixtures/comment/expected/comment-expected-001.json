@@ -5,7 +5,7 @@
 			"type": "Comment",
 			"text": " {?exists}{@helper param=\"hello\"/}, {world}!{/exists} ",
 			"start": 0,
-			"end": 54,
+			"end": 58,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -23,7 +23,7 @@
 			"type": "Comment",
 			"value": " {?exists}{@helper param=\"hello\"/}, {world}!{/exists} ",
 			"start": 0,
-			"end": 54,
+			"end": 58,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -37,7 +37,7 @@
 		}
 	],
 	"start": 0,
-	"end": 54,
+	"end": 58,
 	"loc": {
 		"start": {
 			"line": 1,
