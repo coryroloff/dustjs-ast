@@ -10,11 +10,11 @@
 				"loc": {
 					"start": {
 						"line": 1,
-						"column": 2
+						"column": 1
 					},
 					"end": {
 						"line": 1,
-						"column": 3
+						"column": 2
 					}
 				}
 			},
@@ -22,11 +22,11 @@
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 1
+					"column": 0
 				},
 				"end": {
 					"line": 1,
-					"column": 4
+					"column": 3
 				}
 			}
 		}
@@ -38,6 +38,20 @@
 			"loc": {
 				"start": {
 					"line": 1,
+					"column": 0
+				},
+				"end": {
+					"line": 1,
+					"column": 1
+				}
+			}
+		},
+		{
+			"type": "Punctuator",
+			"value": ".",
+			"loc": {
+				"start": {
+					"line": 1,
 					"column": 1
 				},
 				"end": {
@@ -48,7 +62,7 @@
 		},
 		{
 			"type": "Punctuator",
-			"value": ".",
+			"value": "}",
 			"loc": {
 				"start": {
 					"line": 1,
@@ -59,30 +73,16 @@
 					"column": 3
 				}
 			}
-		},
-		{
-			"type": "Punctuator",
-			"value": "}",
-			"loc": {
-				"start": {
-					"line": 1,
-					"column": 3
-				},
-				"end": {
-					"line": 1,
-					"column": 4
-				}
-			}
 		}
 	],
 	"loc": {
 		"start": {
 			"line": 1,
-			"column": 1
+			"column": 0
 		},
 		"end": {
 			"line": 1,
-			"column": 4
+			"column": 3
 		}
 	}
 }

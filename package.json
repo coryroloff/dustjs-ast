@@ -27,6 +27,7 @@
     "eslint": "^2.12.0",
     "htmlencode": "0.0.4",
     "js-yaml": "^3.6.1",
+    "lodash": "^4.13.1",
     "markdown-table": "^0.4.0",
     "mocha": "^2.5.3",
     "nyc": "^6.4.4",
