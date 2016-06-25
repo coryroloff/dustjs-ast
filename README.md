@@ -13,7 +13,8 @@ npm install --save dustjs-ast
 ```js
 import {default as dust, Token, Node} from "dustjs-ast";
 
-dust.parse("<h1>{hello}, {world}!</h1>");
+const ast = dust.parse("<h1>{hello}, {world}!</h1>"); //=> {type: "Template", ...}
+dust.print(ast); //=> <h1>{hello}, {world}!</h1>
 ```
 
 ## API
