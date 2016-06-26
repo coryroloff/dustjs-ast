@@ -17,6 +17,12 @@
   - name: text
     type: String
 
+- class: Format
+  extends: Node
+  properties:
+  - name: text
+    type: String
+
 - class: Identifier
   extends: Node
   properties:
@@ -105,11 +111,6 @@
     type: Key
   - name: value
     type: Identifier, Inline, NumericLiteral
-  constants:
-  - name: Partial
-    type: String
-  - name: Block
-    type: String
 
 - class: Partial
   extends: Node
@@ -123,6 +124,11 @@
     type: Identifier
   - name: params
     type: Array<Param>
+  constants:
+  - name: Partial
+    type: String
+  - name: Block
+    type: String
 
 - class: Raw
   extends: Node
@@ -146,9 +152,19 @@
   - name: id
     type: Identifier
   - name: context
-    type: Identifier
+    type: ?Identifier
   - name: params
     type: Array<Param>
+  - name: format.startTagAfterKind
+    type: ?Format
+  - name: format.startTagBeforeParam
+    type: Array<Format>
+  - name: format.startTagBeforeEnd
+    type: ?Format
+  - name: format.endTagAfterStart
+    type: ?Format
+  - name: format.endTagBeforeEnd
+    type: ?Format
   constants:
   - name: Standard
     type: String

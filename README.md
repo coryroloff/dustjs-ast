@@ -39,6 +39,12 @@ dust.print(ast); //=> <h1>{hello}, {world}!</h1>
 | -------- | ------------------------------------------------------------------------------------------------- |
 | text     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
 
+### Format ⇒ [Node](#node)
+
+| Property | Type                                                                                              |
+| -------- | ------------------------------------------------------------------------------------------------- |
+| text     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+
 ### Identifier ⇒ [Node](#node)
 
 | Property     | Type                                                                                                                     |
@@ -102,11 +108,6 @@ dust.print(ast); //=> <h1>{hello}, {world}!</h1>
 | key      | [Key](#key--node)                                                                                  |
 | value    | [Identifier](#identifier--node), [Inline](#inline--block), [NumericLiteral](#numericliteral--node) |
 
-| Constant | Type                                                                                              |
-| -------- | ------------------------------------------------------------------------------------------------- |
-| Partial  | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
-| Block    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
-
 ### Partial ⇒ [Node](#node)
 
 A Partial is defined as matching a opening brace followed by a > plus anything that matches with key or inline plus context plus params followed by slash and closing brace.
@@ -117,6 +118,11 @@ A Partial is defined as matching a opening brace followed by a > plus anything t
 | value    | [Key](#key--node), [Inline](#inline--block)                                                                                  |
 | context  | [Identifier](#identifier--node)                                                                                              |
 | params   | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[Param](#param--node)&gt; |
+
+| Constant | Type                                                                                              |
+| -------- | ------------------------------------------------------------------------------------------------- |
+| Partial  | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| Block    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
 
 ### Raw ⇒ [Node](#node)
 
@@ -133,12 +139,17 @@ A Partial is defined as matching a opening brace followed by a > plus anything t
 
 ### Section ⇒ [Block](#block--node)
 
-| Property | Type                                                                                                                         |
-| -------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| kind     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                            |
-| id       | [Identifier](#identifier--node)                                                                                              |
-| context  | [Identifier](#identifier--node)                                                                                              |
-| params   | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[Param](#param--node)&gt; |
+| Property                   | Type                                                                                                                           |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| kind                       | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                              |
+| id                         | [Identifier](#identifier--node)                                                                                                |
+| context                    | ?[Identifier](#identifier--node)                                                                                               |
+| params                     | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[Param](#param--node)&gt;   |
+| format.startTagAfterKind   | ?[Format](#format--node)                                                                                                       |
+| format.startTagBeforeParam | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[Format](#format--node)&gt; |
+| format.startTagBeforeEnd   | ?[Format](#format--node)                                                                                                       |
+| format.endTagAfterStart    | ?[Format](#format--node)                                                                                                       |
+| format.endTagBeforeEnd     | ?[Format](#format--node)                                                                                                       |
 
 | Constant      | Type                                                                                              |
 | ------------- | ------------------------------------------------------------------------------------------------- |

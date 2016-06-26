@@ -78,6 +78,7 @@
     - "{^not.exists}{/not.exists.here}"
     - "{^ \n not.exists}{/not.exists.here}"
     - "{+block \n }{/#}"
+    - "{#hey param1=1param2=2}{/hey}"
 - context: comment
   expected:
     - "{! {?exists}{@helper param=\"hello\"/}, {world}!{/exists} !}"

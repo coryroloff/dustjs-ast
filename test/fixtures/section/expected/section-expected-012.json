@@ -153,6 +153,13 @@
 				}
 			],
 			"params": [],
+			"format": {
+				"startTagAfterKind": null,
+				"startTagBeforeParam": [],
+				"startTagBeforeEnd": null,
+				"endTagAfterStart": null,
+				"endTagBeforeEnd": null
+			},
 			"kind": "?",
 			"id": {
 				"type": "Identifier",

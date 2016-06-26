@@ -134,6 +134,106 @@
 					}
 				}
 			],
+			"format": {
+				"startTagAfterKind": {
+					"type": "Format",
+					"text": "  ",
+					"start": 2,
+					"end": 4,
+					"loc": {
+						"start": {
+							"line": 1,
+							"column": 2
+						},
+						"end": {
+							"line": 1,
+							"column": 4
+						}
+					}
+				},
+				"startTagBeforeParam": [
+					{
+						"type": "Format",
+						"text": "     ",
+						"start": 13,
+						"end": 18,
+						"loc": {
+							"start": {
+								"line": 1,
+								"column": 13
+							},
+							"end": {
+								"line": 1,
+								"column": 18
+							}
+						}
+					},
+					{
+						"type": "Format",
+						"text": "       ",
+						"start": 26,
+						"end": 33,
+						"loc": {
+							"start": {
+								"line": 1,
+								"column": 26
+							},
+							"end": {
+								"line": 1,
+								"column": 33
+							}
+						}
+					}
+				],
+				"startTagBeforeEnd": {
+					"type": "Format",
+					"text": "    ",
+					"start": 41,
+					"end": 45,
+					"loc": {
+						"start": {
+							"line": 1,
+							"column": 41
+						},
+						"end": {
+							"line": 1,
+							"column": 45
+						}
+					}
+				},
+				"endTagAfterStart": {
+					"type": "Format",
+					"text": "         ",
+					"start": 48,
+					"end": 57,
+					"loc": {
+						"start": {
+							"line": 1,
+							"column": 48
+						},
+						"end": {
+							"line": 1,
+							"column": 57
+						}
+					}
+				},
+				"endTagBeforeEnd": {
+					"type": "Format",
+					"text": "         ",
+					"start": 60,
+					"end": 69,
+					"loc": {
+						"start": {
+							"line": 1,
+							"column": 60
+						},
+						"end": {
+							"line": 1,
+							"column": 69
+						}
+					}
+				}
+			},
 			"kind": "#",
 			"id": {
 				"type": "Identifier",
