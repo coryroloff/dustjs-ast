@@ -105,11 +105,18 @@
     type: Key
   - name: value
     type: Identifier, Inline, NumericLiteral
+  constants:
+  - name: Partial
+    type: String
+  - name: Block
+    type: String
 
 - class: Partial
   extends: Node
   description: A Partial is defined as matching a opening brace followed by a > plus anything that matches with key or inline plus context plus params followed by slash and closing brace.
   properties:
+  - name: kind
+    type: String
   - name: value
     type: Key, Inline
   - name: context

@@ -87,6 +87,7 @@
 				}
 			},
 			"params": [],
+			"kind": ">",
 			"start": 0,
 			"end": 24,
 			"loc": {

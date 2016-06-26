@@ -60,6 +60,7 @@
     - "{%pragma}{/pragma}"
     - "{#  hey:a.b.c     param1=1       param2=2    }{/         hey         }"
     - "{#  hey     /}"
+    - "{+ hey}{/hey}"
   unexpected:
     - "{#standard}{/standard"
     - "{#standard}{standard}"
@@ -99,4 +100,5 @@
     - "{> \"thing\" myparam=\"start{ref}end\" /}"
     - "{> \"{.one.two.three}\" /}"
     - "{>   \"hey\"   /}"
+    - "{+ \"hey\" /}"
 ...

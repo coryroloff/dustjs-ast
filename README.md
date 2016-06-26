@@ -102,12 +102,18 @@ dust.print(ast); //=> <h1>{hello}, {world}!</h1>
 | key      | [Key](#key--node)                                                                                  |
 | value    | [Identifier](#identifier--node), [Inline](#inline--block), [NumericLiteral](#numericliteral--node) |
 
+| Constant | Type                                                                                              |
+| -------- | ------------------------------------------------------------------------------------------------- |
+| Partial  | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| Block    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+
 ### Partial ⇒ [Node](#node)
 
 A Partial is defined as matching a opening brace followed by a > plus anything that matches with key or inline plus context plus params followed by slash and closing brace.
 
 | Property | Type                                                                                                                         |
 | -------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| kind     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                            |
 | value    | [Key](#key--node), [Inline](#inline--block)                                                                                  |
 | context  | [Identifier](#identifier--node)                                                                                              |
 | params   | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[Param](#param--node)&gt; |
