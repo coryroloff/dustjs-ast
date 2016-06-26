@@ -2,12 +2,14 @@
   "name": "dustjs-ast",
   "version": "1.0.0",
   "description": "A custom abstract syntax tree for Dust.js",
+  "homepage": "https://github.com/coryroloff/dustjs-ast",
   "scripts": {
     "test": "nyc --reporter=text --reporter=lcov mocha test/**/*-spec.js",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint lib test scripts webpack.config.js",
     "fixtures": "babel-node scripts/fixtures.js",
-    "docs": "babel-node scripts/docs.js"
+    "docs": "babel-node scripts/docs.js",
+    "prepublish": "webpack"
   },
   "bin": {
     "dustjs-ast": "bin/dustjs-ast.js"
@@ -48,5 +50,9 @@
   },
   "dependencies": {
     "commander": "^2.9.0"
-  }
+  },
+  "files": [
+    "dist/dustjs-ast.js",
+    "bin/dustjs-ast.js"
+  ]
 }
