@@ -30,9 +30,9 @@
 					},
 					"value": {
 						"type": "NumericLiteral",
-						"value": 562.123426,
+						"value": 1,
 						"start": 18,
-						"end": 28,
+						"end": 19,
 						"loc": {
 							"start": {
 								"line": 1,
@@ -40,12 +40,12 @@
 							},
 							"end": {
 								"line": 1,
-								"column": 28
+								"column": 19
 							}
 						}
 					},
 					"start": 10,
-					"end": 28,
+					"end": 19,
 					"loc": {
 						"start": {
 							"line": 1,
@@ -53,7 +53,7 @@
 						},
 						"end": {
 							"line": 1,
-							"column": 28
+							"column": 19
 						}
 					}
 				}
@@ -98,7 +98,7 @@
 				"body": []
 			},
 			"start": 0,
-			"end": 30,
+			"end": 22,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -106,7 +106,7 @@
 				},
 				"end": {
 					"line": 1,
-					"column": 30
+					"column": 22
 				}
 			}
 		}
@@ -210,9 +210,9 @@
 		},
 		{
 			"type": "NumericLiteral",
-			"value": "562.123426",
+			"value": "1",
 			"start": 18,
-			"end": 28,
+			"end": 19,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -220,45 +220,61 @@
 				},
 				"end": {
 					"line": 1,
-					"column": 28
+					"column": 19
+				}
+			}
+		},
+		{
+			"type": "Format",
+			"value": " ",
+			"start": 19,
+			"end": 20,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 19
+				},
+				"end": {
+					"line": 1,
+					"column": 20
 				}
 			}
 		},
 		{
 			"type": "Punctuator",
 			"value": "/",
-			"start": 28,
-			"end": 29,
+			"start": 20,
+			"end": 21,
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 28
+					"column": 20
 				},
 				"end": {
 					"line": 1,
-					"column": 29
+					"column": 21
 				}
 			}
 		},
 		{
 			"type": "Punctuator",
 			"value": "}",
-			"start": 29,
-			"end": 30,
+			"start": 21,
+			"end": 22,
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 29
+					"column": 21
 				},
 				"end": {
 					"line": 1,
-					"column": 30
+					"column": 22
 				}
 			}
 		}
 	],
 	"start": 0,
-	"end": 30,
+	"end": 22,
 	"loc": {
 		"start": {
 			"line": 1,
@@ -266,7 +282,7 @@
 		},
 		"end": {
 			"line": 1,
-			"column": 30
+			"column": 22
 		}
 	}
 }

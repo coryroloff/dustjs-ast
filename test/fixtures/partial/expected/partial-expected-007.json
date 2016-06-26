@@ -7,76 +7,10 @@
 				"type": "Inline",
 				"body": [
 					{
-						"type": "Reference",
-						"id": {
-							"type": "Identifier",
-							"path": [
-								{
-									"type": "Key",
-									"name": "one",
-									"start": 6,
-									"end": 9,
-									"loc": {
-										"start": {
-											"line": 2,
-											"column": 6
-										},
-										"end": {
-											"line": 2,
-											"column": 9
-										}
-									}
-								},
-								{
-									"type": "Key",
-									"name": "two",
-									"start": 10,
-									"end": 13,
-									"loc": {
-										"start": {
-											"line": 2,
-											"column": 10
-										},
-										"end": {
-											"line": 2,
-											"column": 13
-										}
-									}
-								},
-								{
-									"type": "Key",
-									"name": "three",
-									"start": 14,
-									"end": 19,
-									"loc": {
-										"start": {
-											"line": 2,
-											"column": 14
-										},
-										"end": {
-											"line": 2,
-											"column": 19
-										}
-									}
-								}
-							],
-							"localContext": true,
-							"start": 5,
-							"end": 19,
-							"loc": {
-								"start": {
-									"line": 2,
-									"column": 5
-								},
-								"end": {
-									"line": 2,
-									"column": 19
-								}
-							}
-						},
-						"filters": [],
+						"type": "StringLiteral",
+						"value": "thing",
 						"start": 4,
-						"end": 20,
+						"end": 9,
 						"loc": {
 							"start": {
 								"line": 2,
@@ -84,13 +18,13 @@
 							},
 							"end": {
 								"line": 1,
-								"column": 20
+								"column": 9
 							}
 						}
 					}
 				],
 				"start": 3,
-				"end": 21,
+				"end": 10,
 				"loc": {
 					"start": {
 						"line": 1,
@@ -98,14 +32,145 @@
 					},
 					"end": {
 						"line": 1,
-						"column": 21
+						"column": 10
 					}
 				}
 			},
 			"context": null,
-			"params": [],
+			"params": [
+				{
+					"type": "Param",
+					"key": {
+						"type": "Key",
+						"name": "myparam",
+						"start": 11,
+						"end": 18,
+						"loc": {
+							"start": {
+								"line": 1,
+								"column": 11
+							},
+							"end": {
+								"line": 1,
+								"column": 18
+							}
+						}
+					},
+					"value": {
+						"type": "Inline",
+						"body": [
+							{
+								"type": "StringLiteral",
+								"value": "start",
+								"start": 20,
+								"end": 25,
+								"loc": {
+									"start": {
+										"line": 2,
+										"column": 20
+									},
+									"end": {
+										"line": 2,
+										"column": 25
+									}
+								}
+							},
+							{
+								"type": "Reference",
+								"id": {
+									"type": "Identifier",
+									"path": [
+										{
+											"type": "Key",
+											"name": "ref",
+											"start": 26,
+											"end": 29,
+											"loc": {
+												"start": {
+													"line": 2,
+													"column": 26
+												},
+												"end": {
+													"line": 2,
+													"column": 29
+												}
+											}
+										}
+									],
+									"localContext": false,
+									"start": 26,
+									"end": 29,
+									"loc": {
+										"start": {
+											"line": 2,
+											"column": 26
+										},
+										"end": {
+											"line": 2,
+											"column": 29
+										}
+									}
+								},
+								"filters": [],
+								"start": 25,
+								"end": 30,
+								"loc": {
+									"start": {
+										"line": 2,
+										"column": 25
+									},
+									"end": {
+										"line": 2,
+										"column": 30
+									}
+								}
+							},
+							{
+								"type": "StringLiteral",
+								"value": "end",
+								"start": 30,
+								"end": 33,
+								"loc": {
+									"start": {
+										"line": 2,
+										"column": 30
+									},
+									"end": {
+										"line": 1,
+										"column": 33
+									}
+								}
+							}
+						],
+						"start": 19,
+						"end": 34,
+						"loc": {
+							"start": {
+								"line": 1,
+								"column": 19
+							},
+							"end": {
+								"line": 1,
+								"column": 34
+							}
+						}
+					},
+					"start": 11,
+					"end": 34,
+					"loc": {
+						"start": {
+							"line": 1,
+							"column": 11
+						},
+						"end": {
+							"line": 1,
+							"column": 34
+						}
+					}
+				}
+			],
 			"start": 0,
-			"end": 24,
+			"end": 37,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -113,7 +178,7 @@
 				},
 				"end": {
 					"line": 1,
-					"column": 24
+					"column": 37
 				}
 			}
 		}
@@ -184,200 +249,248 @@
 			}
 		},
 		{
-			"type": "Punctuator",
-			"value": "{",
+			"type": "StringLiteral",
+			"value": "thing",
 			"start": 4,
-			"end": 5,
+			"end": 9,
 			"loc": {
 				"start": {
 					"line": 2,
 					"column": 4
 				},
 				"end": {
-					"line": 2,
-					"column": 5
-				}
-			}
-		},
-		{
-			"type": "Punctuator",
-			"value": ".",
-			"start": 5,
-			"end": 6,
-			"loc": {
-				"start": {
-					"line": 2,
-					"column": 5
-				},
-				"end": {
-					"line": 2,
-					"column": 6
-				}
-			}
-		},
-		{
-			"type": "Key",
-			"value": "one",
-			"start": 6,
-			"end": 9,
-			"loc": {
-				"start": {
-					"line": 2,
-					"column": 6
-				},
-				"end": {
-					"line": 2,
-					"column": 9
-				}
-			}
-		},
-		{
-			"type": "Punctuator",
-			"value": ".",
-			"start": 9,
-			"end": 10,
-			"loc": {
-				"start": {
-					"line": 2,
-					"column": 9
-				},
-				"end": {
-					"line": 2,
-					"column": 10
-				}
-			}
-		},
-		{
-			"type": "Key",
-			"value": "two",
-			"start": 10,
-			"end": 13,
-			"loc": {
-				"start": {
-					"line": 2,
-					"column": 10
-				},
-				"end": {
-					"line": 2,
-					"column": 13
-				}
-			}
-		},
-		{
-			"type": "Punctuator",
-			"value": ".",
-			"start": 13,
-			"end": 14,
-			"loc": {
-				"start": {
-					"line": 2,
-					"column": 13
-				},
-				"end": {
-					"line": 2,
-					"column": 14
-				}
-			}
-		},
-		{
-			"type": "Key",
-			"value": "three",
-			"start": 14,
-			"end": 19,
-			"loc": {
-				"start": {
-					"line": 2,
-					"column": 14
-				},
-				"end": {
-					"line": 2,
-					"column": 19
-				}
-			}
-		},
-		{
-			"type": "Punctuator",
-			"value": "}",
-			"start": 19,
-			"end": 20,
-			"loc": {
-				"start": {
-					"line": 2,
-					"column": 19
-				},
-				"end": {
 					"line": 1,
-					"column": 20
+					"column": 9
 				}
 			}
 		},
 		{
 			"type": "Punctuator",
 			"value": "\"",
-			"start": 20,
-			"end": 21,
+			"start": 9,
+			"end": 10,
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 20
+					"column": 9
 				},
 				"end": {
 					"line": 1,
-					"column": 21
+					"column": 10
 				}
 			}
 		},
 		{
 			"type": "Format",
 			"value": " ",
-			"start": 21,
-			"end": 22,
+			"start": 10,
+			"end": 11,
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 21
+					"column": 10
 				},
 				"end": {
 					"line": 1,
-					"column": 22
+					"column": 11
+				}
+			}
+		},
+		{
+			"type": "Key",
+			"value": "myparam",
+			"start": 11,
+			"end": 18,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 11
+				},
+				"end": {
+					"line": 1,
+					"column": 18
 				}
 			}
 		},
 		{
 			"type": "Punctuator",
-			"value": "/",
-			"start": 22,
-			"end": 23,
+			"value": "=",
+			"start": 18,
+			"end": 19,
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 22
+					"column": 18
 				},
 				"end": {
 					"line": 1,
-					"column": 23
+					"column": 19
+				}
+			}
+		},
+		{
+			"type": "Punctuator",
+			"value": "\"",
+			"start": 19,
+			"end": 20,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 19
+				},
+				"end": {
+					"line": 2,
+					"column": 20
+				}
+			}
+		},
+		{
+			"type": "StringLiteral",
+			"value": "start",
+			"start": 20,
+			"end": 25,
+			"loc": {
+				"start": {
+					"line": 2,
+					"column": 20
+				},
+				"end": {
+					"line": 2,
+					"column": 25
+				}
+			}
+		},
+		{
+			"type": "Punctuator",
+			"value": "{",
+			"start": 25,
+			"end": 26,
+			"loc": {
+				"start": {
+					"line": 2,
+					"column": 25
+				},
+				"end": {
+					"line": 2,
+					"column": 26
+				}
+			}
+		},
+		{
+			"type": "Key",
+			"value": "ref",
+			"start": 26,
+			"end": 29,
+			"loc": {
+				"start": {
+					"line": 2,
+					"column": 26
+				},
+				"end": {
+					"line": 2,
+					"column": 29
 				}
 			}
 		},
 		{
 			"type": "Punctuator",
 			"value": "}",
-			"start": 23,
-			"end": 24,
+			"start": 29,
+			"end": 30,
 			"loc": {
 				"start": {
-					"line": 1,
-					"column": 23
+					"line": 2,
+					"column": 29
+				},
+				"end": {
+					"line": 2,
+					"column": 30
+				}
+			}
+		},
+		{
+			"type": "StringLiteral",
+			"value": "end",
+			"start": 30,
+			"end": 33,
+			"loc": {
+				"start": {
+					"line": 2,
+					"column": 30
 				},
 				"end": {
 					"line": 1,
-					"column": 24
+					"column": 33
+				}
+			}
+		},
+		{
+			"type": "Punctuator",
+			"value": "\"",
+			"start": 33,
+			"end": 34,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 33
+				},
+				"end": {
+					"line": 1,
+					"column": 34
+				}
+			}
+		},
+		{
+			"type": "Format",
+			"value": " ",
+			"start": 34,
+			"end": 35,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 34
+				},
+				"end": {
+					"line": 1,
+					"column": 35
+				}
+			}
+		},
+		{
+			"type": "Punctuator",
+			"value": "/",
+			"start": 35,
+			"end": 36,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 35
+				},
+				"end": {
+					"line": 1,
+					"column": 36
+				}
+			}
+		},
+		{
+			"type": "Punctuator",
+			"value": "}",
+			"start": 36,
+			"end": 37,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 36
+				},
+				"end": {
+					"line": 1,
+					"column": 37
 				}
 			}
 		}
 	],
 	"start": 0,
-	"end": 24,
+	"end": 37,
 	"loc": {
 		"start": {
 			"line": 1,
@@ -385,7 +498,7 @@
 		},
 		"end": {
 			"line": 1,
-			"column": 24
+			"column": 37
 		}
 	}
 }

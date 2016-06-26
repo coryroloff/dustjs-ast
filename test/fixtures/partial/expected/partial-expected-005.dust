@@ -1,1 +1,1 @@
-{> "thing" myparam=443.2 /}
+{> "thing" myparam="literal" /}

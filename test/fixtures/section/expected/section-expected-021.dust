@@ -1,1 +1,1 @@
-{#  hey     /}
+{#  hey:a.b.c     param1=1       param2=2    }{/         hey         }

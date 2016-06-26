@@ -10,59 +10,91 @@
 						{
 							"type": "Buffer",
 							"text": "",
-							"start": 9,
-							"end": 10,
+							"start": 17,
+							"end": 18,
 							"loc": {
 								"start": {
 									"line": 1,
-									"column": 9
+									"column": 17
 								},
 								"end": {
 									"line": 1,
-									"column": 9
+									"column": 17
 								}
 							}
 						}
 					],
-					"start": 9,
-					"end": 10,
+					"start": 17,
+					"end": 18,
 					"loc": {
 						"start": {
 							"line": 1,
-							"column": 9
+							"column": 17
 						},
 						"end": {
 							"line": 1,
-							"column": 9
+							"column": 17
 						}
 					}
 				}
 			],
 			"params": [],
-			"kind": "%",
+			"kind": "#",
 			"id": {
 				"type": "Identifier",
 				"path": [
 					{
 						"type": "Key",
-						"name": "pragma",
-						"start": 2,
-						"end": 8,
+						"name": "one",
+						"start": 3,
+						"end": 6,
 						"loc": {
 							"start": {
 								"line": 1,
-								"column": 2
+								"column": 3
 							},
 							"end": {
 								"line": 1,
-								"column": 8
+								"column": 6
+							}
+						}
+					},
+					{
+						"type": "Key",
+						"name": "two",
+						"start": 7,
+						"end": 10,
+						"loc": {
+							"start": {
+								"line": 1,
+								"column": 7
+							},
+							"end": {
+								"line": 1,
+								"column": 10
+							}
+						}
+					},
+					{
+						"type": "Key",
+						"name": "three",
+						"start": 11,
+						"end": 16,
+						"loc": {
+							"start": {
+								"line": 1,
+								"column": 11
+							},
+							"end": {
+								"line": 1,
+								"column": 16
 							}
 						}
 					}
 				],
-				"localContext": false,
+				"localContext": true,
 				"start": 2,
-				"end": 8,
+				"end": 16,
 				"loc": {
 					"start": {
 						"line": 1,
@@ -70,12 +102,12 @@
 					},
 					"end": {
 						"line": 1,
-						"column": 8
+						"column": 16
 					}
 				}
 			},
 			"start": 0,
-			"end": 18,
+			"end": 34,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -83,7 +115,7 @@
 				},
 				"end": {
 					"line": 1,
-					"column": 18
+					"column": 34
 				}
 			}
 		}
@@ -107,7 +139,7 @@
 		},
 		{
 			"type": "Punctuator",
-			"value": "%",
+			"value": "#",
 			"start": 1,
 			"end": 2,
 			"loc": {
@@ -122,10 +154,10 @@
 			}
 		},
 		{
-			"type": "Key",
-			"value": "pragma",
+			"type": "Punctuator",
+			"value": ".",
 			"start": 2,
-			"end": 8,
+			"end": 3,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -133,35 +165,51 @@
 				},
 				"end": {
 					"line": 1,
-					"column": 8
+					"column": 3
 				}
 			}
 		},
 		{
-			"type": "Punctuator",
-			"value": "}",
-			"start": 8,
-			"end": 9,
+			"type": "Key",
+			"value": "one",
+			"start": 3,
+			"end": 6,
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 8
+					"column": 3
 				},
 				"end": {
 					"line": 1,
-					"column": 9
+					"column": 6
 				}
 			}
 		},
 		{
 			"type": "Punctuator",
-			"value": "{",
-			"start": 9,
+			"value": ".",
+			"start": 6,
+			"end": 7,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 6
+				},
+				"end": {
+					"line": 1,
+					"column": 7
+				}
+			}
+		},
+		{
+			"type": "Key",
+			"value": "two",
+			"start": 7,
 			"end": 10,
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 9
+					"column": 7
 				},
 				"end": {
 					"line": 1,
@@ -171,7 +219,7 @@
 		},
 		{
 			"type": "Punctuator",
-			"value": "/",
+			"value": ".",
 			"start": 10,
 			"end": 11,
 			"loc": {
@@ -187,13 +235,29 @@
 		},
 		{
 			"type": "Key",
-			"value": "pragma",
+			"value": "three",
 			"start": 11,
-			"end": 17,
+			"end": 16,
 			"loc": {
 				"start": {
 					"line": 1,
 					"column": 11
+				},
+				"end": {
+					"line": 1,
+					"column": 16
+				}
+			}
+		},
+		{
+			"type": "Punctuator",
+			"value": "}",
+			"start": 16,
+			"end": 17,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 16
 				},
 				"end": {
 					"line": 1,
@@ -203,7 +267,7 @@
 		},
 		{
 			"type": "Punctuator",
-			"value": "}",
+			"value": "{",
 			"start": 17,
 			"end": 18,
 			"loc": {
@@ -216,10 +280,138 @@
 					"column": 18
 				}
 			}
+		},
+		{
+			"type": "Punctuator",
+			"value": "/",
+			"start": 18,
+			"end": 19,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 18
+				},
+				"end": {
+					"line": 1,
+					"column": 19
+				}
+			}
+		},
+		{
+			"type": "Punctuator",
+			"value": ".",
+			"start": 19,
+			"end": 20,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 19
+				},
+				"end": {
+					"line": 1,
+					"column": 20
+				}
+			}
+		},
+		{
+			"type": "Key",
+			"value": "one",
+			"start": 20,
+			"end": 23,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 20
+				},
+				"end": {
+					"line": 1,
+					"column": 23
+				}
+			}
+		},
+		{
+			"type": "Punctuator",
+			"value": ".",
+			"start": 23,
+			"end": 24,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 23
+				},
+				"end": {
+					"line": 1,
+					"column": 24
+				}
+			}
+		},
+		{
+			"type": "Key",
+			"value": "two",
+			"start": 24,
+			"end": 27,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 24
+				},
+				"end": {
+					"line": 1,
+					"column": 27
+				}
+			}
+		},
+		{
+			"type": "Punctuator",
+			"value": ".",
+			"start": 27,
+			"end": 28,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 27
+				},
+				"end": {
+					"line": 1,
+					"column": 28
+				}
+			}
+		},
+		{
+			"type": "Key",
+			"value": "three",
+			"start": 28,
+			"end": 33,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 28
+				},
+				"end": {
+					"line": 1,
+					"column": 33
+				}
+			}
+		},
+		{
+			"type": "Punctuator",
+			"value": "}",
+			"start": 33,
+			"end": 34,
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 33
+				},
+				"end": {
+					"line": 1,
+					"column": 34
+				}
+			}
 		}
 	],
 	"start": 0,
-	"end": 18,
+	"end": 34,
 	"loc": {
 		"start": {
 			"line": 1,
@@ -227,7 +419,7 @@
 		},
 		"end": {
 			"line": 1,
-			"column": 18
+			"column": 34
 		}
 	}
 }

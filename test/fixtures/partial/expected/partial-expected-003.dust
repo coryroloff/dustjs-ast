@@ -1,1 +1,1 @@
-{> "thing":my.context /}
+{> "this is {variable-here} my partial" /}

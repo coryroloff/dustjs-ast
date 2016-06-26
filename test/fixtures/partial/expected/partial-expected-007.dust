@@ -1,1 +1,1 @@
-{> "{.one.two.three}" /}
+{> "thing" myparam="start{ref}end" /}

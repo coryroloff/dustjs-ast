@@ -39,6 +39,7 @@
 - context: section
   expected:
     - "{#standard}{/standard}"
+    - "{#standard param=\"\" }{/standard}"
     - "{#standard}{#inner-standard}{/inner-standard}{/standard}"
     - "{?exists}{/exists}"
     - "{^not-exists}{/not-exists}"
@@ -90,6 +91,7 @@
 - context: partial
   expected:
     - "{>\"mypartial\" /}"
+    - "{>\"\" /}"
     - "{> \"this is {variable-here} my partial\" /}"
     - "{> \"thing\":my.context /}"
     - "{> \"thing\" myparam=\"literal\" /}"

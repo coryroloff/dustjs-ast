@@ -5,107 +5,24 @@
 			"type": "Partial",
 			"value": {
 				"type": "Inline",
-				"body": [
-					{
-						"type": "StringLiteral",
-						"value": "this is ",
-						"start": 4,
-						"end": 12,
-						"loc": {
-							"start": {
-								"line": 2,
-								"column": 4
-							},
-							"end": {
-								"line": 2,
-								"column": 12
-							}
-						}
-					},
-					{
-						"type": "Reference",
-						"id": {
-							"type": "Identifier",
-							"path": [
-								{
-									"type": "Key",
-									"name": "variable-here",
-									"start": 13,
-									"end": 26,
-									"loc": {
-										"start": {
-											"line": 2,
-											"column": 13
-										},
-										"end": {
-											"line": 2,
-											"column": 26
-										}
-									}
-								}
-							],
-							"localContext": false,
-							"start": 13,
-							"end": 26,
-							"loc": {
-								"start": {
-									"line": 2,
-									"column": 13
-								},
-								"end": {
-									"line": 2,
-									"column": 26
-								}
-							}
-						},
-						"filters": [],
-						"start": 12,
-						"end": 27,
-						"loc": {
-							"start": {
-								"line": 2,
-								"column": 12
-							},
-							"end": {
-								"line": 2,
-								"column": 27
-							}
-						}
-					},
-					{
-						"type": "StringLiteral",
-						"value": " my partial",
-						"start": 27,
-						"end": 38,
-						"loc": {
-							"start": {
-								"line": 2,
-								"column": 27
-							},
-							"end": {
-								"line": 1,
-								"column": 38
-							}
-						}
-					}
-				],
-				"start": 3,
-				"end": 39,
+				"body": [],
+				"start": 2,
+				"end": 4,
 				"loc": {
 					"start": {
 						"line": 1,
-						"column": 3
+						"column": 2
 					},
 					"end": {
 						"line": 1,
-						"column": 39
+						"column": 4
 					}
 				}
 			},
 			"context": null,
 			"params": [],
 			"start": 0,
-			"end": 42,
+			"end": 7,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -113,7 +30,7 @@
 				},
 				"end": {
 					"line": 1,
-					"column": 42
+					"column": 7
 				}
 			}
 		}
@@ -152,8 +69,8 @@
 			}
 		},
 		{
-			"type": "Format",
-			"value": " ",
+			"type": "Punctuator",
+			"value": "\"",
 			"start": 2,
 			"end": 3,
 			"loc": {
@@ -178,158 +95,62 @@
 					"column": 3
 				},
 				"end": {
-					"line": 2,
+					"line": 1,
 					"column": 4
-				}
-			}
-		},
-		{
-			"type": "StringLiteral",
-			"value": "this is ",
-			"start": 4,
-			"end": 12,
-			"loc": {
-				"start": {
-					"line": 2,
-					"column": 4
-				},
-				"end": {
-					"line": 2,
-					"column": 12
-				}
-			}
-		},
-		{
-			"type": "Punctuator",
-			"value": "{",
-			"start": 12,
-			"end": 13,
-			"loc": {
-				"start": {
-					"line": 2,
-					"column": 12
-				},
-				"end": {
-					"line": 2,
-					"column": 13
-				}
-			}
-		},
-		{
-			"type": "Key",
-			"value": "variable-here",
-			"start": 13,
-			"end": 26,
-			"loc": {
-				"start": {
-					"line": 2,
-					"column": 13
-				},
-				"end": {
-					"line": 2,
-					"column": 26
-				}
-			}
-		},
-		{
-			"type": "Punctuator",
-			"value": "}",
-			"start": 26,
-			"end": 27,
-			"loc": {
-				"start": {
-					"line": 2,
-					"column": 26
-				},
-				"end": {
-					"line": 2,
-					"column": 27
-				}
-			}
-		},
-		{
-			"type": "StringLiteral",
-			"value": " my partial",
-			"start": 27,
-			"end": 38,
-			"loc": {
-				"start": {
-					"line": 2,
-					"column": 27
-				},
-				"end": {
-					"line": 1,
-					"column": 38
-				}
-			}
-		},
-		{
-			"type": "Punctuator",
-			"value": "\"",
-			"start": 38,
-			"end": 39,
-			"loc": {
-				"start": {
-					"line": 1,
-					"column": 38
-				},
-				"end": {
-					"line": 1,
-					"column": 39
 				}
 			}
 		},
 		{
 			"type": "Format",
 			"value": " ",
-			"start": 39,
-			"end": 40,
+			"start": 4,
+			"end": 5,
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 39
+					"column": 4
 				},
 				"end": {
 					"line": 1,
-					"column": 40
+					"column": 5
 				}
 			}
 		},
 		{
 			"type": "Punctuator",
 			"value": "/",
-			"start": 40,
-			"end": 41,
+			"start": 5,
+			"end": 6,
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 40
+					"column": 5
 				},
 				"end": {
 					"line": 1,
-					"column": 41
+					"column": 6
 				}
 			}
 		},
 		{
 			"type": "Punctuator",
 			"value": "}",
-			"start": 41,
-			"end": 42,
+			"start": 6,
+			"end": 7,
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 41
+					"column": 6
 				},
 				"end": {
 					"line": 1,
-					"column": 42
+					"column": 7
 				}
 			}
 		}
 	],
 	"start": 0,
-	"end": 42,
+	"end": 7,
 	"loc": {
 		"start": {
 			"line": 1,
@@ -337,7 +158,7 @@
 		},
 		"end": {
 			"line": 1,
-			"column": 42
+			"column": 7
 		}
 	}
 }

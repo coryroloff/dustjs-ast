@@ -8,13 +8,13 @@
 				"body": [
 					{
 						"type": "StringLiteral",
-						"value": "thing",
-						"start": 4,
+						"value": "hey",
+						"start": 6,
 						"end": 9,
 						"loc": {
 							"start": {
 								"line": 2,
-								"column": 4
+								"column": 6
 							},
 							"end": {
 								"line": 1,
@@ -23,12 +23,12 @@
 						}
 					}
 				],
-				"start": 3,
+				"start": 5,
 				"end": 10,
 				"loc": {
 					"start": {
 						"line": 1,
-						"column": 3
+						"column": 5
 					},
 					"end": {
 						"line": 1,
@@ -37,57 +37,9 @@
 				}
 			},
 			"context": null,
-			"params": [
-				{
-					"type": "Param",
-					"key": {
-						"type": "Key",
-						"name": "myparam",
-						"start": 11,
-						"end": 18,
-						"loc": {
-							"start": {
-								"line": 1,
-								"column": 11
-							},
-							"end": {
-								"line": 1,
-								"column": 18
-							}
-						}
-					},
-					"value": {
-						"type": "NumericLiteral",
-						"value": 443.2,
-						"start": 19,
-						"end": 24,
-						"loc": {
-							"start": {
-								"line": 1,
-								"column": 19
-							},
-							"end": {
-								"line": 1,
-								"column": 24
-							}
-						}
-					},
-					"start": 11,
-					"end": 24,
-					"loc": {
-						"start": {
-							"line": 1,
-							"column": 11
-						},
-						"end": {
-							"line": 1,
-							"column": 24
-						}
-					}
-				}
-			],
+			"params": [],
 			"start": 0,
-			"end": 27,
+			"end": 15,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -95,7 +47,7 @@
 				},
 				"end": {
 					"line": 1,
-					"column": 27
+					"column": 15
 				}
 			}
 		}
@@ -135,9 +87,9 @@
 		},
 		{
 			"type": "Format",
-			"value": " ",
+			"value": "   ",
 			"start": 2,
-			"end": 3,
+			"end": 5,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -145,35 +97,35 @@
 				},
 				"end": {
 					"line": 1,
-					"column": 3
+					"column": 5
 				}
 			}
 		},
 		{
 			"type": "Punctuator",
 			"value": "\"",
-			"start": 3,
-			"end": 4,
+			"start": 5,
+			"end": 6,
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 3
+					"column": 5
 				},
 				"end": {
 					"line": 2,
-					"column": 4
+					"column": 6
 				}
 			}
 		},
 		{
 			"type": "StringLiteral",
-			"value": "thing",
-			"start": 4,
+			"value": "hey",
+			"start": 6,
 			"end": 9,
 			"loc": {
 				"start": {
 					"line": 2,
-					"column": 4
+					"column": 6
 				},
 				"end": {
 					"line": 1,
@@ -199,9 +151,9 @@
 		},
 		{
 			"type": "Format",
-			"value": " ",
+			"value": "   ",
 			"start": 10,
-			"end": 11,
+			"end": 13,
 			"loc": {
 				"start": {
 					"line": 1,
@@ -209,109 +161,45 @@
 				},
 				"end": {
 					"line": 1,
-					"column": 11
-				}
-			}
-		},
-		{
-			"type": "Key",
-			"value": "myparam",
-			"start": 11,
-			"end": 18,
-			"loc": {
-				"start": {
-					"line": 1,
-					"column": 11
-				},
-				"end": {
-					"line": 1,
-					"column": 18
-				}
-			}
-		},
-		{
-			"type": "Punctuator",
-			"value": "=",
-			"start": 18,
-			"end": 19,
-			"loc": {
-				"start": {
-					"line": 1,
-					"column": 18
-				},
-				"end": {
-					"line": 1,
-					"column": 19
-				}
-			}
-		},
-		{
-			"type": "NumericLiteral",
-			"value": "443.2",
-			"start": 19,
-			"end": 24,
-			"loc": {
-				"start": {
-					"line": 1,
-					"column": 19
-				},
-				"end": {
-					"line": 1,
-					"column": 24
-				}
-			}
-		},
-		{
-			"type": "Format",
-			"value": " ",
-			"start": 24,
-			"end": 25,
-			"loc": {
-				"start": {
-					"line": 1,
-					"column": 24
-				},
-				"end": {
-					"line": 1,
-					"column": 25
+					"column": 13
 				}
 			}
 		},
 		{
 			"type": "Punctuator",
 			"value": "/",
-			"start": 25,
-			"end": 26,
+			"start": 13,
+			"end": 14,
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 25
+					"column": 13
 				},
 				"end": {
 					"line": 1,
-					"column": 26
+					"column": 14
 				}
 			}
 		},
 		{
 			"type": "Punctuator",
 			"value": "}",
-			"start": 26,
-			"end": 27,
+			"start": 14,
+			"end": 15,
 			"loc": {
 				"start": {
 					"line": 1,
-					"column": 26
+					"column": 14
 				},
 				"end": {
 					"line": 1,
-					"column": 27
+					"column": 15
 				}
 			}
 		}
 	],
 	"start": 0,
-	"end": 27,
+	"end": 15,
 	"loc": {
 		"start": {
 			"line": 1,
@@ -319,7 +207,7 @@
 		},
 		"end": {
 			"line": 1,
-			"column": 27
+			"column": 15
 		}
 	}
 }

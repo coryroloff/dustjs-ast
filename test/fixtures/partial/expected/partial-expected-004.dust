@@ -1,1 +1,1 @@
-{> "thing" myparam="literal" /}
+{> "thing":my.context /}

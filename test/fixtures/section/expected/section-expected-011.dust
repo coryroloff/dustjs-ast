@@ -1,1 +1,1 @@
-{?exists}block{:else}else{:custom}custom{/exists}
+{#section key=value newKey=three.two.one /}

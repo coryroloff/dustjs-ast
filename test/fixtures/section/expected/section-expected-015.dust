@@ -1,1 +1,1 @@
-{#section myparam=1 /}
+{#section myparam="starting {~lb} right here {one.two} {~rb} ending over here"}{/section}
