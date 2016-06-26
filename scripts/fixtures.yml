@@ -69,10 +69,15 @@
     - "{#standard}{?exists}{/not-exists}{/standard}"
     - "{?exists|js}{/exists}"
     - "{#section key=@ /}"
+    - "{#section \n /}"
+    - "{#section key=1 \n key=2 /}"
     - "{+block}{/#}"
     - "{<inline.partial}{/inline.one}"
+    - "{<inline.partial}{/inline.one \n }"
     - "{<inline.partial}{/inline.^}"
     - "{^not.exists}{/not.exists.here}"
+    - "{^ \n not.exists}{/not.exists.here}"
+    - "{+block \n }{/#}"
 - context: comment
   expected:
     - "{! {?exists}{@helper param=\"hello\"/}, {world}!{/exists} !}"
@@ -101,4 +106,7 @@
     - "{> \"{.one.two.three}\" /}"
     - "{>   \"hey\"   /}"
     - "{+ \"hey\" /}"
+  unexpected:
+    - "{> \n \"mypartial\" /}"
+    - "{> \"mypartial\" \n /}"
 ...

@@ -2,12 +2,12 @@
 	"token": {
 		"type": "Format",
 		"value": " \n ",
-		"start": 15,
-		"end": 18,
+		"start": 7,
+		"end": 10,
 		"loc": {
 			"start": {
 				"line": 1,
-				"column": 15
+				"column": 7
 			},
 			"end": {
 				"line": 2,

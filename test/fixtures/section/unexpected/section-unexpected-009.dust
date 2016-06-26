@@ -1,1 +1,2 @@
-{<inline.partial}{/inline.one}
+{#section key=1 
+ key=2 /}
