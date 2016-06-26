@@ -11,7 +11,7 @@
 							"type": "Buffer",
 							"text": "",
 							"start": 13,
-							"end": 14,
+							"end": 13,
 							"loc": {
 								"start": {
 									"line": 1,
@@ -25,7 +25,7 @@
 						}
 					],
 					"start": 13,
-					"end": 14,
+					"end": 13,
 					"loc": {
 						"start": {
 							"line": 1,
