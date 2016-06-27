@@ -14,7 +14,7 @@
 - class: Comment
   extends: Node
   properties:
-  - name: text
+  - name: value
     type: String
 
 - class: Format

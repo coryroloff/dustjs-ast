@@ -3,7 +3,7 @@
 	"body": [
 		{
 			"type": "Comment",
-			"text": " {?exists}{@helper param=\"hello\"/}, {world}!{/exists} ",
+			"value": " {?exists}{@helper param=\"hello\"/}, {world}!{/exists} ",
 			"start": 0,
 			"end": 58,
 			"loc": {
