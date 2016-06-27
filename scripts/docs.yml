@@ -8,7 +8,7 @@
 - class: Buffer
   extends: Node
   properties:
-  - name: text
+  - name: value
     type: String
 
 - class: Comment

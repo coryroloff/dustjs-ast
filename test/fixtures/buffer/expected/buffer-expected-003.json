@@ -3,7 +3,7 @@
 	"body": [
 		{
 			"type": "Buffer",
-			"text": "<h1>hello,",
+			"value": "<h1>hello,",
 			"start": 0,
 			"end": 10,
 			"loc": {
@@ -35,7 +35,7 @@
 		},
 		{
 			"type": "Buffer",
-			"text": "world!</h1>",
+			"value": "world!</h1>",
 			"start": 11,
 			"end": 22,
 			"loc": {

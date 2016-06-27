@@ -31,7 +31,7 @@ dust.print(ast); //=> <h1>{hello}, {world}!</h1>
 
 | Property | Type                                                                                              |
 | -------- | ------------------------------------------------------------------------------------------------- |
-| text     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| value    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
 
 ### Comment ⇒ [Node](#node)
 

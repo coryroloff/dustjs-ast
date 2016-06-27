@@ -9,7 +9,7 @@
 					"body": [
 						{
 							"type": "Buffer",
-							"text": "<p>",
+							"value": "<p>",
 							"start": 8,
 							"end": 11,
 							"loc": {
@@ -75,7 +75,7 @@
 						},
 						{
 							"type": "Buffer",
-							"text": "</p>",
+							"value": "</p>",
 							"start": 22,
 							"end": 26,
 							"loc": {
