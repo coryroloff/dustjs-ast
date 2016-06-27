@@ -124,6 +124,12 @@
     type: Identifier
   - name: params
     type: Array<Param>
+  - name: format.afterStart
+    type: ?Format
+  - name: format.beforeParam
+    type: Array<Format>
+  - name: format.beforeEnd
+    type: ?Format
   constants:
   - name: Partial
     type: String

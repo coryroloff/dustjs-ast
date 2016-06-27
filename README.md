@@ -112,12 +112,15 @@ dust.print(ast); //=> <h1>{hello}, {world}!</h1>
 
 A Partial is defined as matching a opening brace followed by a > plus anything that matches with key or inline plus context plus params followed by slash and closing brace.
 
-| Property | Type                                                                                                                         |
-| -------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| kind     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                            |
-| value    | [Key](#key--node), [Inline](#inline--block)                                                                                  |
-| context  | [Identifier](#identifier--node)                                                                                              |
-| params   | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[Param](#param--node)&gt; |
+| Property           | Type                                                                                                                           |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| kind               | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                              |
+| value              | [Key](#key--node), [Inline](#inline--block)                                                                                    |
+| context            | [Identifier](#identifier--node)                                                                                                |
+| params             | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[Param](#param--node)&gt;   |
+| format.afterStart  | ?[Format](#format--node)                                                                                                       |
+| format.beforeParam | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[Format](#format--node)&gt; |
+| format.beforeEnd   | ?[Format](#format--node)                                                                                                       |
 
 | Constant | Type                                                                                              |
 | -------- | ------------------------------------------------------------------------------------------------- |

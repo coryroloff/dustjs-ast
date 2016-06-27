@@ -154,7 +154,7 @@
 			],
 			"params": [],
 			"format": {
-				"startTagAfterKind": null,
+				"startTagAfterStart": null,
 				"startTagBeforeParam": [],
 				"startTagBeforeEnd": null,
 				"endTagAfterStart": null,

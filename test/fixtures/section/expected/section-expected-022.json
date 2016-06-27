@@ -11,7 +11,7 @@
 			],
 			"params": [],
 			"format": {
-				"startTagAfterKind": {
+				"startTagAfterStart": {
 					"type": "Format",
 					"text": "  ",
 					"start": 2,

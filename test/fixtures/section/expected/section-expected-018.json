@@ -59,7 +59,7 @@
 				}
 			],
 			"format": {
-				"startTagAfterKind": null,
+				"startTagAfterStart": null,
 				"startTagBeforeParam": [
 					{
 						"type": "Format",
