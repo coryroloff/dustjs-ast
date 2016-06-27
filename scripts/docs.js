@@ -55,8 +55,8 @@ fs.writeFileSync("./README.md", readme);
 
 function props (data, header) {
 	if (!data) return;
-	const rows = [[header, "Type"]];
-	data.forEach(prop => rows.push([prop.name, type(prop.type)]));
+	const rows = [[header, "Type", "Description"]];
+	data.forEach(prop => rows.push([prop.name, type(prop.type), prop.description || "&nbsp;"]));
 	writeln(table(rows));
 }
 

@@ -134,22 +134,27 @@
   constants:
   - name: Partial
     type: String
+    description: ">"
   - name: Block
     type: String
+    description: "+"
 
 - class: Raw
   extends: Node
   properties:
   - name: value
     type: String
+    description: "{\\`**\\_\\_\\_hello, world!\\_\\_\\_**\\`}"
 
 - class: Reference
   extends: Node
   properties:
   - name: id
     type: Identifier
+    description: "{**reference**}"
   - name: filters
     type: Array<Key>
+    description: "{reference&#124;**js**&#124;**s**}"
 
 - class: Section
   extends: Block
@@ -157,37 +162,53 @@
   properties:
   - name: kind
     type: String
+    description: "{**#**section}{/section}"
   - name: id
     type: Identifier
+    description: "{#**section**}{/section}"
   - name: context
     type: ?Identifier
+    description: "{#section:**one.two.three**}{/section}"
   - name: params
     type: Array<Param>
+    description: "{#section **param1=1** **param2=2** **param3=3**}"
   - name: format.startTagAfterStart
     type: ?Format
+    description: "{#**___**section}{/section}"
   - name: format.startTagBeforeParam
     type: Array<Format>
+    description: "{#section**___**param1=1**___**param2=2**___**param3=3}{/section}"
   - name: format.startTagBeforeEnd
     type: ?Format
+    description: "{#section**___**}{/section} and {#section**___**/}"
   - name: format.endTagAfterStart
     type: ?Format
+    description: "{#section}{/**___**section}"
   - name: format.endTagBeforeEnd
     type: ?Format
+    description: "{#section}{/section**___**}"
   constants:
   - name: Standard
     type: String
+    description: "#"
   - name: Exists
     type: String
+    description: "?"
   - name: NotExists
     type: String
+    description: "^"
   - name: InlinePartial
     type: String
+    description: "<"
   - name: Block
     type: String
+    description: "+"
   - name: Helper
     type: String
+    description: "@"
   - name: Pragma
     type: String
+    description: "%"
 
 - class: Special
   extends: Node
