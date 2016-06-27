@@ -63,7 +63,7 @@
 				"startTagBeforeParam": [
 					{
 						"type": "Format",
-						"text": " ",
+						"value": " ",
 						"start": 9,
 						"end": 10,
 						"loc": {
@@ -80,7 +80,7 @@
 				],
 				"startTagBeforeEnd": {
 					"type": "Format",
-					"text": " ",
+					"value": " ",
 					"start": 19,
 					"end": 20,
 					"loc": {

@@ -137,7 +137,7 @@
 			"format": {
 				"startTagAfterStart": {
 					"type": "Format",
-					"text": "  ",
+					"value": "  ",
 					"start": 2,
 					"end": 4,
 					"loc": {
@@ -154,7 +154,7 @@
 				"startTagBeforeParam": [
 					{
 						"type": "Format",
-						"text": "     ",
+						"value": "     ",
 						"start": 13,
 						"end": 18,
 						"loc": {
@@ -170,7 +170,7 @@
 					},
 					{
 						"type": "Format",
-						"text": "       ",
+						"value": "       ",
 						"start": 26,
 						"end": 33,
 						"loc": {
@@ -187,7 +187,7 @@
 				],
 				"startTagBeforeEnd": {
 					"type": "Format",
-					"text": "    ",
+					"value": "    ",
 					"start": 41,
 					"end": 45,
 					"loc": {
@@ -203,7 +203,7 @@
 				},
 				"endTagAfterStart": {
 					"type": "Format",
-					"text": "         ",
+					"value": "         ",
 					"start": 48,
 					"end": 57,
 					"loc": {
@@ -219,7 +219,7 @@
 				},
 				"endTagBeforeEnd": {
 					"type": "Format",
-					"text": "         ",
+					"value": "         ",
 					"start": 60,
 					"end": 69,
 					"loc": {

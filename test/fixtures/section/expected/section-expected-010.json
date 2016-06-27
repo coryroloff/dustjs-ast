@@ -207,7 +207,7 @@
 				"startTagBeforeParam": [
 					{
 						"type": "Format",
-						"text": " ",
+						"value": " ",
 						"start": 9,
 						"end": 10,
 						"loc": {
@@ -223,7 +223,7 @@
 					},
 					{
 						"type": "Format",
-						"text": " ",
+						"value": " ",
 						"start": 19,
 						"end": 20,
 						"loc": {

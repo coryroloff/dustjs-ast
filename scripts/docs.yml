@@ -20,7 +20,7 @@
 - class: Format
   extends: Node
   properties:
-  - name: text
+  - name: value
     type: String
 
 - class: Identifier
@@ -139,7 +139,7 @@
 - class: Raw
   extends: Node
   properties:
-  - name: text
+  - name: value
     type: String
 
 - class: Reference

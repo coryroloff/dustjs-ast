@@ -42,7 +42,7 @@
 			"format": {
 				"startTagAfterStart": {
 					"type": "Format",
-					"text": " ",
+					"value": " ",
 					"start": 2,
 					"end": 3,
 					"loc": {

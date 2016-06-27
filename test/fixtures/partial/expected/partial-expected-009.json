@@ -40,7 +40,7 @@
 			"format": {
 				"afterStart": {
 					"type": "Format",
-					"text": "   ",
+					"value": "   ",
 					"start": 2,
 					"end": 5,
 					"loc": {
@@ -57,7 +57,7 @@
 				"beforeParam": [],
 				"beforeEnd": {
 					"type": "Format",
-					"text": "   ",
+					"value": "   ",
 					"start": 10,
 					"end": 13,
 					"loc": {

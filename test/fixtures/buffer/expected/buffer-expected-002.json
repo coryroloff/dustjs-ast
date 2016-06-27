@@ -19,7 +19,7 @@
 		},
 		{
 			"type": "Format",
-			"text": "\n",
+			"value": "\n",
 			"start": 10,
 			"end": 11,
 			"loc": {

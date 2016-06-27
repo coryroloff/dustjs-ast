@@ -25,7 +25,7 @@
 				"beforeParam": [],
 				"beforeEnd": {
 					"type": "Format",
-					"text": " ",
+					"value": " ",
 					"start": 4,
 					"end": 5,
 					"loc": {

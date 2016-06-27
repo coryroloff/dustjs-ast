@@ -42,7 +42,7 @@
 				"beforeParam": [],
 				"beforeEnd": {
 					"type": "Format",
-					"text": " ",
+					"value": " ",
 					"start": 13,
 					"end": 14,
 					"loc": {

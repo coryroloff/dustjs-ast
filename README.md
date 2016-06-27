@@ -43,7 +43,7 @@ dust.print(ast); //=> <h1>{hello}, {world}!</h1>
 
 | Property | Type                                                                                              |
 | -------- | ------------------------------------------------------------------------------------------------- |
-| text     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| value    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
 
 ### Identifier ⇒ [Node](#node)
 
@@ -131,7 +131,7 @@ A Partial is defined as matching a opening brace followed by a > plus anything t
 
 | Property | Type                                                                                              |
 | -------- | ------------------------------------------------------------------------------------------------- |
-| text     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
+| value    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |
 
 ### Reference ⇒ [Node](#node)
 
