@@ -23,6 +23,8 @@ dust.print(ast); //=> <h1>{hello}, {world}!</h1>
 
 ### Block ⇒ [Node](#node)
 
+A Block is defined as a Node with a body (e.g. children).
+
 | Property | Type                                                                                                                 |
 | -------- | -------------------------------------------------------------------------------------------------------------------- |
 | body     | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[Node](#node)&gt; |
@@ -116,7 +118,7 @@ A Partial is defined as matching a opening brace followed by a > plus anything t
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
 | kind               | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                              |
 | value              | [Key](#key--node), [Inline](#inline--block)                                                                                    |
-| context            | [Identifier](#identifier--node)                                                                                                |
+| context            | ?[Identifier](#identifier--node)                                                                                               |
 | params             | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[Param](#param--node)&gt;   |
 | format.afterStart  | ?[Format](#format--node)                                                                                                       |
 | format.beforeParam | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[Format](#format--node)&gt; |
@@ -141,6 +143,8 @@ A Partial is defined as matching a opening brace followed by a > plus anything t
 | filters  | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[Key](#key--node)&gt; |
 
 ### Section ⇒ [Block](#block--node)
+
+Note: If a Section's first block child has an empty body, then that signifies the Section is self-closed. However, if the Section's first block child has an empty Buffer node, then the Section has both a start and an end tag.
 
 | Property                   | Type                                                                                                                           |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |

@@ -1,6 +1,7 @@
 ---
 - class: Block
   extends: Node
+  description: A Block is defined as a Node with a body (e.g. children).
   properties:
   - name: body
     type: Array<Node>
@@ -121,7 +122,7 @@
   - name: value
     type: Key, Inline
   - name: context
-    type: Identifier
+    type: ?Identifier
   - name: params
     type: Array<Param>
   - name: format.afterStart
@@ -152,6 +153,7 @@
 
 - class: Section
   extends: Block
+  description: "Note: If a Section's first block child has an empty body, then that signifies the Section is self-closed. However, if the Section's first block child has an empty Buffer node, then the Section has both a start and an end tag."
   properties:
   - name: kind
     type: String
