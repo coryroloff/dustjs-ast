@@ -163,7 +163,7 @@
     type: ?Identifier
   - name: params
     type: Array<Param>
-  - name: format.startTagAfterKind
+  - name: format.startTagAfterStart
     type: ?Format
   - name: format.startTagBeforeParam
     type: Array<Format>
