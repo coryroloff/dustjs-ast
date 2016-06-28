@@ -144,7 +144,7 @@ A Partial is defined as matching a opening brace followed by a > plus anything t
 
 ### Section ⇒ [Block](#block--node)
 
-Note: If a Section's first block child has an empty body, then that signifies the Section is self-closed. However, if the Section's first block child has an empty Buffer node, then the Section has both a start and an end tag.
+Note: A self-closed section will always have an empty body. Sections with start and end tags will always have at least one Block in the body.
 
 | Property                   | Type                                                                                                                           | Description                                                       |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------- |

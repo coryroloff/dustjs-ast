@@ -3,12 +3,7 @@
 	"body": [
 		{
 			"type": "Section",
-			"body": [
-				{
-					"type": "Block",
-					"body": []
-				}
-			],
+			"body": [],
 			"params": [
 				{
 					"type": "Param",
@@ -116,10 +111,6 @@
 						"column": 9
 					}
 				}
-			},
-			"block": {
-				"type": "Block",
-				"body": []
 			},
 			"start": 0,
 			"end": 24,

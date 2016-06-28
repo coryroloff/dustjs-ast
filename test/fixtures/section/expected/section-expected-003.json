@@ -12,36 +12,7 @@
 							"body": [
 								{
 									"type": "Block",
-									"body": [
-										{
-											"type": "Buffer",
-											"value": "",
-											"start": 28,
-											"end": 28,
-											"loc": {
-												"start": {
-													"line": 1,
-													"column": 28
-												},
-												"end": {
-													"line": 1,
-													"column": 28
-												}
-											}
-										}
-									],
-									"start": 28,
-									"end": 28,
-									"loc": {
-										"start": {
-											"line": 1,
-											"column": 28
-										},
-										"end": {
-											"line": 1,
-											"column": 28
-										}
-									}
+									"body": []
 								}
 							],
 							"params": [],

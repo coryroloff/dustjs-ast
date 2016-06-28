@@ -6,36 +6,7 @@
 			"body": [
 				{
 					"type": "Block",
-					"body": [
-						{
-							"type": "Buffer",
-							"value": "",
-							"start": 79,
-							"end": 79,
-							"loc": {
-								"start": {
-									"line": 1,
-									"column": 79
-								},
-								"end": {
-									"line": 1,
-									"column": 79
-								}
-							}
-						}
-					],
-					"start": 79,
-					"end": 79,
-					"loc": {
-						"start": {
-							"line": 1,
-							"column": 79
-						},
-						"end": {
-							"line": 1,
-							"column": 79
-						}
-					}
+					"body": []
 				}
 			],
 			"params": [

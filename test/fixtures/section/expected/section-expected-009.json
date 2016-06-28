@@ -3,12 +3,7 @@
 	"body": [
 		{
 			"type": "Section",
-			"body": [
-				{
-					"type": "Block",
-					"body": []
-				}
-			],
+			"body": [],
 			"params": [],
 			"format": {
 				"startTagAfterStart": null,
@@ -51,10 +46,6 @@
 						"column": 8
 					}
 				}
-			},
-			"block": {
-				"type": "Block",
-				"body": []
 			},
 			"start": 0,
 			"end": 10,
