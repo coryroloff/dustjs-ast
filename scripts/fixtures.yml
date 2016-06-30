@@ -55,7 +55,6 @@
     - "{#section myparam=\"starting {~lb} right here {one.two} {~rb} ending over here\"}{/section}"
     - "{#section myparam=1 /}"
     - "{#section myparam=562.123426/}"
-    - "{#section myparam=235./}"
     - "{#.one.two.three}{/.one.two.three}"
     - "{%pragma}{/pragma}"
     - "{#  hey:a.b.c     param1=1       param2=2    }{/         hey         }"
