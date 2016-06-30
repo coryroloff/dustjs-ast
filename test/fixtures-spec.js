@@ -23,10 +23,11 @@ suite("dustjs-ast", function () {
 				const json = JSON.parse(fs.readFileSync(path.join(dir, `${item}.json`), "utf8"));
 
 				if (kind === "expected") {
-					assert.deepEqual(
-						dust.parse(fs.readFileSync(path.join(dir, `${item}.dust`), "utf8")),
-						json
-					);
+					const tmpl = fs.readFileSync(path.join(dir, `${item}.dust`), "utf8");
+					const ast = dust.parse(tmpl, "utf8");
+
+					assert.deepEqual(ast, json);
+					assert.equal(dust.print(ast), tmpl);
 				} else if (kind === "unexpected") {
 					try {
 						dust.parse(fs.readFileSync(path.join(dir, `${item}.dust`), "utf8"));

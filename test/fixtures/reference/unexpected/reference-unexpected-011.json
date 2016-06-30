@@ -1,18 +1,1 @@
-{
-	"token": {
-		"type": "Punctuator",
-		"value": "\"",
-		"start": 1,
-		"end": 2,
-		"loc": {
-			"start": {
-				"line": 1,
-				"column": 1
-			},
-			"end": {
-				"line": 2,
-				"column": 2
-			}
-		}
-	}
-}
+{}
