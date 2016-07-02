@@ -49,6 +49,7 @@
   "pre-commit": {
     "run": [
       "lint",
+      "flow",
       "test"
     ]
   },
