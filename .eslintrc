@@ -5,7 +5,8 @@
     },
     "parser": "babel-eslint",
     "plugins": [
-      "flowtype"
+      "flowtype",
+      "flow-vars"
     ],
     "env": {
       "es6": true,
@@ -27,7 +28,9 @@
       "strict": ["error"],
       "flowtype/require-parameter-type": "error",
       "flowtype/require-return-type": ["error", "always", {annotateUndefined: "always"}],
-      "flowtype/space-after-type-colon": ["error", "always"]
+      "flowtype/space-after-type-colon": ["error", "always"],
+      "flow-vars/define-flow-type": 1,
+      "flow-vars/use-flow-type": 1
     },
     "settings": {
       "flowtype": {
