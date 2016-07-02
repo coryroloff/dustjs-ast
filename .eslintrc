@@ -23,7 +23,7 @@
       "prefer-const": ["error"],
       "strict": ["error"],
       "flowtype/require-parameter-type": "error",
-      "flowtype/require-return-type": ["error", "always"],
+      "flowtype/require-return-type": ["error", "always", {annotateUndefined: "always"}],
       "flowtype/space-after-type-colon": ["error", "always"]
     },
     "settings": {
