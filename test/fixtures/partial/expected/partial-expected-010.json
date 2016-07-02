@@ -3,39 +3,6 @@
 	"body": [
 		{
 			"type": "Partial",
-			"value": {
-				"type": "Inline",
-				"body": [
-					{
-						"type": "StringLiteral",
-						"value": "hey",
-						"start": 4,
-						"end": 7,
-						"loc": {
-							"start": {
-								"line": 2,
-								"column": 4
-							},
-							"end": {
-								"line": 1,
-								"column": 7
-							}
-						}
-					}
-				],
-				"start": 3,
-				"end": 8,
-				"loc": {
-					"start": {
-						"line": 1,
-						"column": 3
-					},
-					"end": {
-						"line": 1,
-						"column": 8
-					}
-				}
-			},
 			"context": null,
 			"format": {
 				"afterStart": {
@@ -74,6 +41,39 @@
 			},
 			"params": [],
 			"kind": "+",
+			"value": {
+				"type": "Inline",
+				"body": [
+					{
+						"type": "StringLiteral",
+						"value": "hey",
+						"start": 4,
+						"end": 7,
+						"loc": {
+							"start": {
+								"line": 2,
+								"column": 4
+							},
+							"end": {
+								"line": 1,
+								"column": 7
+							}
+						}
+					}
+				],
+				"start": 3,
+				"end": 8,
+				"loc": {
+					"start": {
+						"line": 1,
+						"column": 3
+					},
+					"end": {
+						"line": 1,
+						"column": 8
+					}
+				}
+			},
 			"start": 0,
 			"end": 11,
 			"loc": {

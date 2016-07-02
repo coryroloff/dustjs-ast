@@ -3,6 +3,7 @@
 	"body": [
 		{
 			"type": "Reference",
+			"filters": [],
 			"id": {
 				"type": "Identifier",
 				"path": [
@@ -101,7 +102,6 @@
 					}
 				}
 			},
-			"filters": [],
 			"start": 0,
 			"end": 25,
 			"loc": {

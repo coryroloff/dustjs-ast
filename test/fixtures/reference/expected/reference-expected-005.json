@@ -3,6 +3,24 @@
 	"body": [
 		{
 			"type": "Reference",
+			"filters": [
+				{
+					"type": "Key",
+					"name": "js",
+					"start": 25,
+					"end": 27,
+					"loc": {
+						"start": {
+							"line": 1,
+							"column": 25
+						},
+						"end": {
+							"line": 1,
+							"column": 27
+						}
+					}
+				}
+			],
 			"id": {
 				"type": "Identifier",
 				"path": [
@@ -101,24 +119,6 @@
 					}
 				}
 			},
-			"filters": [
-				{
-					"type": "Key",
-					"name": "js",
-					"start": 25,
-					"end": 27,
-					"loc": {
-						"start": {
-							"line": 1,
-							"column": 25
-						},
-						"end": {
-							"line": 1,
-							"column": 27
-						}
-					}
-				}
-			],
 			"start": 0,
 			"end": 28,
 			"loc": {

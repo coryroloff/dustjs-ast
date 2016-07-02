@@ -3,6 +3,40 @@
 	"body": [
 		{
 			"type": "Reference",
+			"filters": [
+				{
+					"type": "Key",
+					"name": "js",
+					"start": 25,
+					"end": 27,
+					"loc": {
+						"start": {
+							"line": 1,
+							"column": 25
+						},
+						"end": {
+							"line": 1,
+							"column": 27
+						}
+					}
+				},
+				{
+					"type": "Key",
+					"name": "s",
+					"start": 28,
+					"end": 29,
+					"loc": {
+						"start": {
+							"line": 1,
+							"column": 28
+						},
+						"end": {
+							"line": 1,
+							"column": 29
+						}
+					}
+				}
+			],
 			"id": {
 				"type": "Identifier",
 				"path": [
@@ -101,40 +135,6 @@
 					}
 				}
 			},
-			"filters": [
-				{
-					"type": "Key",
-					"name": "js",
-					"start": 25,
-					"end": 27,
-					"loc": {
-						"start": {
-							"line": 1,
-							"column": 25
-						},
-						"end": {
-							"line": 1,
-							"column": 27
-						}
-					}
-				},
-				{
-					"type": "Key",
-					"name": "s",
-					"start": 28,
-					"end": 29,
-					"loc": {
-						"start": {
-							"line": 1,
-							"column": 28
-						},
-						"end": {
-							"line": 1,
-							"column": 29
-						}
-					}
-				}
-			],
 			"start": 0,
 			"end": 30,
 			"loc": {

@@ -3,6 +3,29 @@
 	"body": [
 		{
 			"type": "Partial",
+			"context": null,
+			"format": {
+				"afterStart": null,
+				"beforeParam": [],
+				"beforeEnd": {
+					"type": "Format",
+					"value": " ",
+					"start": 13,
+					"end": 14,
+					"loc": {
+						"start": {
+							"line": 1,
+							"column": 13
+						},
+						"end": {
+							"line": 1,
+							"column": 14
+						}
+					}
+				}
+			},
+			"params": [],
+			"kind": ">",
 			"value": {
 				"type": "Inline",
 				"body": [
@@ -36,29 +59,6 @@
 					}
 				}
 			},
-			"context": null,
-			"format": {
-				"afterStart": null,
-				"beforeParam": [],
-				"beforeEnd": {
-					"type": "Format",
-					"value": " ",
-					"start": 13,
-					"end": 14,
-					"loc": {
-						"start": {
-							"line": 1,
-							"column": 13
-						},
-						"end": {
-							"line": 1,
-							"column": 14
-						}
-					}
-				}
-			},
-			"params": [],
-			"kind": ">",
 			"start": 0,
 			"end": 16,
 			"loc": {

@@ -3,40 +3,6 @@
 	"body": [
 		{
 			"type": "Reference",
-			"id": {
-				"type": "Identifier",
-				"path": [
-					{
-						"type": "Key",
-						"name": "single-key",
-						"start": 1,
-						"end": 11,
-						"loc": {
-							"start": {
-								"line": 1,
-								"column": 1
-							},
-							"end": {
-								"line": 1,
-								"column": 11
-							}
-						}
-					}
-				],
-				"localContext": false,
-				"start": 1,
-				"end": 11,
-				"loc": {
-					"start": {
-						"line": 1,
-						"column": 1
-					},
-					"end": {
-						"line": 1,
-						"column": 11
-					}
-				}
-			},
 			"filters": [
 				{
 					"type": "Key",
@@ -71,6 +37,40 @@
 					}
 				}
 			],
+			"id": {
+				"type": "Identifier",
+				"path": [
+					{
+						"type": "Key",
+						"name": "single-key",
+						"start": 1,
+						"end": 11,
+						"loc": {
+							"start": {
+								"line": 1,
+								"column": 1
+							},
+							"end": {
+								"line": 1,
+								"column": 11
+							}
+						}
+					}
+				],
+				"localContext": false,
+				"start": 1,
+				"end": 11,
+				"loc": {
+					"start": {
+						"line": 1,
+						"column": 1
+					},
+					"end": {
+						"line": 1,
+						"column": 11
+					}
+				}
+			},
 			"start": 0,
 			"end": 17,
 			"loc": {

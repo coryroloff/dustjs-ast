@@ -3,22 +3,6 @@
 	"body": [
 		{
 			"type": "Partial",
-			"value": {
-				"type": "Inline",
-				"body": [],
-				"start": 2,
-				"end": 4,
-				"loc": {
-					"start": {
-						"line": 1,
-						"column": 2
-					},
-					"end": {
-						"line": 1,
-						"column": 4
-					}
-				}
-			},
 			"context": null,
 			"format": {
 				"afterStart": null,
@@ -42,6 +26,22 @@
 			},
 			"params": [],
 			"kind": ">",
+			"value": {
+				"type": "Inline",
+				"body": [],
+				"start": 2,
+				"end": 4,
+				"loc": {
+					"start": {
+						"line": 1,
+						"column": 2
+					},
+					"end": {
+						"line": 1,
+						"column": 4
+					}
+				}
+			},
 			"start": 0,
 			"end": 7,
 			"loc": {

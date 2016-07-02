@@ -3,6 +3,44 @@
 	"body": [
 		{
 			"type": "Partial",
+			"context": null,
+			"format": {
+				"afterStart": {
+					"type": "Format",
+					"value": " ",
+					"start": 2,
+					"end": 3,
+					"loc": {
+						"start": {
+							"line": 1,
+							"column": 2
+						},
+						"end": {
+							"line": 1,
+							"column": 3
+						}
+					}
+				},
+				"beforeParam": [],
+				"beforeEnd": {
+					"type": "Format",
+					"value": " ",
+					"start": 39,
+					"end": 40,
+					"loc": {
+						"start": {
+							"line": 1,
+							"column": 39
+						},
+						"end": {
+							"line": 1,
+							"column": 40
+						}
+					}
+				}
+			},
+			"params": [],
+			"kind": ">",
 			"value": {
 				"type": "Inline",
 				"body": [
@@ -24,6 +62,7 @@
 					},
 					{
 						"type": "Reference",
+						"filters": [],
 						"id": {
 							"type": "Identifier",
 							"path": [
@@ -58,7 +97,6 @@
 								}
 							}
 						},
-						"filters": [],
 						"start": 12,
 						"end": 27,
 						"loc": {
@@ -102,44 +140,6 @@
 					}
 				}
 			},
-			"context": null,
-			"format": {
-				"afterStart": {
-					"type": "Format",
-					"value": " ",
-					"start": 2,
-					"end": 3,
-					"loc": {
-						"start": {
-							"line": 1,
-							"column": 2
-						},
-						"end": {
-							"line": 1,
-							"column": 3
-						}
-					}
-				},
-				"beforeParam": [],
-				"beforeEnd": {
-					"type": "Format",
-					"value": " ",
-					"start": 39,
-					"end": 40,
-					"loc": {
-						"start": {
-							"line": 1,
-							"column": 39
-						},
-						"end": {
-							"line": 1,
-							"column": 40
-						}
-					}
-				}
-			},
-			"params": [],
-			"kind": ">",
 			"start": 0,
 			"end": 42,
 			"loc": {

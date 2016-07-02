@@ -96,6 +96,7 @@
 							},
 							{
 								"type": "Reference",
+								"filters": [],
 								"id": {
 									"type": "Identifier",
 									"path": [
@@ -146,7 +147,6 @@
 										}
 									}
 								},
-								"filters": [],
 								"start": 45,
 								"end": 54,
 								"loc": {

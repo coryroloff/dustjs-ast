@@ -3,39 +3,6 @@
 	"body": [
 		{
 			"type": "Partial",
-			"value": {
-				"type": "Inline",
-				"body": [
-					{
-						"type": "StringLiteral",
-						"value": "thing",
-						"start": 4,
-						"end": 9,
-						"loc": {
-							"start": {
-								"line": 2,
-								"column": 4
-							},
-							"end": {
-								"line": 1,
-								"column": 9
-							}
-						}
-					}
-				],
-				"start": 3,
-				"end": 10,
-				"loc": {
-					"start": {
-						"line": 1,
-						"column": 3
-					},
-					"end": {
-						"line": 1,
-						"column": 10
-					}
-				}
-			},
 			"context": null,
 			"format": {
 				"afterStart": {
@@ -129,6 +96,7 @@
 							},
 							{
 								"type": "Reference",
+								"filters": [],
 								"id": {
 									"type": "Identifier",
 									"path": [
@@ -163,7 +131,6 @@
 										}
 									}
 								},
-								"filters": [],
 								"start": 25,
 								"end": 30,
 								"loc": {
@@ -222,6 +189,39 @@
 				}
 			],
 			"kind": ">",
+			"value": {
+				"type": "Inline",
+				"body": [
+					{
+						"type": "StringLiteral",
+						"value": "thing",
+						"start": 4,
+						"end": 9,
+						"loc": {
+							"start": {
+								"line": 2,
+								"column": 4
+							},
+							"end": {
+								"line": 1,
+								"column": 9
+							}
+						}
+					}
+				],
+				"start": 3,
+				"end": 10,
+				"loc": {
+					"start": {
+						"line": 1,
+						"column": 3
+					},
+					"end": {
+						"line": 1,
+						"column": 10
+					}
+				}
+			},
 			"start": 0,
 			"end": 37,
 			"loc": {
