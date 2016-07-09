@@ -17,6 +17,7 @@
   properties:
   - name: value
     type: String
+    description: "{!**\\_\\_\\_hello, world!\\_\\_\\_**!}"
 
 - class: Format
   extends: Node
@@ -71,39 +72,6 @@
     type: Number
   - name: loc.end.column
     type: Number
-  constants:
-  - name: Block
-    type: String
-  - name: Buffer
-    type: String
-  - name: Comment
-    type: String
-  - name: Identifier
-    type: String
-  - name: Inline
-    type: String
-  - name: Key
-    type: String
-  - name: StringLiteral
-    type: String
-  - name: NumericLiteral
-    type: String
-  - name: NamedBlock
-    type: String
-  - name: Param
-    type: String
-  - name: Partial
-    type: String
-  - name: Raw
-    type: String
-  - name: Reference
-    type: String
-  - name: Section
-    type: String
-  - name: Special
-    type: String
-  - name: Template
-    type: String
 
 - class: Param
   extends: Node
@@ -131,13 +99,6 @@
     type: Array<Format>
   - name: format.beforeEnd
     type: ?Format
-  constants:
-  - name: Partial
-    type: String
-    description: ">"
-  - name: Block
-    type: String
-    description: "+"
 
 - class: Raw
   extends: Node
@@ -187,28 +148,6 @@
   - name: format.endTagBeforeEnd
     type: ?Format
     description: "{#section}{/section**___**}"
-  constants:
-  - name: Standard
-    type: String
-    description: "#"
-  - name: Exists
-    type: String
-    description: "?"
-  - name: NotExists
-    type: String
-    description: "^"
-  - name: InlinePartial
-    type: String
-    description: "<"
-  - name: Block
-    type: String
-    description: "+"
-  - name: Helper
-    type: String
-    description: "@"
-  - name: Pragma
-    type: String
-    description: "%"
 
 - class: Special
   extends: Node
@@ -227,22 +166,5 @@
   - name: type
     type: String
   - name: value
-    type: String
-  constants:
-  - name: Comment
-    type: String
-  - name: Key
-    type: String
-  - name: StringLiteral
-    type: String
-  - name: NumericLiteral
-    type: String
-  - name: Punctuator
-    type: String
-  - name: Format
-    type: String
-  - name: Buffer
-    type: String
-  - name: Raw
     type: String
 ...

@@ -11,10 +11,48 @@ npm install --save dustjs-ast
 ## Usage
 
 ```js
-import {default as dust, Token, Node} from "dustjs-ast";
+import dust from "dustjs-ast";
+```
 
-const ast = dust.parse("<h1>{hello}, {world}!</h1>"); //=> {type: "Template", ...}
+### parse (code: String): Template
+
+```js
+dust.parse("<h1>{hello}, {world}!</h1>"); //=> {type: "Template", ...}
+```
+
+### print (node: Node): String
+
+```js
 dust.print(ast); //=> <h1>{hello}, {world}!</h1>
+```
+
+### traverse (node: Node, visitor: Object): void
+
+```js
+dust.traverse(ast, {
+	Section (path) {
+		// on enter
+	},
+	Partial: {
+		enter (path) {
+			// on enter
+		},
+		exit (path) {
+			// on exit
+		}
+	}
+});
+```
+
+### types
+
+```js
+import {types as t} from "dustjs-ast";
+
+t.isSection(node)
+t.isBlock(node)
+t.isReference(node)
+...
 ```
 
 ## API
@@ -37,9 +75,9 @@ A Block is defined as a Node with a body (e.g. children).
 
 ### Comment ⇒ [Node](#node)
 
-| Property | Type                                                                                              | Description |
-| -------- | ------------------------------------------------------------------------------------------------- | ----------- |
-| value    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &nbsp;      |
+| Property | Type                                                                                              | Description                       |
+| -------- | ------------------------------------------------------------------------------------------------- | --------------------------------- |
+| value    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | {!**\_\_\_hello, world!\_\_\_**!} |
 
 ### Format ⇒ [Node](#node)
 
@@ -78,25 +116,6 @@ A Block is defined as a Node with a body (e.g. children).
 | loc.end.line     | [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | &nbsp;      |
 | loc.end.column   | [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | &nbsp;      |
 
-| Constant       | Type                                                                                              | Description |
-| -------------- | ------------------------------------------------------------------------------------------------- | ----------- |
-| Block          | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &nbsp;      |
-| Buffer         | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &nbsp;      |
-| Comment        | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &nbsp;      |
-| Identifier     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &nbsp;      |
-| Inline         | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &nbsp;      |
-| Key            | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &nbsp;      |
-| StringLiteral  | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &nbsp;      |
-| NumericLiteral | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &nbsp;      |
-| NamedBlock     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &nbsp;      |
-| Param          | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &nbsp;      |
-| Partial        | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &nbsp;      |
-| Raw            | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &nbsp;      |
-| Reference      | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &nbsp;      |
-| Section        | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &nbsp;      |
-| Special        | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &nbsp;      |
-| Template       | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &nbsp;      |
-
 ### NumericLiteral ⇒ [Node](#node)
 
 | Property | Type                                                                                              | Description |
@@ -123,11 +142,6 @@ A Partial is defined as matching a opening brace followed by a > plus anything t
 | format.afterStart  | ?[Format](#format--node)                                                                                                       | &nbsp;      |
 | format.beforeParam | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[Format](#format--node)&gt; | &nbsp;      |
 | format.beforeEnd   | ?[Format](#format--node)                                                                                                       | &nbsp;      |
-
-| Constant | Type                                                                                              | Description |
-| -------- | ------------------------------------------------------------------------------------------------- | ----------- |
-| Partial  | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | >           |
-| Block    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | +           |
 
 ### Raw ⇒ [Node](#node)
 
@@ -158,16 +172,6 @@ Note: A self-closed section will always have an empty body. Sections with start 
 | format.endTagAfterStart    | ?[Format](#format--node)                                                                                                       | {#section}{/**___**section}                                       |
 | format.endTagBeforeEnd     | ?[Format](#format--node)                                                                                                       | {#section}{/section**___**}                                       |
 
-| Constant      | Type                                                                                              | Description |
-| ------------- | ------------------------------------------------------------------------------------------------- | ----------- |
-| Standard      | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | #           |
-| Exists        | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | ?           |
-| NotExists     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | ^           |
-| InlinePartial | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | <           |
-| Block         | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | +           |
-| Helper        | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | @           |
-| Pragma        | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | %           |
-
 ### Special ⇒ [Node](#node)
 
 | Property | Type              | Description |
@@ -192,16 +196,5 @@ Note: A self-closed section will always have an empty body. Sections with start 
 | -------- | ------------------------------------------------------------------------------------------------- | ----------- |
 | type     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &nbsp;      |
 | value    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &nbsp;      |
-
-| Constant       | Type                                                                                              | Description |
-| -------------- | ------------------------------------------------------------------------------------------------- | ----------- |
-| Comment        | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &nbsp;      |
-| Key            | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &nbsp;      |
-| StringLiteral  | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &nbsp;      |
-| NumericLiteral | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &nbsp;      |
-| Punctuator     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &nbsp;      |
-| Format         | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &nbsp;      |
-| Buffer         | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &nbsp;      |
-| Raw            | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &nbsp;      |
 
 <!-- API: end -->
