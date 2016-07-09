@@ -170,7 +170,7 @@ Note: A self-closed section will always have an empty body. Sections with start 
 | format.startTagBeforeParam | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[Format](#format--node)&gt; | {#section**___**param1=1**___**param2=2**___**param3=3}{/section} |
 | format.startTagBeforeEnd   | ?[Format](#format--node)                                                                                                       | {#section**___**}{/section} and {#section**___**/}                |
 | format.endTagAfterStart    | ?[Format](#format--node)                                                                                                       | {#section}{/**___**section}                                       |
-| format.endTagBeforeEnd     | ?[Format](#format--node)                                                                                                       | {#section}{/section**___**}                                       |
+| format.endTagBeforeEnd     | ?[Format](#format--node)                                                                                                       | {#section}{/section`___`}                                       |
 
 ### Special ⇒ [Node](#node)
 
