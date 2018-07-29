@@ -1,3 +1,8 @@
+```
+Disclaimer: This project is unmaintined and was simply a learning experience on building a lexer/parser.
+There are many better options to use than Dust.js for templating!
+```
+
 # dustjs-ast [![Build Status](https://travis-ci.org/coryroloff/dustjs-ast.svg?branch=master)](https://travis-ci.org/coryroloff/dustjs-ast) [![Coverage Status](https://coveralls.io/repos/github/coryroloff/dustjs-ast/badge.svg?branch=master)](https://coveralls.io/github/coryroloff/dustjs-ast?branch=master)
 
 A custom abstract syntax tree for Dust.js.
