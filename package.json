@@ -4,7 +4,7 @@
   "description": "A custom abstract syntax tree for Dust.js",
   "homepage": "https://github.com/coryroloff/dustjs-ast",
   "scripts": {
-    "test": "nyc --reporter=text --reporter=lcov mocha test/**/*-spec.js",
+    "test": "nyc --reporter=text --reporter=lcov --reporter=cobertura mocha test/**/*-spec.js",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint lib test scripts webpack.config.js",
     "healthcheck": "npm run lint && npm run test",
